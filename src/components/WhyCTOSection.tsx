@@ -9,21 +9,39 @@ const WhyCTOSection: React.FC = () => {
       <div className="container max-w-7xl mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cto-dark">Need for a<br />Chief Technology Officer</h2>
-          <p className="text-lg text-cto-gray leading-relaxed">
-            A CTO's role extends beyond mere technology. They architect the digital framework that positions a company for scalability and adaptability in a rapidly changing digital environment.
-          </p>
         </div>
         
-        <div className="mb-16">
-          <p className="text-xl md:text-2xl font-light mb-8 text-center max-w-4xl mx-auto italic text-cto-dark">
-            Imagine a world where the way you do things is not only a competitive advantage, but the reason you keep coming out on top as an industry leader.
-          </p>
+        {/* Two-column layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+          {/* Left Column: Text Content */}
+          <div className="animate-fade-in-up">
+            <p className="text-cto-gray mb-6 leading-relaxed">
+              A CTO's role extends beyond mere technology. They architect the digital framework that positions a company for scalability and adaptability in a rapidly changing digital environment.
+            </p>
+            
+            <p className="text-xl md:text-2xl font-light mb-6 text-cto-dark italic">
+              Imagine a world where the way you do things is not only a competitive advantage, but the reason you keep coming out on top as an industry leader.
+            </p>
+            
+            <p className="text-cto-gray mb-6">
+              The role of a CTO can vary significantly depending on the company's size, industry, and technology needs. In startup environments, a CTO might be more hands-on with software development, while in larger companies, the focus might be more on strategic planning and leadership.
+            </p>
+          </div>
           
-          <p className="text-cto-gray mb-8 max-w-4xl mx-auto">
-            The role of a CTO can vary significantly depending on the company's size, industry, and technology needs. In startup environments, a CTO might be more hands-on with software development, while in larger companies, the focus might be more on strategic planning and leadership.
-          </p>
+          {/* Right Column: Image */}
+          <div className="relative h-full flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="relative w-full h-full min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                alt="CTO Leadership" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-cto-blue/10 mix-blend-overlay"></div>
+            </div>
+          </div>
         </div>
         
+        {/* Full-width section for cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="p-6 border border-gray-200 rounded-lg">
             <div className="mb-4">
