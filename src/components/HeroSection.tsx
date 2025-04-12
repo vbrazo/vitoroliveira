@@ -18,7 +18,10 @@ const HeroSection: React.FC = () => {
             <p className="text-xl md:text-2xl text-cto-gray mb-10 leading-relaxed">
               Bespoke fractional CTO and early-stage advisor services, to guide you from startup to scale with strategic tech leadership.
             </p>
-            <Button className="bg-cto-blue hover:bg-cto-blue/90 text-white px-8 py-6 text-lg rounded-md">
+            <Button 
+              className="bg-cto-blue hover:bg-cto-blue/90 text-white px-8 py-6 text-lg rounded-md"
+              onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
+            >
               Book a FREE Discovery Call
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -28,8 +31,8 @@ const HeroSection: React.FC = () => {
           <div className="relative h-full flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <div className="relative w-full h-full min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden shadow-xl">
               <img 
-                src="/placeholder.svg" 
-                alt="CTO Services" 
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                alt="Tech Executive" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-cto-blue/10 mix-blend-overlay"></div>
