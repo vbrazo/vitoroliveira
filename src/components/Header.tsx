@@ -12,7 +12,12 @@ const Header: React.FC = () => {
           <a href="#engagement" className="text-cto-gray hover:text-cto-blue transition-colors">Engagement</a>
           <a href="#why" className="text-cto-gray hover:text-cto-blue transition-colors">Why a CTO?</a>
         </nav>
-        <Button className="bg-cto-blue hover:bg-cto-blue/90">Book a Call</Button>
+        <Button 
+          className="bg-cto-blue hover:bg-cto-blue/90"
+          onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
+        >
+          Book a Call
+        </Button>
       </div>
     </header>
   );
