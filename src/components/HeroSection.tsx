@@ -1,49 +1,53 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import LogoScroller from './LogoScroller';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-white to-gray-50">
-      <div className="container max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-          {/* Left Column: Content */}
-          <div className="animate-fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-cto-dark mb-6 leading-tight">
-              Empowering Businesses<br />
-              With Strategic Innovation.
-            </h1>
-            <p className="text-xl md:text-2xl text-cto-gray mb-10 leading-relaxed">
+    <section className="bg-gradient-to-br from-white to-gray-50">
+      <div className="container flex flex-col md:flex-row  max-w-7xl justify-center items-center gap-8 md:gap-0">
+        <div className="w-full md:w-1/2 flex flex-col justify-center py-8 md:py-0 px-4 md:px-0">
+          <div>
+            <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px]">
+              Empowering Businesses With Strategic Innovation
+            </div>
+          </div>
+
+          <div className="mt-4 md:mt-[3vh] w-full md:w-[456px]">
+            <span className="text-gray-700 text-[18px] md:text-[20px] font-medium tracking-tight leading-[18px] md:leading-normal">
               Bespoke fractional CTO and early-stage advisor services, to guide you from startup to scale with strategic tech leadership.
-            </p>
+            </span>
+          </div>
+
+          <div className="mt-6 md:mt-[48px] hidden md:flex">
             <Button 
-              className="bg-cto-blue hover:bg-cto-blue/90 text-white px-8 py-6 text-lg rounded-md"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-md uppercase"
               onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
             >
               Book a FREE Discovery Call
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </div>
-          
-          {/* Right Column: Image */}
-          <div className="relative h-full flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="relative w-full h-full min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
-                alt="Tech Executive" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-cto-blue/10 mix-blend-overlay"></div>
-            </div>
+
+          <div className="w-full cursor-pointer flex md:!hidden py-[24px] pt-[30px]">
+            <Button 
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg rounded-md uppercase"
+              onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
+            >
+              Book a FREE Discovery Call
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </div>
-        
-        {/* Full-width Logo Section */}
-        <div className="w-full overflow-hidden">
-          <h3 className="text-center text-cto-gray font-medium mb-8">Trusted by innovative companies</h3>
-          <LogoScroller />
+
+        <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end relative px-4 md:px-0">
+          <div className="relative w-full h-full max-h-[300px] sm:max-h-[400px] md:max-h-none">
+            <img
+              className="w-full h-full object-cover"
+              src="/vitor-v1.jpg"
+              alt="Vitor Oliveira"
+            />
+          </div>
         </div>
       </div>
     </section>
