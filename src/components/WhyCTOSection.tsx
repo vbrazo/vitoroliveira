@@ -45,7 +45,7 @@ const WhyCTOSection: React.FC = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="p-6 border border-gray-200 rounded-lg">
             <div className="mb-4">
-              <Activity className="h-8 w-8 text-cto-blue" />
+              <Activity className="h-8 w-8 text-black" />
             </div>
             <h3 className="text-xl font-bold mb-3 text-cto-dark">Software Development Lifecycle (SDLC)</h3>
             <p className="text-cto-gray">
@@ -55,7 +55,7 @@ const WhyCTOSection: React.FC = () => {
           
           <div className="p-6 border border-gray-200 rounded-lg">
             <div className="mb-4">
-              <Lock className="h-8 w-8 text-cto-blue" />
+              <Lock className="h-8 w-8 text-black" />
             </div>
             <h3 className="text-xl font-bold mb-3 text-cto-dark">Security First</h3>
             <p className="text-cto-gray">
@@ -65,7 +65,7 @@ const WhyCTOSection: React.FC = () => {
           
           <div className="p-6 border border-gray-200 rounded-lg">
             <div className="mb-4">
-              <Zap className="h-8 w-8 text-cto-blue" />
+              <Zap className="h-8 w-8 text-black" />
             </div>
             <h3 className="text-xl font-bold mb-3 text-cto-dark">Antifragility</h3>
             <p className="text-cto-gray">
@@ -79,7 +79,7 @@ const WhyCTOSection: React.FC = () => {
           <p className="text-cto-gray mb-6">
             The reality is that you don't need a full-time CTO to get the benefits of having a CTO. You can have a fractional CTO that can provide the same level of expertise and guidance at a fraction of the cost of a full-time executive role.
           </p>
-          <a href="#services" className="inline-flex items-center text-cto-blue hover:underline">
+          <a href="#services" className="inline-flex items-center text-black hover:underline">
             Learn more about my fractional CTO services 
             <ArrowRight className="ml-1 h-4 w-4" />
           </a>

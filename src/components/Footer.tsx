@@ -3,12 +3,12 @@ import { Mail, Linkedin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-[#F3F3F3] text-white py-12">
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center gap-10">
           <div className="flex flex-col items-center">
-            <div className="text-2xl font-bold mb-4">Vitor Oliveira</div>
-            <p className="text-gray-400 mb-4 max-w-md">
+            <div className="text-2xl font-bold text-black mb-4">Vitor Oliveira</div>
+            <p className="text-black mb-4 max-w-md">
               Empowering businesses with strategic innovation and technology leadership.
             </p>
             <div className="flex space-x-4 justify-center">
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-10 pt-6 text-center text-gray-500 text-sm">
+        <div className="border-t border-gray-300 mt-10 pt-6 text-center text-black text-sm">
           &copy; {new Date().getFullYear()} Vitor Oliveira LLC. All rights reserved.
         </div>
       </div>
