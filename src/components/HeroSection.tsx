@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="flex relative flex-col text-center md:text-left items-center justify-center gap-16 md:items-start  w-full bg-black min-h-[screen]">
-      <div className="container flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:gap-0">
+    <section className="flex relative flex-col text-center md:text-left items-center justify-center gap-16 md:items-start w-full bg-black min-h-[screen]">
+      <div className="container mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:gap-0">
         <div className="w-full md:w-1/2 flex flex-col justify-center pt-8 md:pt-0 px-4 md:px-0">
           <div>
             <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
           <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-3 text-lg rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+              className="px-8 py-3 text-sm rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
               onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
             >
               Book a FREE Discovery Call
