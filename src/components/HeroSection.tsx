@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => {
   return (
@@ -20,23 +19,25 @@ const HeroSection: React.FC = () => {
           </div>
 
           <div className="mt-6 md:mt-[48px] hidden md:flex">
-            <Button 
-              className="px-8 py-6 text-lg rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 text-lg rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
               onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
             >
               Book a FREE Discovery Call
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </motion.button>
           </div>
 
           <div className="w-full cursor-pointer flex md:!hidden py-[24px] pt-[30px] justify-center">
-            <Button 
-              className="px-8 py-6 text-lg rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+          <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-8 py-3 text-lg rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
               onClick={() => window.open('https://www.calendly.com/vbrazo', '_blank')}
             >
               Book a FREE Discovery Call
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </motion.button>
           </div>
         </div>
 

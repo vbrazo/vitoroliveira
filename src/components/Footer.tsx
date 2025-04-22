@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <div className="flex space-x-4 justify-center">
               <a
                 href="https://www.linkedin.com/in/imvitoroliveira/"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-gray-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="https://github.com/vbrazo"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-400 hover:text-gray-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >

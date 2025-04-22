@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { ArrowRight, Zap, Lock, Activity } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const WhyCTOSection: React.FC = () => {
   return (
