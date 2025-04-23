@@ -1,4 +1,3 @@
-import {Helmet} from "react-helmet";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -12,11 +11,6 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Vitor Oliveira - CTO Services</title>
-        <link rel="canonical" href="https://vitoroliveira.com" />
-      </Helmet>
       <Toaster />
       <Sonner />
       <BrowserRouter>
