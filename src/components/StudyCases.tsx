@@ -156,18 +156,18 @@ const ColorChangeCards = () => {
     <section id="study-cases" className="scroll-mt-20">
       <div className="p-4 md:p-8 bg-slate-100">
         <div className="container max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-cto-dark">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-cto-dark">
             Case Studies
           </h2>
-          <p className="text-center text-cto-gray max-w-3xl mx-auto mb-6 md:mb-16">
+          <p className="text-center text-cto-gray max-w-3xl mx-auto mb-6">
             A showcase of my work across engineering leadership, software development, open source contributions, talent management, angel investing, and startup advisory.
           </p>
         </div>
 
         <ShiftHightlightTabs selected={selectedTag} setSelected={setSelectedTag} />
 
-        <div className="relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
+        <div className="relative mt-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 w-full max-w-6xl mx-auto">
             {caseStudies[selectedTag].map((study, index) => (
               <div 
                 key={index} 

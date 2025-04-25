@@ -7,15 +7,23 @@ export const ShiftHightlightTabs = ({
   selected: string;
   setSelected: Dispatch<SetStateAction<string>>;
 }) => {
+  const handleTabClick = (id: string) => {
+    setSelected(id);
+    const studyCasesSection = document.getElementById("study-cases");
+    if (studyCasesSection) {
+      studyCasesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="sticky top-[4.3rem] z-10 bg-slate-100/95 backdrop-blur-sm md:pt-4 pb-4 lg:top-0 lg:pt-0 lg:pb-12">
+    <div className="sticky top-[4.3rem] z-10 bg-slate-100/95 backdrop-blur-sm pt-4 md:pt-4 pb-4 lg:top-[4.3rem] lg:pt-4 lg:pb-4">
       <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 lg:grid-cols-6">
         {TAB_DATA.map((t) => (
           <ToggleButton
             key={t.id}
             id={t.id}
             selected={selected}
-            setSelected={setSelected}
+            setSelected={handleTabClick}
           >
             {t.title}
           </ToggleButton>
