@@ -18,8 +18,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<CTOServices />} />
           <Route path="/cto-services" element={<CTOServices />} />
-          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-          {/* <Route path="/investing" element={<Investing />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const CTASection: React.FC = () => {
   return (
-    <section className="py-20 bg-black text-white text-center">
+    <section className="py-20 bg-black bg-opacity-90 text-white text-center">
       <div className="container max-w-4xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Elevate your tech game.<br />

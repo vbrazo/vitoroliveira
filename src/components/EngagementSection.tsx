@@ -29,7 +29,7 @@ const engagements = [
 
 const EngagementSection: React.FC = () => {
   return (
-    <section id="engagement" className="py-20 bg-gray-50 scroll-mt-5">
+    <section id="engagement" className="py-20 scroll-mt-5 bg-gray-50">
       <div className="container max-w-7xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-cto-dark">
           Engaged When and How You Need

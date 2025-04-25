@@ -1,6 +1,5 @@
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import TestimonialSection from '@/components/TestimonialSection';
 import ServicesSection from '@/components/ServicesSection';
 import EngagementSection from '@/components/EngagementSection';
 import WhyCTOSection from '@/components/WhyCTOSection';
@@ -8,6 +7,7 @@ import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 import Blog from '../components/Blog';
 import StudyCases from '../components/StudyCases';
+import ScrollingTestimonials from '@/components/ScrollingTestimonials';
 
 const CTOServices = () => {
   return (
@@ -15,12 +15,12 @@ const CTOServices = () => {
       <Header />
       <main>
         <HeroSection />
-        <TestimonialSection />
         <ServicesSection />
         <EngagementSection />
         <StudyCases />
         <WhyCTOSection />
         <Blog />
+        <ScrollingTestimonials />
         <CTASection />
       </main>
       <Footer />
