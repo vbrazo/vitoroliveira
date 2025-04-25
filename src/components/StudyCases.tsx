@@ -1,7 +1,11 @@
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
+import { useState } from "react";
+import { SpringModal } from "./SpringModal";
 
 const ColorChangeCards = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [caseStudy, setCaseStudy] = useState("");
   return (
     <section id="study-cases" className="scroll-mt-20">
       <div className="p-4 md:p-8 bg-slate-100">
@@ -10,33 +14,42 @@ const ColorChangeCards = () => {
             Case Studies
           </h2>
           <p className="text-center text-cto-gray max-w-3xl mx-auto mb-16">
-            Real-world examples of my technical leadership, software architecture, and team management expertise.
+            Real-world examples of my engineering leadership, software engineering and architecture, talent management, recruitment and account management expertise.
           </p>
         </div>
           
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 w-full max-w-6xl mx-auto">
-          <Card
-            heading="Strides Tech Community"
-            description="A lifelong learning platform for career growth through mentorship, training and knowledge sharing."
-            imgSrc="https://www.strides.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhow-it-works-1.604b0dd5.webp&w=3840&q=75"
-          />
-          <Card
-            heading="Gun.io"
-            description="Gun.io sources and manages world-class developers for world class companies."
-            imgSrc="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a98c826f7c2f123f62d9d9eff63c4d92/gun-io.png"
-          />
-          <Card
-            heading="Paywith"
-            description="PayWith's payment innovations platform allows businesses to create powerful, mobile-centric payment programs, faster, cheaper, and with more security and control."
-            imgSrc="https://media.licdn.com/dms/image/v2/C561BAQE2zdpkRzc5Aw/company-background_10000/company-background_10000/0/1620549922242/paywith_australia_cover?e=2147483647&v=beta&t=ltw-imeCOBDF0zX9sVUzaKKJ54HmuGnWUZYMdkCSaSk"
-          />
-          <Card
-            heading="Faker Ruby"
-            description="A library for generating fake data such as names, addresses, and phone numbers."
-            imgSrc="https://opengraph.githubassets.com/d79339dd850aa45e1c2bc5cf809beefda6b7ed19e96ffb448d02494c0183b6e2/faker-ruby/faker"
-          />
+          <div onClick={() => { setIsOpen(true); setCaseStudy("Strides Tech Community") }}>
+            <Card
+              heading="Strides Tech Community"
+              description="A lifelong learning platform for career growth through mentorship, training and knowledge sharing."
+              imgSrc="https://www.strides.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhow-it-works-1.604b0dd5.webp&w=3840&q=75"
+            />
+          </div>
+          <div onClick={() => { setIsOpen(true); setCaseStudy("Gun.io") }}>
+            <Card
+              heading="Gun.io"
+              description="Gun.io sources and manages world-class developers for world class companies."
+              imgSrc="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a98c826f7c2f123f62d9d9eff63c4d92/gun-io.png"
+            />
+          </div>
+          <div onClick={() => { setIsOpen(true); setCaseStudy("Paywith Canada INC") }}>
+            <Card
+              heading="Paywith"
+              description="PayWith's payment innovations platform allows businesses to create powerful, mobile-centric payment programs, faster, cheaper, and with more security and control."
+              imgSrc="https://media.licdn.com/dms/image/v2/C561BAQE2zdpkRzc5Aw/company-background_10000/company-background_10000/0/1620549922242/paywith_australia_cover?e=2147483647&v=beta&t=ltw-imeCOBDF0zX9sVUzaKKJ54HmuGnWUZYMdkCSaSk"
+            />
+          </div>
+          <div onClick={() => { setIsOpen(true); setCaseStudy("Faker Ruby") }}>
+            <Card
+              heading="Faker Ruby"
+              description="A library for generating fake data such as names, addresses, and phone numbers."
+              imgSrc="https://opengraph.githubassets.com/d79339dd850aa45e1c2bc5cf809beefda6b7ed19e96ffb448d02494c0183b6e2/faker-ruby/faker"
+            />
+          </div>
         </div>
       </div>
+      <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} caseStudy={caseStudy} channel="Website - Homepage" />
     </section>
   );
 };
