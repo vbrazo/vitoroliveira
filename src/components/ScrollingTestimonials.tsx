@@ -111,6 +111,13 @@ const testimonials = {
       title: "Staff Engineer @ Arvore de Livros",
       info: "I met Vitor through open-source collaboration, where he generously shared his leadership expertise. His guidance on team organization and personal development was invaluable. He even invited me to join one of his leadership programs, creating opportunities for growth and networking. Vitor remains a trusted mentor I can always count on.",
     },
+    {
+      id: 5,
+      img: "https://media.licdn.com/dms/image/v2/D4E03AQFajF7Js5FqXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694233415827?e=1750896000&v=beta&t=6cuTpE9nhDu2a2_9hrX8F_cSV-g35sSn8TfU65sStus",
+      name: "Jan Vicent Hoffbauer",
+      title: "CTO @ Fluento.ai",
+      info: "I highly recommend Vitor as a coach for CTOs and startup founders. His guidance significantly improved my leadership and communication skills, while facilitating valuable networking opportunities.",
+    },
   ],
   middle: [
     // {
@@ -147,6 +154,13 @@ const testimonials = {
       name: "Alexandre Cabral",
       title: "CTO @ Banco BBM",
       info: "Vitor combines technical excellence with founder mindset. His ability to balance technical debt with business growth, make data-driven decisions, and build scalable systems makes him an invaluable partner for any founder looking to build a sustainable tech business.",
+    },
+    {
+      id: 5,
+      img: "https://media.licdn.com/dms/image/v2/C4D03AQFLEwTm7FK92A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1643906133948?e=2147483647&v=beta&t=753i41cN5XEEHa4DBIppzkQ2o3METFNLJMy5wlCbaQ8",
+      name: "Victoria Stahr",
+      title: "Talent Growth @ Gun.io",
+      info: "Vitor is a thoughtful, strategic leader and creative problem solver. His ability to break down concepts and teach others, combined with his growth mindset, makes him an exceptional teammate and mentor.",
     },
   ],
 };
