@@ -76,12 +76,19 @@ const TestimonialList = ({
 
 const testimonials = {
   top: [
+    // {
+    //   id: 1,
+    //   img: "https://d2gjqh9j26unp0.cloudfront.net/profilepic/1415f084c08857ccbd931fda76ca8717",
+    //   name: "Paula Cunha",
+    //   title: "CEO @ Jornada Mima",
+    //   info: "Vitor provided invaluable support to our tech team, offering clear guidance on product and UX decisions while helping shape our team's formation. His ability to bridge technical and business needs while fostering team growth was instrumental in our success.",
+    // },
     {
       id: 1,
-      img: "https://d2gjqh9j26unp0.cloudfront.net/profilepic/1415f084c08857ccbd931fda76ca8717",
-      name: "Paula Cunha",
-      title: "CEO @ Jornada Mima",
-      info: "Vitor provided invaluable support to our tech team, offering clear guidance on product and UX decisions while helping shape our team's formation. His ability to bridge technical and business needs while fostering team growth was instrumental in our success.",
+      img: "https://m.media-amazon.com/images/M/MV5BODM3MGEyYmItNDk0MS00OTVjLTlkNDQtMjRkMzM1YmQ4NTE4XkEyXkFqcGc@._V1_.jpg",
+      name: "Yee Jee Tso",
+      title: "CTO @ Paywith",
+      info: "Vitor demonstrated exceptional leadership at Paywith, building and managing high-performing teams of 20+ developers. His technical expertise in infrastructure design and PCI compliance, combined with his passion for mentorship and team development, was instrumental in Paywith's growth. His balanced approach to work and life set a positive example for the entire organization.",
     },
     {
       id: 2,
@@ -106,12 +113,19 @@ const testimonials = {
     },
   ],
   middle: [
+    // {
+    //   id: 1,
+    //   img: "https://media.licdn.com/dms/image/v2/C4D03AQFLEwTm7FK92A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1643906133948?e=2147483647&v=beta&t=753i41cN5XEEHa4DBIppzkQ2o3METFNLJMy5wlCbaQ8",
+    //   name: "Luciana Melhorim",
+    //   title: "COO @ Jornada Mima",
+    //   info: "Vitor's comprehensive technical audit and roadmap planning transformed our technology strategy. He helped us identify critical improvements and set a clear path forward.",
+    // },
     {
       id: 1,
-      img: "https://media.licdn.com/dms/image/v2/C4D03AQFLEwTm7FK92A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1643906133948?e=2147483647&v=beta&t=753i41cN5XEEHa4DBIppzkQ2o3METFNLJMy5wlCbaQ8",
-      name: "Luciana Melhorim",
-      title: "COO @ Jornada Mima",
-      info: "Vitor's comprehensive technical audit and roadmap planning transformed our technology strategy. He helped us identify critical improvements and set a clear path forward.",
+      img: "https://media.licdn.com/dms/image/v2/D5603AQHH_uAEDYcu8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725788671058?e=1750896000&v=beta&t=h5_RfUe1r02yX7-x8LTEqkaSr1G7-Kh7sXaF1vcDmUg",
+      name: "Jesse Gonzalez",
+      title: "Senior Account Executive @ Gun.io",
+      info: "Vitor is one of the most adaptable and hardworking professionals I've met. He excels at wearing multiple hats, approaches challenges with a positive attitude, and is always eager to learn. His collaborative spirit and supportive nature make him an exceptional coworker.",
     },
     {
       id: 2,
