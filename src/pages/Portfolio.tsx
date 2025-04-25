@@ -2,7 +2,7 @@ import Header from '@/components/Header';
 import EngagementSection from '@/components/EngagementSection';
 import Footer from '@/components/Footer';
 
-const Index = () => {
+const Portfolio = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -18,4 +18,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Portfolio;

@@ -1,3 +1,4 @@
+import Blog from "@/pages/Blog";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
@@ -54,10 +55,12 @@ const Logo = () => {
 const NavLeft = () => {
   return (
     <div className="flex items-center gap-6">
-      <Logo />
+      <a href="/cto-services"><Logo /></a>
       <NavLink text="Services" href="#services" />
       <NavLink text="Engagement" href="#engagement" />
-      <NavLink text="Blog" href="https://vitoroliveira.substack.com/" isExternal />
+      <NavLink text="Blog" href="#blog" />
+      {/* <NavLink text="Funding" href="/investing" /> */}
+      {/* <NavLink text="Portfolio" href="/portfolio" /> */}
     </div>
   );
 };
@@ -104,9 +107,10 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink text="Services" href="#services" />
-      <MenuLink text="Engagement" href="#engagement" />
-      <MenuLink text="Blog" href="https://vitoroliveira.substack.com/" isExternal />
+      <MenuLink text="Services" href="/cto-services" />
+      <MenuLink text="Funding" href="/investing" />
+      <MenuLink text="Portfolio" href="/portfolio" />
+      <MenuLink text="Blog" href="/blog" />
     </motion.div>
   );
 };

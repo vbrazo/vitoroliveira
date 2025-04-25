@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import VideoModal from './VideoModal';
 
 const HeroSection: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const videoIds = ['dQw4w9WgXcQ', 'jNQXAC9IVRw', '9bZkp7q19f0']; // Add your YouTube video IDs here
+  const randomVideoId = videoIds[Math.floor(Math.random() * videoIds.length)];
+
   return (
     <section className="flex relative flex-col text-center md:text-left items-center justify-center gap-16 md:items-start w-full bg-black min-h-[screen]">
       <div className="container mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:gap-0">
@@ -52,16 +57,35 @@ const HeroSection: React.FC = () => {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background: `
-                  linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 10%),
-                  linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 10%),
-                  linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 10%),
-                  linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 10%)
+                  linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%),
+                  linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%),
+                  linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%),
+                  linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 30%)
                 `,
               }}
             />
+            {/* <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 shadow-lg cursor-pointer"
+              onClick={() => setIsModalOpen(true)}
+            >
+              <svg
+                className="w-8 h-8 text-black"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8 5v14l11-7z" />
+              </svg>
+            </motion.button> */}
           </div>
         </div>
       </div>
+      <VideoModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        videoId={randomVideoId}
+      />
     </section>
   );
 };
