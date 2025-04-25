@@ -19,8 +19,8 @@ const CTOServices = () => {
         <EngagementSection />
         <StudyCases />
         <WhyCTOSection />
-        <Blog />
         <ScrollingTestimonials />
+        <Blog />
         <CTASection />
       </main>
       <Footer />
