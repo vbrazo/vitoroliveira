@@ -6,7 +6,8 @@ import EngagementSection from '@/components/EngagementSection';
 import WhyCTOSection from '@/components/WhyCTOSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
-import Blog from './Blog';
+import Blog from '../components/Blog';
+import StudyCases from '../components/StudyCases';
 
 const CTOServices = () => {
   return (
@@ -17,6 +18,7 @@ const CTOServices = () => {
         <TestimonialSection />
         <ServicesSection />
         <EngagementSection />
+        <StudyCases />
         <WhyCTOSection />
         <Blog />
         <CTASection />

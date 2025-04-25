@@ -14,7 +14,7 @@ const BREAKPOINTS = {
 
 const Blog = () => {
   return (
-    <section id="blog" className="mb-[80px]">
+    <section id="blog" className="mb-[80px] scroll-mt-[6rem]">
       <div className="flex flex-col">
         <Header />
         <main>

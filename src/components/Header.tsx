@@ -1,4 +1,4 @@
-import Blog from "@/pages/Blog";
+import Blog from "@/components/Blog";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
@@ -17,7 +17,7 @@ const FlipNav = () => {
     <nav className="bg-black p-4 flex items-center justify-between fixed top-0 left-0 right-0 z-50">
       <NavLeft />
       <NavRight />
-      <NavMenu isOpen={isOpen} />
+      <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -55,9 +55,10 @@ const Logo = () => {
 const NavLeft = () => {
   return (
     <div className="flex items-center gap-6">
-      <a href="/cto-services"><Logo /></a>
+      <a href="/"><Logo /></a>
       <NavLink text="Services" href="#services" />
       <NavLink text="Engagement" href="#engagement" />
+      <NavLink text="Study Cases" href="#study-cases" />
       <NavLink text="Blog" href="#blog" />
       {/* <NavLink text="Funding" href="/investing" /> */}
       {/* <NavLink text="Portfolio" href="/portfolio" /> */}
@@ -90,16 +91,16 @@ const NavRight = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-        className="px-4 py-2 bg-gradient-to-r bg-white font-medium rounded-md whitespace-nowrap"
-      >
-        Book a Call
-      </motion.button>
+          className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
+        >
+          Book a call
+        </motion.button>
       </a>
     </div>
   );
 };
 
-const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
+const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: boolean) => void }) => {
   return (
     <motion.div
       variants={menuVariants}
@@ -107,21 +108,22 @@ const NavMenu = ({ isOpen }: { isOpen: boolean }) => {
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink text="Services" href="/cto-services" />
-      <MenuLink text="Funding" href="/investing" />
-      <MenuLink text="Portfolio" href="/portfolio" />
-      <MenuLink text="Blog" href="/blog" />
+      <MenuLink text="Services" href="#services" setIsOpen={setIsOpen} />
+      <MenuLink text="Engagement" href="#engagement" setIsOpen={setIsOpen} />
+      <MenuLink text="Study Cases" href="#study-cases" setIsOpen={setIsOpen} />
+      <MenuLink text="Blog" href="#blog" setIsOpen={setIsOpen} />
     </motion.div>
   );
 };
 
-const MenuLink = ({ text, href, isExternal }: { text: string, href: string, isExternal?: boolean }) => {
+const MenuLink = ({ text, href, isExternal, setIsOpen }: { text: string, href: string, isExternal?: boolean, setIsOpen: (value: boolean) => void }) => {
   return (
     <motion.a
       variants={menuLinkVariants}
       target={isExternal ? "_blank" : "_self"}
       rel="nofollow"
       href={href}
+      onClick={() => setIsOpen(false)}
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>
