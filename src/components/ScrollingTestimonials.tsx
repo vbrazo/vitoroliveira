@@ -157,7 +157,7 @@ const testimonials = {
     },
     {
       id: 5,
-      img: "https://media.licdn.com/dms/image/v2/C4D03AQFLEwTm7FK92A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1643906133948?e=2147483647&v=beta&t=753i41cN5XEEHa4DBIppzkQ2o3METFNLJMy5wlCbaQ8",
+      img: "https://media.licdn.com/dms/image/v2/C4E03AQEWIG5MF2q3rA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1629315203984?e=1750896000&v=beta&t=qaaUzpaE87T-gKpnLiTrohCfrqnKrZe8p7ohIZ24sZo",
       name: "Victoria Stahr",
       title: "Talent Growth @ Gun.io",
       info: "Vitor is a thoughtful, strategic leader and creative problem solver. His ability to break down concepts and teach others, combined with his growth mindset, makes him an exceptional teammate and mentor.",
