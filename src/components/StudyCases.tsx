@@ -221,16 +221,16 @@ const Card = ({
           backgroundPosition: "center",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
       <div className="p-4 relative z-5 h-full text-white md:text-slate-300 md:group-hover:text-white transition-colors duration-500 flex flex-col justify-between">
         <FiArrowRight className="text-3xl md:group-hover:-rotate-45 transition-transform duration-500 ml-auto" />
-        <div>
-          <h4>
+        <div className="space-y-2">
+          <h4 className="text-2xl md:text-3xl font-semibold">
             {heading.split("").map((l, i) => (
               <ShiftLetter letter={l} key={i} />
             ))}
           </h4>
-          <p>{description}</p>
+          <p className="text-sm md:text-base leading-relaxed">{description}</p>
         </div>
       </div>
     </motion.div>

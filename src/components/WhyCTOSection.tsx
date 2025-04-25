@@ -1,7 +1,72 @@
 import React from 'react';
-import { ArrowRight, Zap, Lock, Activity } from 'lucide-react';
+import { 
+  ArrowRight, 
+  Zap, 
+  Lock, 
+  Activity, 
+  Brain, 
+  Users, 
+  Map, 
+  Layout, 
+  MessageSquare, 
+  BarChart2 
+} from 'lucide-react';
+
+type CardData = {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+};
 
 const WhyCTOSection: React.FC = () => {
+  const cards: CardData[] = [
+    {
+      icon: Activity,
+      title: "Software Development Lifecycle (SDLC)",
+      description: "Building great technology is a team sport. The CTO is the coach or the team captain that ensures the team is working together to deliver the best outcome possible"
+    },
+    {
+      icon: Lock,
+      title: "Security First",
+      description: "The digital frontier is fraught with threats that can jeopardize your business's integrity and customer trust. The CTO is the first line of defense to stop threats before they start and maintaining safe and secure operations"
+    },
+    {
+      icon: Zap,
+      title: "Antifragility",
+      description: "Developing technical and operational systems that are not only resilient to change, but thrive as pressure and chaos increase is critical to surviving hyper-growth within your organization to become the industry leader"
+    },
+    {
+      icon: Map,
+      title: "Technical Strategy & Roadmapping",
+      description: "A Fractional CTO crafts the technology roadmap aligned with business goals, ensuring tech investments are intentional, scalable, and efficient. They bridge the gap between business vision and technical execution"
+    },
+    {
+      icon: Users,
+      title: "Talent Acquisition & Development",
+      description: "Building and nurturing high-performing technical teams is crucial. A CTO helps attract top talent, fosters a culture of continuous learning, and ensures the right people are in the right roles to drive innovation and growth"
+    },
+    {
+      icon: Layout,
+      title: "Platform & Architecture Decisions",
+      description: "Making foundational architecture decisions — cloud vs on-prem, monolith vs microservices, build vs buy — that support scalability, speed, and maintainability. The Fractional CTO ensures systems are future-proof and adaptable"
+    },
+    {
+      icon: BarChart2,
+      title: "Metrics, KPIs & Engineering Ops",
+      description: "Implementing dashboards and operational practices to track engineering performance (velocity, deployment frequency, bug rate, etc.), ensuring continuous improvement and accountability"
+    },
+    {
+      icon: Brain,
+      title: "AI & Automation",
+      description: "Leveraging artificial intelligence and automation to streamline operations, enhance decision-making, and create competitive advantages. A CTO ensures these technologies are implemented responsibly and effectively to drive business growth"
+    },
+    {
+      icon: MessageSquare,
+      title: "Stakeholder & Investor Communication",
+      description: "Acting as a translator between tech and non-tech stakeholders, and often representing the tech vision to boards or investors during fundraising rounds or strategic planning sessions"
+    },
+  ];
+
   return (
     <section id="why" className="py-20 bg-white">
       <div className="container max-w-7xl mx-auto px-6">
@@ -41,35 +106,15 @@ const WhyCTOSection: React.FC = () => {
         
         {/* Full-width section for cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <div className="mb-4">
-              <Activity className="h-8 w-8 text-black" />
+          {cards.map((card, index) => (
+            <div key={index} className="p-6 border border-gray-200 rounded-lg">
+              <div className="mb-4">
+                <card.icon className="h-8 w-8 text-black" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-cto-dark">{card.title}</h3>
+              <p className="text-cto-gray">{card.description}</p>
             </div>
-            <h3 className="text-xl font-bold mb-3 text-cto-dark">Software Development Lifecycle (SDLC)</h3>
-            <p className="text-cto-gray">
-              Building great technology is a team sport. The CTO is the coach or the team captain that ensures the team is working together to deliver the best outcome possible.
-            </p>
-          </div>
-          
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <div className="mb-4">
-              <Lock className="h-8 w-8 text-black" />
-            </div>
-            <h3 className="text-xl font-bold mb-3 text-cto-dark">Security First</h3>
-            <p className="text-cto-gray">
-              The digital frontier is fraught with threats that can jeopardize your business's integrity and customer trust. The CTO is the first line of defense to stop threats before they start and maintaining safe and secure operations.
-            </p>
-          </div>
-          
-          <div className="p-6 border border-gray-200 rounded-lg">
-            <div className="mb-4">
-              <Zap className="h-8 w-8 text-black" />
-            </div>
-            <h3 className="text-xl font-bold mb-3 text-cto-dark">Antifragility</h3>
-            <p className="text-cto-gray">
-              Developing technical and operational systems that are not only resilient to change, but thrive as pressure and chaos increase is critical to surviving hyper-growth within your organization to become the industry leader.
-            </p>
-          </div>
+          ))}
         </div>
         
         <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto text-center">

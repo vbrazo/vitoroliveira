@@ -6,25 +6,25 @@ const services = [
   {
     id: 1,
     title: "Fractional Chief Technology Officer (CTO)",
-    description: "Overseeing technology strategy, ensuring that technological resources align with business goals, and leading R&D to gain a competitive edge.",
+    description: "Overseeing technology strategy, ensuring that technological resources align with business goals, and leading R&D to gain a competitive edge",
     icon: <Users className="h-8 w-8 text-black" />
   },
   {
     id: 2,
     title: "Early-Stage Technology Advisor & Coach",
-    description: "Bridge the gap between technology and strategic business growth. A tailored, hands-on approach not only supports but also accelerates the path to success.",
+    description: "Bridge the gap between technology and strategic business growth. A tailored, hands-on approach not only supports but also accelerates the path to success",
     icon: <BarChart className="h-8 w-8 text-black" />
   },
   {
     id: 3,
     title: "Regulatory & Compliance Assistance",
-    description: "Secure data and build trust with focused, strategic guidance, propelling your business towards secure growth. Get help navigating regulated industries.",
+    description: "Secure data and build trust with focused, strategic guidance, propelling your business towards secure growth. Get help navigating regulated industries",
     icon: <Shield className="h-8 w-8 text-black" />
   },
   {
     id: 4,
     title: "M&A Diligence & Tech Valuation",
-    description: "Navigate mergers and acquisitions with precision; assess technology's true value to make informed decisions that drive successful mergers & acquisitions.",
+    description: "Navigate mergers and acquisitions with precision; assess technology's true value to make informed decisions that drive successful mergers & acquisitions",
     icon: <FileText className="h-8 w-8 text-black" />
   }
 ];

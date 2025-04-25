@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
 
           <div className="mt-4 md:mt-[3vh] w-full md:w-[456px]">
             <span className="text-gray-100 text-[18px] md:text-[20px] font-medium tracking-tight leading-[18px] md:leading-normal">
-              Bespoke fractional CTO and early-stage advisor services, to guide you from startup to scale with strategic tech leadership.
+              Bespoke fractional CTO and early-stage advisor services, to guide you from startup to scale with strategic tech leadership
             </span>
           </div>
 

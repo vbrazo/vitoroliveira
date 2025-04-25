@@ -5,19 +5,25 @@ const engagements = [
     id: 1,
     title: "Virtual",
     hours: "1-4 hours/week",
-    description: "Highly fractional, part-time advisory leadership and coaching."
+    description: "Highly fractional, advisory leadership and coaching"
   },
   {
     id: 2,
     title: "Fractional",
     hours: "1-3 days/week",
-    description: "Part-time leadership where full-time dedication is not necessary."
+    description: "Part-time leadership where full-time isn't needed"
   },
   {
     id: 3,
     title: "Interim",
-    hours: "4-5 days a week",
-    description: "Full-time leadership during an unplanned or forced vacancy."
+    hours: "3-5 days a week",
+    description: "Full-time leadership during an unplanned or forced vacancy"
+  },
+  {
+    id: 4,
+    title: "Full-time",
+    hours: "5 days a week",
+    description: "Dedicated partnership for long-term success"
   }
 ];
 
@@ -32,7 +38,7 @@ const EngagementSection: React.FC = () => {
           Flexible engagement models tailored to your specific needs and timing requirements.
         </p>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-4 gap-8">
           {engagements.map((item) => (
             <div key={item.id} className="bg-white p-8 rounded-lg border border-gray-200 text-center">
               <h3 className="text-2xl font-bold text-cto-dark mb-2">{item.title}</h3>
