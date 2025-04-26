@@ -13,12 +13,12 @@ const HeroSection: React.FC = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center pt-8 md:pt-0 px-4 md:px-0">
           <div>
             <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
-              Empowering Businesses With Strategic Innovation
+              Strategic Tech Leadership for Startups and Scaling Businesses
             </div>
           </div>
 
           <div className="mt-4 md:mt-[3vh] w-full md:w-[456px]">
-            <span className="text-gray-100 text-[18px] md:text-[20px] font-medium tracking-tight leading-[18px] md:leading-normal">
+            <span className="text-gray-100 text-[18px] md:text-[20px] font-normal tracking-tight leading-[18px] md:leading-normal">
               Bespoke fractional CTO and early-stage advisor services, to guide you from startup to scale with strategic tech leadership
             </span>
           </div>

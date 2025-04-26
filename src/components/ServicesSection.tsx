@@ -40,6 +40,12 @@ const services = [
     icon: <FileText className="h-8 w-8 text-black" />
   },
   {
+    id: 7,
+    title: "Web & Mobile Development",
+    description: "Custom web and mobile application development, from concept to deployment. Specializing in both traditional coding and no-code/low-code solutions to match your needs and budget",
+    icon: <Code className="h-8 w-8 text-black" />
+  },
+  {
     id: 8,
     title: "Engineering & Management Mentoring",
     description: "Personalized mentoring for software engineers and technical managers looking to advance their careers, improve their leadership skills, or navigate challenging professional situations",
@@ -50,12 +56,6 @@ const services = [
     title: "Interview Preparation",
     description: "Comprehensive interview preparation for software engineering roles, including system design, coding challenges, behavioral interviews, and technical discussions. Get personalized coaching and mock interviews",
     icon: <MessageSquare className="h-8 w-8 text-black" />
-  },
-  {
-    id: 7,
-    title: "Web & Mobile Development",
-    description: "Custom web and mobile application development, from concept to deployment. Specializing in both traditional coding and no-code/low-code solutions to match your needs and budget",
-    icon: <Code className="h-8 w-8 text-black" />
   }
 ];
 

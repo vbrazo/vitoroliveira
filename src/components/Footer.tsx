@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center">
             <div className="text-2xl font-bold text-black mb-4">Vitor Oliveira</div>
             <p className="text-black mb-4 max-w-md">
-              Empowering businesses with strategic innovation and technology leadership.
+              Strategic Tech Leadership for Startups and Scaling Businesses
             </p>
             <div className="flex space-x-4 justify-center">
               <a
