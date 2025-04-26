@@ -150,21 +150,21 @@ const posts: PostType[] = [
   },
   {
     id: 2,
+    imgUrl: "https://talkstar-photos.s3.amazonaws.com/uploads/33b74579-2ab0-4d22-8ad3-c867c87f3ff5/AdamGrant_2016S-stageshot.jpg",
+    author: "Vitor Oliveira",
+    title: "Are you a taker, a giver, or a compensator?",
+    description:
+      "Learn How Smart Generosity Can Elevate Your Work, Your Network, and Your Legacy",
+    link: "https://vitoroliveira.substack.com/p/are-you-a-taker-a-giver-or-a-matcher",
+  },
+  {
+    id: 3,
     imgUrl: "https://images.ctfassets.net/0d3i1kfsuaq3/zv85KLhzWnMKcXAiVDkIY/8b8882065c6bbe92276f43fa69652cdb/Hero_7BestPracticesforSuccess.jpg",
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #1",
     description:
       "From strong to success: Talent conquers",
     link: "https://open.substack.com/pub/vitoroliveira/p/1?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
-  },
-  {
-    id: 3,
-    imgUrl: "https://substackcdn.com/image/fetch/w_1040,h_545,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59bacc54-ec85-4237-b237-eb47e873f43a_674x1000.jpeg",
-    author: "Vitor Oliveira",
-    title: "Você é um tomador, um doador ou um compensador?",
-    description:
-      "",
-    link: "https://open.substack.com/pub/vitoroliveira/p/voce-e-um-tomador-um-doador-ou-um?r=3osz1&utm_campaign=post&utm_medium=web",
   },
   {
     id: 4,
