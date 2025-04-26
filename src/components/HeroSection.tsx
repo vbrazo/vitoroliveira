@@ -9,11 +9,11 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="flex relative flex-col text-center md:text-left items-center justify-center gap-16 md:items-start w-full bg-black min-h-[screen]">
-      <div className="container mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:gap-0">
+      <div className="container mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8">
         <div className="w-full md:w-1/2 flex flex-col justify-center pt-8 md:pt-0 px-4 md:px-0">
           <div>
             <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
-              Strategic Tech Leadership for Startups and Scaling Businesses
+              Your Strategic Partner in Tech, Product, and Growth
             </div>
           </div>
 
