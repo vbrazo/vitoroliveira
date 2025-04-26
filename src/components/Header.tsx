@@ -58,10 +58,9 @@ const NavLeft = () => {
       <a href="/"><Logo /></a>
       <NavLink text="Services" href="#services" />
       <NavLink text="Engagement" href="#engagement" />
-      <NavLink text="Study Cases" href="#study-cases" />
+      <NavLink text="Case Studies" href="#study-cases" />
+      <NavLink text="Success Stories" href="#success-stories" />
       <NavLink text="Blog" href="#blog" />
-      {/* <NavLink text="Funding" href="/investing" /> */}
-      {/* <NavLink text="Portfolio" href="/portfolio" /> */}
     </div>
   );
 };
@@ -110,7 +109,8 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
     >
       <MenuLink text="Services" href="#services" setIsOpen={setIsOpen} />
       <MenuLink text="Engagement" href="#engagement" setIsOpen={setIsOpen} />
-      <MenuLink text="Study Cases" href="#study-cases" setIsOpen={setIsOpen} />
+      <MenuLink text="Case Studies" href="#study-cases" setIsOpen={setIsOpen} />
+      <MenuLink text="Success Stories" href="#success-stories" setIsOpen={setIsOpen} />
       <MenuLink text="Blog" href="#blog" setIsOpen={setIsOpen} />
     </motion.div>
   );

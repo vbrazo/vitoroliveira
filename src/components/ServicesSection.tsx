@@ -17,14 +17,26 @@ const services = [
   },
   {
     id: 3,
+    title: "Technical Team Building & Leadership",
+    description: "Recruit, structure, and mentor high-performing engineering teams tailored to your startup’s stage. Create a sustainable and scalable engineering culture.",
+    icon: <Users className="h-8 w-8 text-black" />
+  },
+  {
+    id: 4,
+    title: "Technology Roadmapping & Prioritization",
+    description: "Design and implement a clear, actionable technology roadmap that balances short-term wins and long-term vision, ensuring alignment with business objectives.",
+    icon: <BarChart className="h-8 w-8 text-black" />
+  },
+  {
+    id: 5,
     title: "Regulatory & Compliance Assistance",
     description: "Secure data and build trust with focused, strategic guidance, propelling your business towards secure growth. Get help navigating regulated industries",
     icon: <Shield className="h-8 w-8 text-black" />
   },
   {
-    id: 4,
-    title: "M&A Diligence & Tech Valuation",
-    description: "Navigate mergers and acquisitions with precision; assess technology's true value to make informed decisions that drive successful mergers & acquisitions",
+    id: 6,
+    title: "Due Diligence & Investor Support",
+    description: "Support founders with technical due diligence assessments, pitch deck refinement, and strategic investor introductions to strengthen fundraising efforts and unlock growth opportunities.",
     icon: <FileText className="h-8 w-8 text-black" />
   }
 ];
@@ -36,7 +48,7 @@ const ServicesSection: React.FC = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-cto-dark">
           Services
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((service) => (
             <ServiceCard 
               key={service.id}
