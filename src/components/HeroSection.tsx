@@ -4,7 +4,7 @@ import VideoModal from './VideoModal';
 
 const HeroSection: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const videoIds = ['dQw4w9WgXcQ', 'jNQXAC9IVRw', '9bZkp7q19f0']; // Add your YouTube video IDs here
+  const videoIds = ['dQw4w9WgXcQ', 'jNQXAC9IVRw', '9bZkp7q19f0'];
   const randomVideoId = videoIds[Math.floor(Math.random() * videoIds.length)];
 
   return (
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
         <div className="w-full md:w-1/2 flex flex-col justify-center pt-8 md:pt-0 px-4 md:px-0">
           <div>
             <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
-              Your Strategic Partner in Tech, Product, and Growth
+              Strategic Leadership in Technology, Product, and Growth
             </div>
           </div>
 
