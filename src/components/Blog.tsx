@@ -57,7 +57,7 @@ const BlogPostCarousel = () => {
   return (
     <section className="bg-white w-full" ref={ref}>
       <div className="relative overflow-hidden">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
           <div className="flex flex-row items-center justify-between gap-4 mb-8">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-cto-dark">Blog</h2>
 

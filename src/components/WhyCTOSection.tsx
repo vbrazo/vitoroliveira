@@ -69,7 +69,7 @@ const WhyCTOSection: React.FC = () => {
 
   return (
     <section id="why" className="py-20 bg-white">
-      <div className="container max-w-7xl mx-auto px-6">
+      <div className="container max-w-7xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cto-dark">Need for a<br />Chief Technology Officer</h2>
         </div>
