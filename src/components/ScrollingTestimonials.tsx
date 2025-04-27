@@ -20,15 +20,7 @@ const ScrollingTestimonials = () => {
   return (
     <>
       <div id="success-stories" className="h-[50px]" />
-      <div className="bg-black py-12">
-        <div className="mb-8 px-4">
-          <h3 className="text-slate-50 text-4xl font-semibold text-center">
-            Success Stories
-          </h3>
-          <p className="text-center text-slate-300 text-sm mt-2 max-w-lg mx-auto">
-            This many happy customers can't be wrong...
-          </p>
-        </div>
+      <div className="bg-black py-12 relative">
         <div className="p-4 overflow-x-hidden relative">
           <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-900 to-transparent" />
 
