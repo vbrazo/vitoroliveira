@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import Blog from '../components/Blog';
 import StudyCases from '../components/StudyCases';
 import ScrollingTestimonials from '@/components/ScrollingTestimonials';
+import { StaggerTestimonials } from '@/components/StaggerTestimonials';
 
 const CTOServices = () => {
   return (
@@ -19,7 +20,12 @@ const CTOServices = () => {
         <EngagementSection />
         <StudyCases />
         <WhyCTOSection />
-        <ScrollingTestimonials />
+        <div className="md:hidden flex">
+          <StaggerTestimonials />
+        </div>
+        <div className="hidden md:flex">
+          <ScrollingTestimonials />
+        </div>
         <Blog />
         <CTASection />
       </main>
