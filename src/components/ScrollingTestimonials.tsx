@@ -20,7 +20,7 @@ const ScrollingTestimonials = () => {
   return (
     <>
       <div id="success-stories" className="h-[50px]" />
-      <div className="bg-black py-12 relative">
+      <div className="bg-black relative">
         <div className="p-4 overflow-x-hidden relative">
           <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-900 to-transparent" />
 
@@ -29,7 +29,7 @@ const ScrollingTestimonials = () => {
             <TestimonialList list={topTestimonials} duration={300} />
             <TestimonialList list={topTestimonials} duration={300} />
           </div>
-          <div className="flex items-center mb-4">
+          <div className="flex items-center">
             <TestimonialList list={middleTestimonials} duration={400} reverse />
             <TestimonialList list={middleTestimonials} duration={400} reverse />
             <TestimonialList list={middleTestimonials} duration={400} reverse />
