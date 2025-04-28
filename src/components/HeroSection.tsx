@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className="flex relative flex-col text-center md:text-left items-center justify-center gap-16 md:items-start w-full bg-black min-h-[screen]">
-      <div className="container mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8">
+      <div className="container mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:h-[500px] lg:h-screen">
         <div className="w-full md:w-1/2 flex flex-col justify-center pt-8 md:pt-0 px-4 md:px-0">
           <div>
             <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
@@ -47,27 +47,23 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end relative">
-          <div className="relative w-full h-auto lg:h-[500px]">
+          <div className="relative w-full h-auto md:h-[500px] lg:h-screen">
             <img
               className="w-full h-full object-cover"
               src="/vitor-v2.JPG"
               alt="Vitor Oliveira"
             />
-            <div className="absolute inset-0 pointer-events-none" />
-            {/* <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-4 shadow-lg cursor-pointer"
-              onClick={() => setIsModalOpen(true)}
-            >
-              <svg
-                className="w-8 h-8 text-black"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </motion.button> */}
+                        <div
+              className="absolute inset-0 pointer-events-none hidden md:flex"
+              style={{
+                background: `
+                  linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%),
+                  linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%),
+                  linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%),
+                  linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%)
+                `,
+              }}
+            />
           </div>
         </div>
       </div>
