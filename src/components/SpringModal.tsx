@@ -90,7 +90,7 @@ export const SpringModal = ({
                 Get More Details
               </h3>
               <p className="text-center mb-6">
-                Interested in learning more about this case study? Leave your email and we'll get in touch with you.
+                Interested in learning more about this case study? Leave your email and I'll get in touch with you.
               </p>
               
               {isSubmitted ? (

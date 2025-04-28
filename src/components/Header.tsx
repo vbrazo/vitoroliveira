@@ -1,11 +1,10 @@
-import Blog from "@/components/Blog";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
 
 const FlipNavWrapper = () => {
   return (
-    <div>
+    <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50">
       <FlipNav />
     </div>
   );
@@ -14,9 +13,13 @@ const FlipNavWrapper = () => {
 const FlipNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-black p-4 flex items-center justify-between fixed top-0 left-0 right-0 z-50">
-      <NavLeft />
-      <NavRight />
+    <nav className="bg-black p-4 flex justify-between items-center top-0 max-w-7xl mx-auto w-full px-4">
+      <div className="flex-1">
+        <NavLeft />
+      </div>
+      <div className="flex justify-end flex-1">
+        <NavRight />
+      </div>
       <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       <motion.button
         whileHover={{ scale: 1.05 }}
