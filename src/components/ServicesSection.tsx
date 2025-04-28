@@ -41,7 +41,7 @@ const services = [
   },
   {
     id: 7,
-    title: "Web & Mobile Development",
+    title: "Web & Mobile App Development",
     description: "Custom web and mobile application development, from concept to deployment. Specializing in both traditional coding and no-code/low-code solutions to match your needs and budget",
     icon: <Code className="h-8 w-8 text-black" />
   },
