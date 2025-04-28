@@ -86,21 +86,6 @@ const caseStudies = {
       imgSrc: "https://www.projetodraft.com/wp-content/uploads/2024/12/084_004-Com-Sal.png"
     },
     {
-      heading: "Investidores.vc",
-      description: "The best platform to invest in startups in Brazil",
-      imgSrc: "https://s.criacaostatic.cc/investidoresvcktt77n5c/uploads/2025/02/INVESTIDORES.png"
-    },
-    {
-      heading: "NextGen Venture Partners",
-      description: "NextGen Venture Partners works with over 1,800 Venture Partners to invest $1 million in seed stage companies and $2 million to $10 million in companies with more than $10 million in revenue",
-      imgSrc: "https://media.licdn.com/dms/image/v2/D5622AQGe2DLCuJJg8A/feedshare-shrink_800/feedshare-shrink_800/0/1712621092452?e=2147483647&v=beta&t=-k-Hm65EIkn6r0oVFgKyM5vd4Ngl8XmfADvEvWflqPg"
-    },
-    {
-      heading: "Hustle Fund",
-      description: "Hustle Fund is a venture capital firm investing in hilariously-early pre-seed founders",
-      imgSrc: "https://i.vimeocdn.com/video/1960427049-8a4c0144cdc6c9a9aaa698998bc6818afc4a471e6ae726ae58702b13cd19eddd-d?f=webp"
-    },
-    {
       heading: "DeltaAI",
       description: "DeltaAI democratizes access to law in Brazil by solving problems in just a few clicks",
       imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Logotipo_da_DeltaAI.png/250px-Logotipo_da_DeltaAI.png"
@@ -114,6 +99,21 @@ const caseStudies = {
       heading: "Brota Company",
       description: "A smart and autonomous vegetable garden that allows anyone to plant whatever they want at home without having to work or make a mess",
       imgSrc: "https://brotacompany.com.br/cdn/shop/files/classica_04-min.jpg?v=1741372712&width=1445"
+    },
+    {
+      heading: "Investidores.vc",
+      description: "The best platform to invest in startups in Brazil",
+      imgSrc: "https://s.criacaostatic.cc/investidoresvcktt77n5c/uploads/2025/02/INVESTIDORES.png"
+    },
+    {
+      heading: "NextGen Venture Partners",
+      description: "NextGen Venture Partners works with over 1,800 Venture Partners to invest $1 million in seed stage companies and $2 million to $10 million in companies with more than $10 million in revenue",
+      imgSrc: "https://media.licdn.com/dms/image/v2/D5622AQGe2DLCuJJg8A/feedshare-shrink_800/feedshare-shrink_800/0/1712621092452?e=2147483647&v=beta&t=-k-Hm65EIkn6r0oVFgKyM5vd4Ngl8XmfADvEvWflqPg"
+    },
+    {
+      heading: "Hustle Fund",
+      description: "Hustle Fund is a venture capital firm investing in hilariously-early pre-seed founders",
+      imgSrc: "https://i.vimeocdn.com/video/1960427049-8a4c0144cdc6c9a9aaa698998bc6818afc4a471e6ae726ae58702b13cd19eddd-d?f=webp"
     }
   ],
   "5": [
