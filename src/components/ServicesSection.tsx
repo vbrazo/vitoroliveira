@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, BarChart, Shield, FileText, Code, GraduationCap, MessageSquare } from 'lucide-react';
+import { Users, BarChart, Shield, FileText, Code, GraduationCap, MessageSquare, Group, UsersRound, Map } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 
 const services = [
@@ -19,13 +19,13 @@ const services = [
     id: 3,
     title: "Engineering Team Building & Leadership",
     description: "Recruit, structure, and mentor high-performing engineering teams tailored to your startup's stage. Create a sustainable and scalable engineering culture.",
-    icon: <Users className="h-8 w-8 text-black" />
+    icon: <Group className="h-8 w-8 text-black" />
   },
   {
     id: 4,
     title: "Technology Roadmapping & Prioritization",
     description: "Design and implement a clear, actionable technology roadmap that balances short-term wins and long-term vision, ensuring alignment with business objectives",
-    icon: <BarChart className="h-8 w-8 text-black" />
+    icon: <Map className="h-8 w-8 text-black" />
   },
   {
     id: 5,
