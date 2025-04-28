@@ -1,19 +1,17 @@
 import { motion } from "framer-motion";
 import { TESTIMONIAL_DATA } from "../data/testimonials";
 
-// Add hash function
 const hashString = (str: string) => {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
     hash = ((hash << 5) - hash) + char;
-    hash = hash & hash; // Convert to 32bit integer
+    hash = hash & hash;
   }
   return Math.abs(hash).toString(16);
 };
 
 const ScrollingTestimonials = () => {
-  // Split testimonials into two groups for the scrolling effect
   const topTestimonials = TESTIMONIAL_DATA.slice(0, 5);
   const middleTestimonials = TESTIMONIAL_DATA.slice(5);
 

@@ -14,7 +14,7 @@ export const TESTIMONIAL_DATA: TestimonialType[] = [
   },
   {
     tempId: 1,
-    testimonial: "Vitor was instrumental in our early-stage growth, he mentored our team and played a key role in helping us find the perfect technical co-founder. His strategic insights and mentorship were invaluable in shaping our company's foundation.",
+    testimonial: "Vitor was instrumental in our early-stage growth, he mentored Plataforma Impact students and played a key role in helping us define sales and business strategies. His strategic insights and mentorship were invaluable in shaping our company's foundation.",
     by: "Garry Carrier, CEO @ Plataforma Impact",
     imgSrc: "https://findinghumansintech.com/wp-content/uploads/2023/01/1656878268319.jpg",
   },
