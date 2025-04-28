@@ -86,7 +86,7 @@ const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExt
 const NavRight = () => {
   return (
     <div className="lg:flex items-center gap-4 hidden">
-      <a href="https://www.calendly.com/vbrazo" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.calendly.com/imvitoroliveira" target="_blank" rel="noopener noreferrer">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
