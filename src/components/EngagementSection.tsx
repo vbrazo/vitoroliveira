@@ -40,7 +40,10 @@ const EngagementSection: React.FC = () => {
         
         <div className="grid md:grid-cols-4 gap-8">
           {engagements.map((item) => (
-            <div key={item.id} className="bg-white p-8 rounded-lg border border-gray-200 text-center">
+            <div 
+              key={item.id} 
+              className="bg-white p-8 rounded-lg border border-gray-200 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-gray-300 cursor-pointer"
+            >
               <h3 className="text-2xl font-bold text-cto-dark mb-2">{item.title}</h3>
               <p className="text-zinc-600 font-medium mb-4">{item.hours}</p>
               <p className="text-zinc-500">{item.description}</p>

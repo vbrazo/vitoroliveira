@@ -47,23 +47,13 @@ const HeroSection: React.FC = () => {
         </div>
 
         <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end relative">
-          <div className="relative w-full h-auto md:h-[500px]">
+          <div className="relative w-full h-auto lg:h-[500px]">
             <img
               className="w-full h-full object-cover"
               src="/vitor-v2.JPG"
               alt="Vitor Oliveira"
             />
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: `
-                  linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%),
-                  linear-gradient(to left, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%),
-                  linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%),
-                  linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 15%)
-                `,
-              }}
-            />
+            <div className="absolute inset-0 pointer-events-none" />
             {/* <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
