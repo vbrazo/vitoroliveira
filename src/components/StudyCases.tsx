@@ -128,7 +128,7 @@ const caseStudies = {
       imgSrc: "https://startinmalta.com/wp-content/uploads/2022/10/supercharger-venture.jpg"
     },
     {
-      heading: "LISA Accelerator - Stanford University",
+      heading: "LISA Stanford Accelerator",
       description: "An ecosystem for Innovators and Startup founders of Stanford GSB Alumni community",
       imgSrc: "https://media.licdn.com/dms/image/v2/D4D12AQEBceSZJSmRjA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1683485562925?e=2147483647&v=beta&t=C1SlKfqK5W_CumH6eHzNZeu_y32h0lOYiVZjsLK3jaI"
     },
@@ -225,7 +225,7 @@ const Card = ({
       <div className="p-4 relative z-5 h-full text-white md:text-slate-300 md:group-hover:text-white transition-colors duration-500 flex flex-col justify-between">
         <FiArrowRight className="text-3xl md:group-hover:-rotate-45 transition-transform duration-500 ml-auto" />
         <div className="space-y-2">
-          <h4 className="text-2xl md:text-3xl font-semibold">
+          <h4 className="text-xl md:text-3xl font-semibold">
             {heading.split("").map((l, i) => (
               <ShiftLetter letter={l} key={i} />
             ))}
@@ -240,7 +240,7 @@ const Card = ({
 
 const ShiftLetter = ({ letter }: { letter: string }) => {
   return (
-    <div className="inline-block overflow-hidden h-[36px] font-semibold text-3xl">
+    <div className="inline-block overflow-hidden h-[36px] font-semibold text-2xl">
       <motion.span
         className="flex flex-col min-w-[4px]"
         style={{
