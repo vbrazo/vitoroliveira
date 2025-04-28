@@ -38,7 +38,7 @@ const WhyCTOSection: React.FC = () => {
     {
       icon: Map,
       title: "Technical Strategy & Roadmapping",
-      description: "A Fractional CTO crafts the technology roadmap aligned with business goals, ensuring tech investments are intentional, scalable, and efficient. They bridge the gap between business vision and technical execution"
+      description: "Strategic technology roadmapping aligned with business goals, ensuring tech investments are intentional, scalable, and efficient. Bridging the gap between business vision and technical execution"
     },
     {
       icon: Users,
@@ -48,7 +48,7 @@ const WhyCTOSection: React.FC = () => {
     {
       icon: Layout,
       title: "Platform & Architecture Decisions",
-      description: "Making foundational architecture decisions — cloud vs on-prem, monolith vs microservices, build vs buy — that support scalability, speed, and maintainability. The Fractional CTO ensures systems are future-proof and adaptable"
+      description: "Guiding critical architecture decisions like cloud infrastructure, system design patterns, and technology investments that maximize scalability and performance. Ensuring your technical foundation supports long-term growth and innovation"
     },
     {
       icon: BarChart2,
