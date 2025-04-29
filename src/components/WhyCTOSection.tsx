@@ -76,13 +76,13 @@ const WhyCTOSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-fade-in-up">
             <p className="text-cto-gray mb-6 leading-relaxed">
-              A CTO's role extends beyond mere technology. They architect the digital framework that positions a company for scalability and adaptability in a rapidly changing digital environment.
+              A CTO's role goes far beyond managing technology—they design the digital foundation that enables a company to scale and adapt in an ever-evolving landscape.
             </p>
             <p className="text-xl md:text-2xl font-light mb-6 text-cto-dark italic">
-              Imagine a world where the way you do things is not only a competitive advantage, but the reason you keep coming out on top as an industry leader.
+              A CTO's responsibilities can differ widely based on the company’s size, industry, and tech priorities. In startups, they’re often deeply involved in hands-on development, while in larger organizations, the role tends to center around strategic leadership and long-term planning.
             </p>
             <p className="text-cto-gray mb-6">
-              The role of a CTO can vary significantly depending on the company's size, industry, and technology needs. In startup environments, a CTO might be more hands-on with software development, while in larger companies, the focus might be more on strategic planning and leadership.
+              The scope of a CTO's role often depends on the company’s size, industry, and technological demands. In startups, they may take a hands-on approach to development, whereas in larger organizations, the emphasis typically shifts to strategy, vision, and executive leadership.
             </p>
           </div>
           <div className="relative h-full flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
@@ -110,7 +110,7 @@ const WhyCTOSection: React.FC = () => {
         <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-bold mb-3 text-cto-dark">No Budget? No problem.</h3>
           <p className="text-cto-gray mb-6">
-          The truth is, you don’t need a full-time CTO to access top-tier technical leadership. A fractional CTO can offer the same strategic insight and expertise—without the full-time cost.
+            The truth is, you don't need a full-time CTO to access top-tier technical leadership. A fractional CTO can offer the same strategic insight and expertise—without the full-time cost.
           </p>
           <a href="#services" className="inline-flex items-center text-black hover:underline">
             Learn more about my fractional CTO services 
