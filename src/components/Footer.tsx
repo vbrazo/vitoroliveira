@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex space-x-4 justify-center">
               <a
-                href="https://www.linkedin.com/in/imvitoroliveira/"
+                href="https://www.linkedin.com/in/vbrazo/"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a
-                href="https://github.com/imvitoroliveira"
+                href="https://github.com/vbrazo"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
