@@ -14,7 +14,7 @@ const BREAKPOINTS = {
 
 const Blog = () => {
   return (
-    <section id="blog" className="my-[80px] scroll-mt-[6rem]">
+    <section id="blog" className="py-[80px] scroll-mt-[6rem]">
       <div className="flex flex-col">
         <Header />
         <main>
@@ -126,7 +126,6 @@ const Post = ({ link, imgUrl, author, title, description, cardWidth }: PostType 
   );
 };
 
-// export default BlogPostCarousel;
 export default Blog;
 
 type PostType = {

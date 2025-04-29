@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { distance, motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
 
@@ -62,19 +62,33 @@ const NavLeft = () => {
       <NavLink text="Services" href="#services" />
       <NavLink text="Engagement" href="#engagement" />
       <NavLink text="Case Studies" href="#study-cases" />
-      <NavLink text="Success Stories" href="#success-stories" />
+      <NavLink text="Success Stories" href="#success-stories-2" />
       <NavLink text="Blog" href="#blog" />
     </div>
   );
 };
 
 const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExternal?: boolean }) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    let distance = 80;
+    const element = document.querySelector(href);
+    if (element) {
+      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - distance;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <a
       href={href}
       rel="nofollow"
       className="hidden lg:block h-[30px] overflow-hidden font-medium"
       target={isExternal ? "_blank" : "_self"}
+      onClick={handleClick}
     >
       <motion.div whileHover={{ y: -30 }}>
         <span className="flex items-center h-[30px] text-white">{text}</span>
@@ -120,13 +134,28 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
 };
 
 const MenuLink = ({ text, href, isExternal, setIsOpen }: { text: string, href: string, isExternal?: boolean, setIsOpen: (value: boolean) => void }) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    setIsOpen(false);
+    if (href === '#success-stories') {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 70;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  };
+
   return (
     <motion.a
       variants={menuLinkVariants}
       target={isExternal ? "_blank" : "_self"}
       rel="nofollow"
       href={href}
-      onClick={() => setIsOpen(false)}
+      onClick={handleClick}
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>

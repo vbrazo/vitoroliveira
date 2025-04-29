@@ -17,8 +17,7 @@ const ScrollingTestimonials = () => {
 
   return (
     <>
-      <div id="success-stories" className="h-[50px]" />
-      <div className="bg-black relative w-full">
+      <div className="bg-black relative w-full" id="success-stories-2">
         <div className="p-4 overflow-x-hidden relative">
           <div className="absolute top-0 bottom-0 left-0 w-24 z-10 bg-gradient-to-r from-slate-900 to-transparent" />
 

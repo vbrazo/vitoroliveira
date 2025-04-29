@@ -73,46 +73,49 @@ export const StaggerTestimonials = () => {
   }, []);
 
   return (
-    <div
-      className="relative w-full overflow-hidden bg-neutral-200"
-      style={{
-        height: SECTION_HEIGHT,
-      }}
-    >
-      {testimonials.map((t, idx) => {
-        let position = 0;
+    <>
+      <div id="success-stories" className="h-[50px]" />
+      <div
+        className="relative w-full overflow-hidden bg-neutral-200"
+        style={{
+          height: SECTION_HEIGHT,
+        }}
+      >
+        {testimonials.map((t, idx) => {
+          let position = 0;
 
-        if (testimonials.length % 2) {
-          position = idx - (testimonials.length + 1) / 2;
-        } else {
-          position = idx - testimonials.length / 2;
-        }
+          if (testimonials.length % 2) {
+            position = idx - (testimonials.length + 1) / 2;
+          } else {
+            position = idx - testimonials.length / 2;
+          }
 
-        return (
-          <TestimonialCard
-            key={t.tempId}
-            testimonial={t}
-            handleMove={handleMove}
-            position={position}
-            cardSize={cardSize}
-          />
-        );
-      })}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
-        <button
-          onClick={() => handleMove(-1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
-        >
-          <GoArrowLeft />
-        </button>
-        <button
-          onClick={() => handleMove(1)}
-          className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
-        >
-          <GoArrowRight />
-        </button>
+          return (
+            <TestimonialCard
+              key={t.tempId}
+              testimonial={t}
+              handleMove={handleMove}
+              position={position}
+              cardSize={cardSize}
+            />
+          );
+        })}
+        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-8">
+          <button
+            onClick={() => handleMove(-1)}
+            className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
+          >
+            <GoArrowLeft />
+          </button>
+          <button
+            onClick={() => handleMove(1)}
+            className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
+          >
+            <GoArrowRight />
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
