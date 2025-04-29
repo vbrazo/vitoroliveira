@@ -110,7 +110,7 @@ const WhyCTOSection: React.FC = () => {
         <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto text-center">
           <h3 className="text-2xl font-bold mb-3 text-cto-dark">No Budget? No problem.</h3>
           <p className="text-cto-gray mb-6">
-            The reality is that you don't need a full-time CTO to get the benefits of having a CTO. You can have a fractional CTO that can provide the same level of expertise and guidance at a fraction of the cost of a full-time executive role.
+          The truth is, you don’t need a full-time CTO to access top-tier technical leadership. A fractional CTO can offer the same strategic insight and expertise—without the full-time cost.
           </p>
           <a href="#services" className="inline-flex items-center text-black hover:underline">
             Learn more about my fractional CTO services 
