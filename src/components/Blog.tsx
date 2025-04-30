@@ -158,6 +158,15 @@ const posts: PostType[] = [
   },
   {
     id: 3,
+    imgUrl: "https://gun.io/wp-content/uploads/2024/03/etienne-girardet-ktUX4KHlU8-unsplash.jpg",
+    author: "Vitor Oliveira",
+    title: "P.S. A Journey Beyond Recruitment: Life as a Talent Success Manager",
+    description:
+      "From Startup Founder to Talent Success Manager: Enhancing Developer Experiences at Gun.io",
+    link: "https://gun.io/guest-posts/2024/03/p-s-a-journey-beyond-recruitment-life-as-a-talent-success-manager/",
+  },
+  {
+    id: 4,
     imgUrl: "https://cdn.prod.website-files.com/5e7878021f083273253e36bd/656480c57acc6b9113bb6bf2_65255b1.webp",
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #4",
@@ -166,7 +175,7 @@ const posts: PostType[] = [
     link: "https://open.substack.com/pub/vitoroliveira/p/4?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
   },
   {
-    id: 4,
+    id: 5,
     imgUrl: "https://www.rioonwatch.org/wp-content/uploads/2016/08/1385727_368399686625642_510219592_n.jpg",
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #2",
@@ -175,7 +184,7 @@ const posts: PostType[] = [
     link: "https://open.substack.com/pub/vitoroliveira/p/2?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
   },
   {
-    id: 5,
+    id: 6,
     imgUrl: "https://images.ctfassets.net/0d3i1kfsuaq3/zv85KLhzWnMKcXAiVDkIY/8b8882065c6bbe92276f43fa69652cdb/Hero_7BestPracticesforSuccess.jpg",
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #1",
@@ -184,7 +193,7 @@ const posts: PostType[] = [
     link: "https://open.substack.com/pub/vitoroliveira/p/1?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
   },
   {
-    id: 6,
+    id: 7,
     imgUrl: "https://substackcdn.com/image/fetch/w_1040,h_545,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c806857-68ec-420e-9521-145498ebd924_2460x774.png",
     author: "Vitor Oliveira",
     title: "Welcome",
