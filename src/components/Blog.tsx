@@ -171,7 +171,7 @@ const posts: PostType[] = [
     author: "Vitor Oliveira",
     title: "Preventing Software Defects with Vitor Oliveira",
     description:
-      "",
+      "A discussion including learning spoken languages and whether that relates to programming, testing and QA, the false dichotomy of perfect vs. good code, the types of defects, and code review. ",
     link: "https://audio.buzzsprout.com/82l35itq8dqgwldaqykevwvf324v?response-content-disposition=inline&",
   },
   {

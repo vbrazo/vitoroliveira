@@ -12,6 +12,11 @@ const caseStudies = {
       imgSrc: "https://www.strides.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhow-it-works-1.604b0dd5.webp&w=3840&q=75"
     },
     {
+      heading: "Napice",
+      description: "Education and community platform for software engineering leaders. Live courses, cohorts, tech talks, and trainings focused on leadership",
+      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_cTcecj_Lwnj22x9QAIjcGI5bd9FZSqOrQ&s"
+    },
+    {
       heading: "Paywith",
       description: "PayWith's payment innovations platform allows businesses to create powerful, mobile-centric payment programs, faster, cheaper, and with more security and control",
       imgSrc: "https://media.licdn.com/dms/image/v2/C561BAQE2zdpkRzc5Aw/company-background_10000/company-background_10000/0/1620549922242/paywith_australia_cover?e=2147483647&v=beta&t=ltw-imeCOBDF0zX9sVUzaKKJ54HmuGnWUZYMdkCSaSk"
