@@ -166,6 +166,24 @@ const posts: PostType[] = [
     link: "https://gun.io/guest-posts/2024/03/p-s-a-journey-beyond-recruitment-life-as-a-talent-success-manager/",
   },
   {
+    id: 9,
+    imgUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/ec/0e/e3/ec0ee3da-785b-12ca-4ee5-dee443819f88/mza_14427237716915326589.jpg/600x600bb.webp",
+    author: "Vitor Oliveira",
+    title: "Preventing Software Defects with Vitor Oliveira",
+    description:
+      "",
+    link: "https://www.codewithjason.com/podcast/12394897-175-preventing-software-defects-with-vitor-oliveira/",
+  },
+  {
+    id: 9,
+    imgUrl: "https://i.ytimg.com/vi/-94XWhDToI4/maxresdefault.jpg",
+    author: "Vitor Oliveira",
+    title: "Software Engineering Leadership | Developing Your Skills",
+    description:
+      "A guide to becoming a better software engineering leader",
+    link: "https://www.youtube.com/watch?v=-94XWhDToI4",
+  },
+  {
     id: 4,
     imgUrl: "https://cdn.prod.website-files.com/5e7878021f083273253e36bd/656480c57acc6b9113bb6bf2_65255b1.webp",
     author: "Vitor Oliveira",
@@ -173,6 +191,15 @@ const posts: PostType[] = [
     description:
       "Breaking into Tech as a Clinical Laboratory Scientist",
     link: "https://open.substack.com/pub/vitoroliveira/p/4?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+  },
+  {
+    id: 4,
+    imgUrl: "https://thescimus.com/blog/wp-content/uploads/2023/02/Tech-Lead-vs-Engineering-Manager-1600%D0%BD%D0%B0400-e1676936691632.png",
+    author: "Vitor Oliveira",
+    title: "Harnessing Talent Success Stories #3",
+    description:
+      "From First-Time Manager to Engineering Manager",
+    link: "https://open.substack.com/pub/vitoroliveira/p/3?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
   },
   {
     id: 5,
@@ -192,6 +219,15 @@ const posts: PostType[] = [
       "From strong to success: Talent conquers",
     link: "https://open.substack.com/pub/vitoroliveira/p/1?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
   },
+  // {
+  //   id: 8,
+  //   imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJ2OPxJ7BP3hiq5Dy4NJIVyhNIChc6cXCzw&s",
+  //   author: "Vitor Oliveira",
+  //   title: "VanHackCON - Career Path in Canada",
+  //   description:
+  //     "Career path how Vitor got a leadership position after a few months in Canada",
+  //   link: "https://www.youtube.com/watch?v=5s-phH3B4DA",
+  // },
   {
     id: 7,
     imgUrl: "https://substackcdn.com/image/fetch/w_1040,h_545,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c806857-68ec-420e-9521-145498ebd924_2460x774.png",
