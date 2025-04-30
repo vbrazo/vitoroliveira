@@ -43,19 +43,25 @@ const services = [
     id: 7,
     title: "Web & Mobile App Development",
     description: "Custom web and mobile application development, from concept to deployment. Specializing in both traditional coding and no-code/low-code solutions to match your needs and budget",
-    icon: <Code className="h-8 w-8 text-black" />
+    icon: <Code className="h-8 w-8 text-black" />,
+    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkText: "Book a session"
   },
   {
     id: 8,
     title: "Engineering & Management Mentoring",
     description: "Personalized mentoring for software engineers and technical managers looking to advance their careers, improve their leadership skills, or navigate challenging professional situations",
-    icon: <GraduationCap className="h-8 w-8 text-black" />
+    icon: <GraduationCap className="h-8 w-8 text-black" />,
+    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkText: "Book a session"
   },
   {
     id: 9,
     title: "Interview Preparation",
     description: "Comprehensive interview preparation for software engineering roles, including system design, coding challenges, behavioral interviews, and technical discussions. Get personalized coaching and mock interviews",
-    icon: <MessageSquare className="h-8 w-8 text-black" />
+    icon: <MessageSquare className="h-8 w-8 text-black" />,
+    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkText: "Book a session"
   }
 ];
 
@@ -73,6 +79,8 @@ const ServicesSection: React.FC = () => {
               title={service.title}
               description={service.description}
               icon={service.icon}
+              linkUrl={service.linkUrl}
+              linkText={service.linkText}
             />
           ))}
         </div>
