@@ -8,7 +8,7 @@ const services = [
     title: "Fractional Chief Technology Officer (CTO)",
     description: "Overseeing technology strategy, ensuring that technological resources align with business goals, and leading R&D to gain a competitive edge",
     icon: <Users className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Start Your Tech Strategy"
   },
   {
@@ -16,7 +16,7 @@ const services = [
     title: "Early-Stage Technology Advisor & Coach",
     description: "Bridge the gap between technology and strategic business growth. A tailored, hands-on approach not only supports but also accelerates the path to success",
     icon: <BarChart className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Get Growth Guidance"
   },
   {
@@ -24,7 +24,7 @@ const services = [
     title: "Engineering Team Building & Leadership",
     description: "Recruit, structure, and mentor high-performing engineering teams tailored to your startup's stage. Create a sustainable and scalable engineering culture.",
     icon: <Group className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Build Your Dream Team"
   },
   {
@@ -32,7 +32,7 @@ const services = [
     title: "Technology Roadmapping & Prioritization",
     description: "Design and implement a clear, actionable technology roadmap that balances short-term wins and long-term vision, ensuring alignment with business objectives",
     icon: <Map className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Chart Your Tech Path"
   },
   {
@@ -40,7 +40,7 @@ const services = [
     title: "Regulatory & Compliance Assistance",
     description: "Secure data and build trust with focused, strategic guidance, propelling your business towards secure growth. Get help navigating regulated industries",
     icon: <Shield className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Secure Your Compliance"
   },
   {
@@ -48,7 +48,7 @@ const services = [
     title: "Due Diligence & Investor Support",
     description: "Support founders with technical due diligence assessments, pitch deck refinement, and strategic investor introductions to strengthen fundraising efforts and unlock growth opportunities",
     icon: <FileText className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Pitch your startup"
   },
   {
@@ -56,7 +56,7 @@ const services = [
     title: "Web & Mobile App Development",
     description: "Custom web and mobile application development, from concept to deployment. Specializing in both traditional coding and no-code/low-code solutions to match your needs and budget",
     icon: <Code className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://intro.co/VitorOliveira",
     linkText: "Build Your App"
   },
   {
