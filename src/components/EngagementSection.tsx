@@ -42,11 +42,20 @@ const EngagementSection: React.FC = () => {
           {engagements.map((item) => (
             <div 
               key={item.id} 
-              className="bg-white p-8 rounded-lg border border-gray-200 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-gray-300 cursor-pointer"
+              className="group bg-white p-8 rounded-lg border border-gray-200 text-center transition-all duration-300 relative overflow-hidden"
             >
-              <h3 className="text-2xl font-bold text-cto-dark mb-2">{item.title}</h3>
-              <p className="text-zinc-600 font-medium mb-4">{item.hours}</p>
-              <p className="text-zinc-500">{item.description}</p>
+              <div className="absolute inset-0 w-full h-full transition-transform duration-500 bg-black -translate-x-full group-hover:translate-x-0" />
+              <div className="relative z-10">
+                <h3 className="text-2xl font-bold text-cto-dark mb-2 transition-colors duration-300 group-hover:text-white">
+                  {item.title}
+                </h3>
+                <p className="text-zinc-600 font-medium mb-4 transition-colors duration-300 group-hover:text-gray-300">
+                  {item.hours}
+                </p>
+                <p className="text-zinc-500 transition-colors duration-300 group-hover:text-gray-400">
+                  {item.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
