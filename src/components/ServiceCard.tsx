@@ -10,13 +10,22 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, linkUrl, linkText }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [showTooltip, setShowTooltip] = useState(true);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    setMousePosition({
-      x: e.clientX - rect.left,
-      y: e.clientY - rect.top
-    });
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    // Hide tooltip if too close to bottom or edges
+    const buffer = 60; // Adjust this value as needed
+    setShowTooltip(
+      y < rect.height - buffer && 
+      x > buffer && 
+      x < rect.width - buffer
+    );
+
+    setMousePosition({ x, y });
   };
 
   const content = (
@@ -38,16 +47,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, lin
       onMouseMove={handleMouseMove}
     >
       {content}
-      <span 
-        className="absolute opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 bg-black text-white text-sm py-1 px-2 rounded pointer-events-none z-10"
-        style={{
-          left: `${mousePosition.x}px`,
-          top: `${mousePosition.y}px`,
-          transform: 'translate(-50%, 20px)'
-        }}
-      >
-        Learn more
-      </span>
+      {showTooltip && (
+        <span 
+          className="absolute opacity-0 group-hover/card:opacity-100 transition-opacity duration-300 bg-black text-white text-sm py-1 px-2 rounded pointer-events-none z-10"
+          style={{
+            left: `${mousePosition.x}px`,
+            top: `${mousePosition.y}px`,
+            transform: 'translate(-50%, 20px)'
+          }}
+        >
+          {'Learn more'}
+        </span>
+      )}
+      <div className="mt-4 text-black hover:underline">
+        {linkText || 'Learn more'} →
+      </div>
     </a>
   ) : (
     <div className="p-8 border border-gray-200 rounded-lg bg-white">
