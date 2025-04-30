@@ -7,11 +7,11 @@ const CTASection: React.FC = () => {
     <section className="py-20 bg-black bg-opacity-90 text-white text-center">
       <div className="container max-w-4xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          Elevate your tech game.<br />
-          Partner with a CTO today.
+          Take your technology to the next level. <br/>
+          Bring a CTO on board.
         </h2>
         <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-          Waiting until you know you need a CTO is often too late to reduce the pain of not having one sooner. Don't risk your future.
+          By the time you realize you need a CTO, the damage of not having one may already be done. Don’t wait—secure the leadership your future depends on.
         </p>
         <div className="hidden md:flex justify-center">
           <motion.button
