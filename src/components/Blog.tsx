@@ -172,7 +172,7 @@ const posts: PostType[] = [
     title: "Preventing Software Defects with Vitor Oliveira",
     description:
       "",
-    link: "https://www.codewithjason.com/podcast/12394897-175-preventing-software-defects-with-vitor-oliveira/",
+    link: "https://audio.buzzsprout.com/82l35itq8dqgwldaqykevwvf324v?response-content-disposition=inline&",
   },
   {
     id: 9,
