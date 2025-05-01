@@ -48,7 +48,7 @@ const services = [
     title: "Due Diligence & Investor Support",
     description: "Support founders with technical due diligence assessments, pitch deck refinement, and strategic investor introductions to strengthen fundraising efforts and unlock growth opportunities",
     icon: <FileText className="h-8 w-8 text-black" />,
-    linkUrl: "https://intro.co/VitorOliveira",
+    linkUrl: "https://tally.so/r/mOA0zY",
     linkText: "Pitch your startup"
   },
   {
@@ -64,7 +64,7 @@ const services = [
     title: "Engineering & Management Mentoring",
     description: "Personalized mentoring for software engineers and technical managers looking to advance their careers, improve their leadership skills, or navigate challenging professional situations",
     icon: <GraduationCap className="h-8 w-8 text-black" />,
-    linkUrl: "https://mentorcruise.com/mentor/vitoroliveira/",
+    linkUrl: "https://tally.so/r/wAK49W",
     linkText: "Level Up Your Career"
   },
   {
