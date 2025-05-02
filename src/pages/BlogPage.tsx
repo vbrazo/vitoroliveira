@@ -71,7 +71,7 @@ const BlogPage = () => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-grow container mx-auto py-8 px-4">
-        <div className="max-w-7xl mx-auto mt-20">
+        <div className="max-w-5xl mx-auto mt-20">
           <div className="flex items-center flex-wrap gap-2 mb-10">
             <Chip
               text="All"

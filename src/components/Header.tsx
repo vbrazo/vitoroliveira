@@ -134,7 +134,7 @@ const NavRight = () => {
   let title = "Book a call";
 
   if (!isHomePage) {
-    title = "Get in touch";
+    title = "Let's write an article?";
   }
 
   return (
