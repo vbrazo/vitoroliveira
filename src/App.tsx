@@ -4,8 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CTOServices from "./pages/CTOServices";
-import Blog from "./components/Blog"
 import NotFound from "./pages/NotFound";
+import BlogPage from "./pages/BlogPage";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +18,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<CTOServices />} />
           <Route path="/cto-services" element={<CTOServices />} />
+          <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

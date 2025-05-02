@@ -1,6 +1,7 @@
 import { distance, motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
+import { useLocation } from "react-router-dom";
 
 const FlipNavWrapper = () => {
   return (
@@ -56,14 +57,26 @@ const Logo = () => {
 };
 
 const NavLeft = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <div className="flex items-center gap-6">
       <a href="/"><Logo /></a>
-      <NavLink text="Services" href="#services" />
-      <NavLink text="Engagement" href="#engagement" />
-      <NavLink text="Case Studies" href="#study-cases" />
-      <NavLink text="Success Stories" href="#success-stories-2" />
-      <NavLink text="Blog" href="#blog" />
+      {isHomePage ? (
+        <>
+          <NavLink text="Services" href="#services" />
+          <NavLink text="Engagement" href="#engagement" />
+          <NavLink text="Case Studies" href="#study-cases" />
+          <NavLink text="Success Stories" href="#success-stories-2" />
+          <NavLink text="Blog" href="#blog" />
+        </>
+      ) : (
+        <>
+          <NavLink text="vitoroliveira.ca" href="/" />
+          <NavLink text="Blog" href="/blog" />
+        </>
+      )}
     </div>
   );
 };
@@ -71,8 +84,17 @@ const NavLeft = () => {
 const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExternal?: boolean }) => {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    let distance = 80;
-    const element = document.querySelector(href);
+    
+    // Handle regular page navigation
+    if (href.startsWith('/')) {
+      window.location.href = href;
+      return;
+    }
+
+    // Handle section navigation
+    const distance = 80;
+    const targetId = href.replace(/^#/, '');
+    const element = document.getElementById(targetId);
     if (element) {
       const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - distance;
       window.scrollTo({
@@ -101,6 +123,14 @@ const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExt
 };
 
 const NavRight = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  let title = "Book a call";
+
+  if (!isHomePage) {
+    title = "Get in touch";
+  }
+
   return (
     <div className="lg:flex items-center gap-4 hidden">
       <a href="https://www.calendly.com/imvitoroliveira" target="_blank" rel="noopener noreferrer">
@@ -109,7 +139,7 @@ const NavRight = () => {
           whileTap={{ scale: 0.95 }}
           className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
         >
-          Book a call
+          {title}
         </motion.button>
       </a>
     </div>

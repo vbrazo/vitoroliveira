@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import useMeasure from "react-use-measure";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const MARGIN = 20;
 const BREAKPOINTS = {
@@ -13,6 +15,13 @@ const BREAKPOINTS = {
 };
 
 const Blog = () => {
+  const navigate = useNavigate();
+  
+  const handleViewAllClick = () => {
+    navigate('/blog', { replace: true });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <section id="blog" className="py-[80px] scroll-mt-[1rem]">
       <div className="flex flex-col">
@@ -21,6 +30,11 @@ const Blog = () => {
           <section className="flex relative flex-col text-center md:text-left items-center justify-center gap-16 md:items-start w-full min-h-[screen]">
             <div className="container flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:gap-0">
               <BlogPostCarousel />
+            </div>
+            <div className="container flex justify-center">
+              <Button onClick={handleViewAllClick} variant="outline" className="font-medium">
+                View All Articles
+              </Button>
             </div>
           </section>
         </main>
@@ -126,6 +140,7 @@ const Post = ({ link, imgUrl, author, title, description, cardWidth }: PostType 
   );
 };
 
+export { posts, tags };
 export default Blog;
 
 type PostType = {
@@ -135,7 +150,15 @@ type PostType = {
   title: string;
   description: string;
   link: string;
+  tags: string[];
 };
+
+const tags = [
+  "Leadership",
+  "Engineering Management",
+  "Software Engineering",
+  "Talent Success",
+];
 
 const posts: PostType[] = [
   {
@@ -146,6 +169,7 @@ const posts: PostType[] = [
     description:
       "Steps to build trust, improve delivery, and drive performance across multiple teams",
     link: "https://open.substack.com/pub/vitoroliveira/p/my-practical-guide-for-engineering?r=3osz1&utm_campaign=post&utm_medium=web",
+    tags: ["Leadership", "Engineering Management"],
   },
   {
     id: 2,
@@ -155,6 +179,7 @@ const posts: PostType[] = [
     description:
       "Learn How Smart Generosity Can Elevate Your Work, Your Network, and Your Legacy",
     link: "https://vitoroliveira.substack.com/p/are-you-a-taker-a-giver-or-a-matcher",
+    tags: ["Leadership", "Organizational Leadership", "Engineering Management"],
   },
   {
     id: 3,
@@ -164,6 +189,7 @@ const posts: PostType[] = [
     description:
       "From Startup Founder to Talent Success Manager: Enhancing Developer Experiences at Gun.io",
     link: "https://gun.io/guest-posts/2024/03/p-s-a-journey-beyond-recruitment-life-as-a-talent-success-manager/",
+    tags: ["Talent Success"],
   },
   {
     id: 9,
@@ -173,6 +199,7 @@ const posts: PostType[] = [
     description:
       "A discussion including learning spoken languages and whether that relates to programming, testing and QA, the false dichotomy of perfect vs. good code, the types of defects, and code review. ",
     link: "https://audio.buzzsprout.com/82l35itq8dqgwldaqykevwvf324v?response-content-disposition=inline&",
+    tags: ["Software Engineering", "Engineering Management"],
   },
   {
     id: 9,
@@ -182,6 +209,7 @@ const posts: PostType[] = [
     description:
       "A guide to becoming a better software engineering leader",
     link: "https://www.youtube.com/watch?v=-94XWhDToI4",
+    tags: ["Leadership", "Organizational Leadership", "Engineering Management"],
   },
   {
     id: 4,
@@ -191,6 +219,7 @@ const posts: PostType[] = [
     description:
       "Breaking into Tech as a Clinical Laboratory Scientist",
     link: "https://open.substack.com/pub/vitoroliveira/p/4?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
   },
   {
     id: 4,
@@ -200,6 +229,7 @@ const posts: PostType[] = [
     description:
       "From First-Time Manager to Engineering Manager",
     link: "https://open.substack.com/pub/vitoroliveira/p/3?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
   },
   {
     id: 5,
@@ -209,6 +239,7 @@ const posts: PostType[] = [
     description:
       "From Brazilian favelas to the world: Talent wins",
     link: "https://open.substack.com/pub/vitoroliveira/p/2?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
   },
   {
     id: 6,
@@ -218,6 +249,7 @@ const posts: PostType[] = [
     description:
       "From strong to success: Talent conquers",
     link: "https://open.substack.com/pub/vitoroliveira/p/1?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
   },
   // {
   //   id: 8,
@@ -236,5 +268,6 @@ const posts: PostType[] = [
     description:
       "My notes about software engineering, software architecture, tech leadership, soft skills, working with people, and career growth.",
     link: "https://open.substack.com/pub/vitoroliveira/p/welcome?r=3osz1&utm_campaign=post&utm_medium=web",
+    tags: ["Leadership", "Engineering Management"],
   },
 ];
