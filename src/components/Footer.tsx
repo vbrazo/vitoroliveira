@@ -1,7 +1,12 @@
 import React from 'react';
-import { Linkedin, Github } from 'lucide-react';
+import { Linkedin, Github, BookOpen } from 'lucide-react';
 
 const Footer: React.FC = () => {
+
+  const handleBlogClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <footer className="bg-[#F3F3F3] text-white py-12">
       <div className="container max-w-7xl mx-auto px-6">
@@ -27,6 +32,13 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 <Github className="h-5 w-5" />
+              </a>
+              <a
+                onClick={handleBlogClick}
+                href={'/blog'}
+                className="text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <BookOpen className="h-5 w-5" />
               </a>
             </div>
           </div>
