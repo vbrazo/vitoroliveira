@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { posts, tags } from '@/components/Blog';
@@ -53,6 +53,11 @@ const Chip = ({
 const BlogPage = () => {
   const [activeTag, setActiveTag] = useState<string>("All");
   
+  useEffect(() => {
+    // Scroll to top when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   const filteredPosts = useMemo(() => {
     if (activeTag === "All") return posts;
     
