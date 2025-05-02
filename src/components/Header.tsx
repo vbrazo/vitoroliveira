@@ -82,25 +82,31 @@ const NavLeft = () => {
 };
 
 const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExternal?: boolean }) => {
+  const location = useLocation();
+  const isCurrentPage = location.pathname === href;
+  const isSectionReference = href.startsWith('#');
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     
-    // Handle regular page navigation
-    if (href.startsWith('/')) {
-      window.location.href = href;
+    // If it's a section reference, always allow navigation
+    if (isSectionReference) {
+      const distance = 80;
+      const targetId = href.replace(/^#/, '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - distance;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
       return;
     }
 
-    // Handle section navigation
-    const distance = 80;
-    const targetId = href.replace(/^#/, '');
-    const element = document.getElementById(targetId);
-    if (element) {
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - distance;
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      });
+    // If it's a different page, navigate to it
+    if (!isCurrentPage) {
+      window.location.href = href;
     }
   };
 
@@ -108,7 +114,7 @@ const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExt
     <a
       href={href}
       rel="nofollow"
-      className="hidden lg:block h-[30px] overflow-hidden font-medium"
+      className={`hidden lg:block h-[30px] overflow-hidden font-medium ${isCurrentPage && !isSectionReference ? 'pointer-events-none opacity-50' : ''}`}
       target={isExternal ? "_blank" : "_self"}
       onClick={handleClick}
     >
