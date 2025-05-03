@@ -131,15 +131,22 @@ const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExt
 const NavRight = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isFitScorePage = location.pathname === '/fit-score';
   let title = "Book a call";
+  let href = "https://www.calendly.com/imvitoroliveira";
 
   if (!isHomePage) {
     title = "Let's build a case study?";
   }
 
+  if (isFitScorePage) {
+    title = "Get Your Fit Score";
+    href = "#call-to-action";
+  }
+
   return (
     <div className="lg:flex items-center gap-4 hidden">
-      <a href="https://www.calendly.com/imvitoroliveira" target="_blank" rel="noopener noreferrer">
+      <a href={href} target={isFitScorePage ? "_self" : "_blank"} rel="noopener noreferrer">
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}

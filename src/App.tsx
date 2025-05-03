@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CTOServices from "./pages/CTOServices";
 import NotFound from "./pages/NotFound";
 import BlogPage from "./pages/BlogPage";
-
+import FitScore from "./pages/FitScore";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -17,6 +17,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CTOServices />} />
+          <Route path="/fit-score" element={<FitScore />} />
           <Route path="/cto-services" element={<CTOServices />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />
