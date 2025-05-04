@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Sidebar } from "../components/RetractingSideBar";
+import { FiBriefcase } from "react-icons/fi";
 
 const NewFitScore = () => {
     const [formData, setFormData] = useState({
@@ -74,16 +75,16 @@ const NewFitScore = () => {
     };
 
     return (
-        <div className="flex min-h-screen bg-white">
+        <div className="min-h-screen bg-gradient-to-br from-white via-zinc-100 to-zinc-200 flex">
             <Sidebar />
-            <div className="flex-1 p-8">
-                <div className="max-w-2xl mx-auto">
-                    <h1 className="text-2xl font-semibold text-gray-800 mb-8">New Analysis</h1>
-                    
+            <main className="flex-1 flex p-6">
+                <div className="w-full max-w-lg bg-white border border-zinc-200 p-8">
+                    <h1 className="text-3xl font-bold text-black mb-2 tracking-tight">New Fit Score</h1>
+                    <p className="text-zinc-500 mb-8">Choose a company to analyze your fit.</p>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
-                            <label htmlFor="targetCompany" className="block text-sm font-medium text-gray-700">
-                                Target Company *
+                            <label htmlFor="targetCompany" className="text-sm font-semibold text-zinc-700 mb-1 flex items-center gap-2">
+                                <FiBriefcase className="inline text-zinc-400" /> Target Company <span className="text-zinc-400">*</span>
                             </label>
                             <input
                                 type="text"
@@ -91,26 +92,23 @@ const NewFitScore = () => {
                                 name="targetCompany"
                                 value={formData.targetCompany}
                                 onChange={handleChange}
-                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
-                                    errors.targetCompany ? "border-red-500" : ""
-                                }`}
+                                className={`mt-1 block w-full rounded-lg border ${errors.targetCompany ? "border-red-400" : "border-zinc-300"} bg-white px-4 py-2 shadow-sm focus:border-black focus:ring-2 focus:ring-zinc-200 transition sm:text-sm`}
                             />
                             {errors.targetCompany && (
-                                <p className="mt-1 text-sm text-red-600">{errors.targetCompany}</p>
+                                <p className="mt-1 text-xs text-red-500">{errors.targetCompany}</p>
                             )}
                         </div>
-
                         <div className="flex justify-end">
                             <button
                                 type="submit"
-                                className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                className="inline-flex items-center gap-2 rounded-lg bg-black py-2 px-6 text-base font-semibold text-white shadow hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-zinc-400 focus:ring-offset-2 transition"
                             >
                                 Analyze
                             </button>
                         </div>
                     </form>
                 </div>
-            </div>
+            </main>
         </div>
     );
 };

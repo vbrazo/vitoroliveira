@@ -6,7 +6,7 @@ import { FiTrash, FiEye } from "react-icons/fi";
 
 const FitScoreList = () => {
     return (
-        <div className="w-full bg-white">
+        <div className="w-full min-h-screen bg-gradient-to-br from-slate-100 to-slate-200">
             <Table />
         </div>
     );
@@ -17,22 +17,6 @@ const Table = () => {
     const [users, setUsers] = useState(userData);
     const [modalOpen, setModalOpen] = useState(false);
     const [userToRemove, setUserToRemove] = useState<User | null>(null);
-
-    const addUser = () => {
-        const newId = users.length ? Math.max(...users.map(u => u.id)) + 1 : 1;
-        setUsers([
-            ...users,
-            {
-                id: newId,
-                name: "New Company",
-                contact: "new@example.com",
-                photoURL: "/imgs/head-shots/1.jpg",
-                maxRank: 0,
-                status: "pending",
-                score: 0,
-            },
-        ]);
-    };
 
     const confirmRemoveUser = (user: User) => {
         setUserToRemove(user);
@@ -79,23 +63,23 @@ const Table = () => {
         <>
         <div className="flex flex-row">
         <Sidebar />
-            <div className="w-full bg-white shadow-lg rounded-lg overflow-x-scroll max-w-6xl m-10 mx-auto">
-                <div className="flex justify-between items-center p-4">
-                    <h2 className="text-xl font-semibold text-slate-800">Fit Score Analyses</h2>
+            <div className="w-full bg-white/90 shadow-2xl overflow-x-auto">
+                <div className="flex justify-between items-center p-6 border-b border-slate-100 bg-gradient-to-r from-white via-slate-50 to-slate-100 rounded-t-2xl">
+                    <h2 className="text-2xl font-bold text-slate-800 tracking-tight">Fit Score Analyses</h2>
                     <button
                         onClick={() => navigate('/fit-score/new')}
-                        className="bg-black text-white px-4 py-2 rounded transition"
+                        className="bg-black hover:bg-slate-800 text-white px-6 py-2 rounded-lg shadow transition font-semibold text-base"
                     >
-                        New Analysis
+                        + New Analysis
                     </button>
                 </div>
-                <table className="w-full">
+                <table className="w-full text-slate-700">
                     <thead>
-                        <tr className="border-b-[1px] border-slate-200 text-slate-600 text-sm uppercase">
+                        <tr className="border-b border-slate-200 text-slate-500 text-xs uppercase tracking-wider bg-slate-50">
                             <th className="pl-4 w-8"></th>
-                            <th className="text-start p-4 font-medium">Company Name</th>
-                            <th className="text-center p-4 font-medium">Score Fit</th>
-                            <th className="text-start p-4 font-medium"></th>
+                            <th className="text-start p-4 font-semibold">Company Name</th>
+                            <th className="text-center p-4 font-semibold">Score Fit</th>
+                            <th className="text-start p-4 font-semibold"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -155,17 +139,17 @@ const TableRows = ({ user, index, shift, confirmRemoveUser }: TableRowsProps) =>
     return (
         <motion.tr
             layoutId={`row-${user.id}`}
-            className={`text-sm ${user.id % 2 ? "bg-slate-50" : "bg-white"}`}
+            className={`text-sm transition hover:bg-slate-100 focus-within:bg-slate-100 ${user.id % 2 ? "bg-slate-50" : "bg-white"}`}
         >
             <td className="pl-4 w-8 text-lg"></td>
             <td className="p-4 flex items-center gap-3 overflow-hidden">
                 <img
                     src={user.photoURL}
                     alt="Example user photo"
-                    className="w-10 h-10 rounded-full bg-slate-200 object-cover object-top shrink-0"
+                    className="w-10 h-10 rounded-full bg-slate-200 object-cover object-top shrink-0 border-2 border-slate-300"
                 />
                 <div>
-                    <span className="block mb-1 font-medium text-slate-800">{user.name}</span>
+                    <span className="block mb-1 font-semibold text-slate-800">{user.name}</span>
                     <span className="block text-xs text-slate-500">{user.contact}</span>
                 </div>
             </td>
@@ -177,7 +161,7 @@ const TableRows = ({ user, index, shift, confirmRemoveUser }: TableRowsProps) =>
             <td className="p-4 flex gap-2">
                 <button
                     onClick={() => navigate(`/fit-score/result`)}
-                    className="text-slate-600 hover:text-black"
+                    className="text-slate-500 hover:text-black transition"
                     title="View Report"
                 >
                     <FiEye size={18} />
@@ -187,7 +171,7 @@ const TableRows = ({ user, index, shift, confirmRemoveUser }: TableRowsProps) =>
                         e.stopPropagation();
                         confirmRemoveUser(user);
                     }}
-                    className="text-red-600 hover:text-red-800"
+                    className="text-red-500 hover:text-red-700 transition"
                     title="Remove"
                 >
                     <FiTrash size={18} />
