@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { Sidebar } from "../components/RetractingSideBar";
-import { useNavigate } from "react-router-dom";
 
 const NewFitScore = () => {
-    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         linkedinUrl: "",
         email: "",
@@ -44,7 +42,7 @@ const NewFitScore = () => {
             newErrors.linkedinUrl = "LinkedIn URL is required";
             isValid = false;
         } else if (!formData.linkedinUrl.includes('linkedin.com/in/')) {
-            newErrors.linkedinUrl = "Please enter a valid LinkedIn profile URL";
+            newErrors.linkedinUrl = "Please enter a valid LinkedIn URL";
             isValid = false;
         }
 
@@ -69,11 +67,10 @@ const NewFitScore = () => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // if (validateForm()) {
-            // TODO: Implement API call to submit fit score analysis
-            navigate("/fit-score/result");
+        if (validateForm()) {
+            // TODO: Implement API call to process fit score analysis
             console.log("Form submitted:", formData);
-        // }
+        }
     };
 
     return (
@@ -166,9 +163,9 @@ const NewFitScore = () => {
                         <div className="flex justify-end">
                             <button
                                 type="submit"
-                                className="inline-flex justify-center rounded-md border border-transparent bg-black py-2 px-4 text-sm font-medium text-white shadow-sm focus:ring-offset-2"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                             >
-                                Submit Analysis
+                                Analyze
                             </button>
                         </div>
                     </form>

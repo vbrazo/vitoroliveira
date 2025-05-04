@@ -155,6 +155,17 @@ const NavRight = () => {
           {title}
         </motion.button>
       </a>
+      {!isHomePage && (
+        <a href="/sign-in" rel="noopener noreferrer">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-4 py-2 bg-black text-white font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 border-white"
+        >
+          Login
+        </motion.button>
+      </a>
+      )}
     </div>
   );
 };

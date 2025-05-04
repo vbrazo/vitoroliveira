@@ -12,6 +12,10 @@ import Dashboard from "./pages/Dashboard";
 import FitScoreList from "./pages/FitScoreList";
 import UserSettings from "./pages/UserSettings";
 import NewFitScore from "./pages/NewFitScore";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import ForgotPassword from "./pages/ForgotPassword";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -22,6 +26,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CTOServices />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/fit-score" element={<FitScore />} />
           <Route path="/fit-score/result" element={<FitScoreResult />} />
           <Route path="/fit-score/list" element={<FitScoreList />} />
