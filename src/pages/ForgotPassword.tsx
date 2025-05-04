@@ -97,7 +97,7 @@ const Email = () => {
       </div>
      
       <SplashButton type="submit" className="w-full" onClick={() => {
-        window.location.href = "/fit-score/list";
+        window.location.href = "/sign-in";
       }}>
         Send me a magic link
       </SplashButton>
