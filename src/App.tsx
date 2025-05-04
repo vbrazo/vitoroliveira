@@ -7,6 +7,11 @@ import CTOServices from "./pages/CTOServices";
 import NotFound from "./pages/NotFound";
 import BlogPage from "./pages/BlogPage";
 import FitScore from "./pages/FitScore";
+import FitScoreResult from "./pages/FitScoreResult";
+import Dashboard from "./pages/Dashboard";
+import FitScoreList from "./pages/FitScoreList";
+import UserSettings from "./pages/UserSettings";
+import NewFitScore from "./pages/NewFitScore";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,6 +23,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<CTOServices />} />
           <Route path="/fit-score" element={<FitScore />} />
+          <Route path="/fit-score/result" element={<FitScoreResult />} />
+          <Route path="/fit-score/list" element={<FitScoreList />} />
+          <Route path="/fit-score/new" element={<NewFitScore />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/user-settings" element={<UserSettings />} />
           <Route path="/cto-services" element={<CTOServices />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />

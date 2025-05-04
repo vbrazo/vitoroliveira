@@ -12,7 +12,6 @@ import {
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-import { SpringModal } from "@/components/SpringModal";
 
 const HeroSection = () => {
   return (
@@ -257,10 +256,12 @@ const HowToUse = () => {
 
       if (!response.ok) {
         throw new Error("Failed to send message to Slack");
+      } else {
+        toast.success("Your Fit Score request has been submitted!");
+        setIsModalOpen(true);
+        navigate("/fit-score/result");
+        window.scrollTo(0, 0);
       }
-
-      toast.success("Your Fit Score request has been submitted!");
-      setIsModalOpen(true);
     } catch (error) {
       console.error("Error sending message to Slack:", error);
       toast.error("Failed to submit your request. Please try again.");
@@ -385,12 +386,6 @@ const HowToUse = () => {
           </div>
         </div>
       </section>
-      <SpringModal 
-        isOpen={isModalOpen}
-        setIsOpen={setIsModalOpen}
-        caseStudy="Fit Score Analysis"
-        channel="Fit Score"
-      />
     </>
   );
 };
