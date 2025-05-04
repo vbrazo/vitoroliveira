@@ -82,66 +82,6 @@ const NewFitScore = () => {
                     
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
-                            <label htmlFor="linkedinUrl" className="block text-sm font-medium text-gray-700">
-                                LinkedIn URL *
-                            </label>
-                            <input
-                                type="url"
-                                id="linkedinUrl"
-                                name="linkedinUrl"
-                                value={formData.linkedinUrl}
-                                onChange={handleChange}
-                                placeholder="https://linkedin.com/in/yourprofile"
-                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
-                                    errors.linkedinUrl ? "border-red-500" : ""
-                                }`}
-                            />
-                            {errors.linkedinUrl && (
-                                <p className="mt-1 text-sm text-red-600">{errors.linkedinUrl}</p>
-                            )}
-                        </div>
-
-                        <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                                Email Address *
-                            </label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={formData.email}
-                                onChange={handleChange}
-                                placeholder="you@example.com"
-                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
-                                    errors.email ? "border-red-500" : ""
-                                }`}
-                            />
-                            {errors.email && (
-                                <p className="mt-1 text-sm text-red-600">{errors.email}</p>
-                            )}
-                        </div>
-
-                        <div>
-                            <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
-                                Phone Number
-                            </label>
-                            <input
-                                type="tel"
-                                id="phoneNumber"
-                                name="phoneNumber"
-                                value={formData.phoneNumber}
-                                onChange={handleChange}
-                                placeholder="+1 (555) 123-4567"
-                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
-                                    errors.phoneNumber ? "border-red-500" : ""
-                                }`}
-                            />
-                            {errors.phoneNumber && (
-                                <p className="mt-1 text-sm text-red-600">{errors.phoneNumber}</p>
-                            )}
-                        </div>
-
-                        <div>
                             <label htmlFor="targetCompany" className="block text-sm font-medium text-gray-700">
                                 Target Company *
                             </label>

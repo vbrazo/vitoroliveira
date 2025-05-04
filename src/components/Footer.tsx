@@ -1,8 +1,15 @@
 import React from 'react';
 import { Linkedin, Github, BookOpen } from 'lucide-react';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  title?: string;
+  description?: string;
+}
 
+const Footer: React.FC<FooterProps> = ({
+  title='Vitor Oliveira',
+  description='Strategic Leadership in Technology, Product, and Growth'
+}) => {
   const handleBlogClick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -12,9 +19,9 @@ const Footer: React.FC = () => {
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-col items-center text-center gap-10">
           <div className="flex flex-col items-center">
-            <div className="text-2xl font-bold text-black mb-4">Vitor Oliveira</div>
+            <div className="text-2xl font-bold text-black mb-4">{title}</div>
             <p className="text-black mb-4 max-w-md">
-              Strategic Leadership in Technology, Product, and Growth
+              {description}
             </p>
             <div className="flex space-x-4 justify-center">
               <a

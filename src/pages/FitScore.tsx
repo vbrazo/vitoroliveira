@@ -451,7 +451,7 @@ const FitScore = () => {
         <HowToUse />
         <FAQ />
       </main>
-      <Footer />
+      <Footer title="Fit Score" description="By Vitor Oliveira" />
     </div>
   );
 };

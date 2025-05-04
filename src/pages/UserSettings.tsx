@@ -3,13 +3,19 @@ import { Sidebar } from "../components/RetractingSideBar";
 
 const UserSettings = () => {
     const [formData, setFormData] = useState({
+        name: "",
         email: "",
+        linkedinUrl: "",
+        phoneNumber: "",
         currentPassword: "",
         newPassword: "",
         confirmPassword: ""
     });
     const [errors, setErrors] = useState({
+        name: "",
         email: "",
+        linkedinUrl: "",
+        phoneNumber: "",
         currentPassword: "",
         newPassword: "",
         confirmPassword: ""
@@ -31,11 +37,20 @@ const UserSettings = () => {
     const validateForm = () => {
         let isValid = true;
         const newErrors = {
+            name: "",
             email: "",
+            linkedinUrl: "",
+            phoneNumber: "",
             currentPassword: "",
             newPassword: "",
             confirmPassword: ""
         };
+
+        // Name validation
+        if (!formData.name) {
+            newErrors.name = "Name is required";
+            isValid = false;
+        }
 
         // Email validation
         if (!formData.email) {
@@ -45,6 +60,21 @@ const UserSettings = () => {
             newErrors.email = "Email is invalid";
             isValid = false;
         }
+
+        // LinkedIn URL validation
+        if (!formData.linkedinUrl) {
+            newErrors.linkedinUrl = "LinkedIn URL is required";
+            isValid = false;
+        } else if (!/^https:\/\/(www\.)?linkedin\.com\/.*$/.test(formData.linkedinUrl)) {
+            newErrors.linkedinUrl = "LinkedIn URL must start with https://linkedin.com/";
+            isValid = false;
+        }
+
+        // Phone number validation (optional, but you can add your own logic)
+        // if (formData.phoneNumber && !/^[\d\s()+-]+$/.test(formData.phoneNumber)) {
+        //     newErrors.phoneNumber = "Phone number is invalid";
+        //     isValid = false;
+        // }
 
         // Current password validation
         if (!formData.currentPassword) {
@@ -88,6 +118,25 @@ const UserSettings = () => {
                     
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
+                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
+                                    errors.name ? "border-red-500" : ""
+                                }`}
+                            />
+                            {errors.name && (
+                                <p className="mt-1 text-sm text-red-600">{errors.name}</p>
+                            )}
+                        </div>
+
+                        <div>
                             <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                                 Email
                             </label>
@@ -103,6 +152,46 @@ const UserSettings = () => {
                             />
                             {errors.email && (
                                 <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                            )}
+                        </div>
+
+                        <div>
+                            <label htmlFor="linkedinUrl" className="block text-sm font-medium text-gray-700">
+                                LinkedIn URL *
+                            </label>
+                            <input
+                                type="url"
+                                id="linkedinUrl"
+                                name="linkedinUrl"
+                                value={formData.linkedinUrl}
+                                onChange={handleChange}
+                                placeholder="https://linkedin.com/in/yourprofile"
+                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
+                                    errors.linkedinUrl ? "border-red-500" : ""
+                                }`}
+                            />
+                            {errors.linkedinUrl && (
+                                <p className="mt-1 text-sm text-red-600">{errors.linkedinUrl}</p>
+                            )}
+                        </div>
+
+                        <div>
+                            <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
+                                Phone Number
+                            </label>
+                            <input
+                                type="tel"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                value={formData.phoneNumber}
+                                onChange={handleChange}
+                                placeholder="+1 (555) 123-4567"
+                                className={`mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm ${
+                                    errors.phoneNumber ? "border-red-500" : ""
+                                }`}
+                            />
+                            {errors.phoneNumber && (
+                                <p className="mt-1 text-sm text-red-600">{errors.phoneNumber}</p>
                             )}
                         </div>
 

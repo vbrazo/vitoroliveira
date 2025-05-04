@@ -140,7 +140,7 @@ const NavRight = () => {
   }
 
   if (isFitScorePage) {
-    title = "Get Your Fit Score";
+    title = "Get Fit Score";
     href = "#call-to-action";
   }
 

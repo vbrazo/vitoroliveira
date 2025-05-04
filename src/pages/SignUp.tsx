@@ -88,6 +88,17 @@ const Email = () => {
   return (
     <form onSubmit={(e) => e.preventDefault()}>
       <div className="mb-3">
+        <label htmlFor="linkedin-input" className="mb-1.5 block text-gray-400">
+          LinkedIn URL
+        </label>
+        <input
+          id="linkedin-input"
+          type="url"
+          placeholder="https://linkedin.com/in/yourprofile"
+          className="w-full rounded-md border border-gray-700 bg-gray-900 px-3 py-2 placeholder-gray-500 ring-1 ring-transparent transition-shadow focus:outline-0 focus:ring-gray-700"
+        />
+      </div>
+      <div className="mb-3">
         <label htmlFor="email-input" className="mb-1.5 block text-gray-400">
           Email
         </label>
