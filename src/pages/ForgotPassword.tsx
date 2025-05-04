@@ -46,7 +46,7 @@ const Heading = () => (
   <div>
     {/* <NavLogo /> */}
     <div className="mb-9 mt-6 space-y-1.5">
-      <h1 className="text-2xl font-semibold">Reset your password</h1>
+      <h1 className="text-2xl font-semibold">Send me a magic link</h1>
       <p className="text-gray-400">
         Forgotten your password? No worries. Enter your email address and we'll send you a secure link to create a new one.
       </p>

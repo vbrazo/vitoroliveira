@@ -104,7 +104,7 @@ const Email = () => {
             Password
           </label>
           <a href="/forgot-password" className="text-sm text-white">
-            Send me a magic link
+            Forgot? Send me a magic link
           </a>
         </div>
         <input
