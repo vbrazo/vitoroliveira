@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sidebar } from "../components/RetractingSideBar";
 import { FiUser, FiMail, FiLinkedin, FiPhone, FiLock, FiBriefcase } from "react-icons/fi";
+import Header from "@/components/Header";
 
 const UserSettings = () => {
     const [formData, setFormData] = useState({
@@ -111,9 +112,15 @@ const UserSettings = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-white via-zinc-100 to-zinc-200 flex">
-            <Sidebar />
-            <main className="flex-1 flex p-6">
+        <div className="min-h-screen bg-gradient-to-br from-white via-zinc-100 to-zinc-200 flex lg:flex-row flex-col">
+            <div className="w-full md:hidden flex">
+                <Header />
+            </div>
+
+            <div className="md:flex hidden">
+                <Sidebar />
+            </div>
+            <main className="w-full flex mt-20 md:mt-0">
                 <div className="w-full max-w-lg bg-white border border-zinc-200 p-8">
                     <h1 className="text-3xl font-bold text-black mb-2 tracking-tight">User Settings</h1>
                     <p className="text-zinc-500 mb-8">Update your profile and account information below.</p>

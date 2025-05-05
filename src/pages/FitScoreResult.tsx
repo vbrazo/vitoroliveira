@@ -21,6 +21,7 @@ import {
 import { ArrowRight, Star, ThumbsUp, Building2, Trophy, Users, Linkedin, Twitter, Mail, Share2, Instagram, Check } from "lucide-react";
 import { Sidebar } from "../components/RetractingSideBar";
 import { FiChevronRight } from "react-icons/fi";
+import Header from "@/components/Header";
 
 const Breadcrumbs = () => {
   return (
@@ -95,9 +96,15 @@ const FitScoreResult = () => {
   };
   
   return (
-    <div className="min-h-screen flex flex-row">
-      <Sidebar />
-      <main className="flex-grow">
+    <div className="min-h-screen flex lg:flex-row flex-cool">
+      <div className="md:hidden flex">
+          <Header />
+      </div>
+
+      <div className="md:flex hidden">
+          <Sidebar />
+      </div>
+      <main className="w-full mt-20 md:mt-0">
         <section className="p-12 bg-gradient-to-b from-primary/10 to-white">
           <div className="container mx-auto px-4">
             <Breadcrumbs />
@@ -124,15 +131,15 @@ const FitScoreResult = () => {
         </section>
 
         {/* 2. Detailed Breakdown Section */}
-        <section className="py-16 bg-white max-w-5xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-12">Your Fit Breakdown</h2>
-            <div className="grid md:grid-cols-2 gap-8 justify-center items-center">
-              <div className="space-y-6">
+        <section className="py-8 md:py-16 bg-white w-full max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 className="text-xl md:text-2xl font-bold text-center mb-6 md:mb-12">Your Fit Breakdown</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="space-y-4 md:space-y-6">
                 {radarData.map((item) => (
                   <div key={item.category} className="group">
                     <div className="flex justify-between items-center mb-1">
-                      <h3 className="font-medium text-gray-800 group-hover:text-primary transition-colors">{item.category}</h3>
-                      <span className="font-semibold text-primary">{item.value}/5</span>
+                      <h3 className="font-medium text-gray-800 text-sm md:text-base group-hover:text-primary transition-colors">{item.category}</h3>
+                      <span className="font-semibold text-primary text-sm md:text-base">{item.value}/5</span>
                     </div>
                     <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
                       <div 
@@ -140,14 +147,14 @@ const FitScoreResult = () => {
                         style={{ width: `${(item.value / 5) * 100}%` }}
                       ></div>
                     </div>
-                    <p className="text-sm text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
+                    <p className="text-xs md:text-sm text-gray-500 mt-1 group-hover:text-gray-700 transition-colors">
                       {getExplanation(item.category, item.value)}
                     </p>
                   </div>
                 ))}
               </div>
-              <div>
-                <ChartContainer className="h-[300px] flex" config={chartConfig}>
+              <div className="w-full flex">
+                <ChartContainer className="h-[100px] md:h-[300px] flex" config={chartConfig}>
                   <RadarChart 
                     outerRadius="80%" 
                     data={radarData}
@@ -327,9 +334,9 @@ const FitScoreResult = () => {
 
         {/* 6. Next Steps / CTA Block */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4 max-w-3xl text-center flex flex-col">
+          <div className="container mx-auto px-4 w-full md:max-w-3xl text-center flex flex-col">
             <h2 className="flex text-2xl font-bold mb-6 justify-center">Ready for Your Next Step?</h2>
-            <div className="flex flex-row gap-5 justify-center">
+            <div className="flex flex-col md:flex-row gap-5 justify-center">
                 <Button size="lg" onClick={() => window.open(`https://www.google.com/about/careers/applications/`, '_blank')}>
                     View Open Roles at {company}
                 </Button>

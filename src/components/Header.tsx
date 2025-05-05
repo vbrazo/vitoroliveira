@@ -59,6 +59,8 @@ const Logo = () => {
 const NavLeft = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const sidebarPages = ['/fit-score', '/fit-score/list', '/fit-score/new', '/user-settings'];
+  const shouldCloseSidebar = sidebarPages.some(path => location.pathname.startsWith(path));
 
   return (
     <div className="flex items-center gap-6">
@@ -71,12 +73,17 @@ const NavLeft = () => {
           <NavLink text="Success Stories" href="#success-stories-2" />
           <NavLink text="Blog" href="#blog" />
         </>
+      ) : (shouldCloseSidebar ? (
+        <>
+          <NavLink text="vitoroliveira.ca" href="/" />
+          <NavLink text="Blog" href="/blog" />
+        </>
       ) : (
         <>
           <NavLink text="vitoroliveira.ca" href="/" />
           <NavLink text="Blog" href="/blog" />
         </>
-      )}
+      ))}
     </div>
   );
 };
@@ -171,6 +178,11 @@ const NavRight = () => {
 };
 
 const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: boolean) => void }) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  const sidebarPages = ['/fit-score', '/fit-score/list', '/fit-score/new', '/user-settings'];
+  const shouldCloseSidebar = sidebarPages.some(path => location.pathname.startsWith(path));
+
   return (
     <motion.div
       variants={menuVariants}
@@ -178,11 +190,26 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
       animate={isOpen ? "open" : "closed"}
       className="absolute p-4 bg-white shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
     >
-      <MenuLink text="Services" href="#services" setIsOpen={setIsOpen} />
-      <MenuLink text="Engagement" href="#engagement" setIsOpen={setIsOpen} />
-      <MenuLink text="Case Studies" href="#study-cases" setIsOpen={setIsOpen} />
-      <MenuLink text="Success Stories" href="#success-stories" setIsOpen={setIsOpen} />
-      <MenuLink text="Blog" href="#blog" setIsOpen={setIsOpen} />
+      {isHomePage ? (
+        <>
+          <MenuLink text="Services" href="#services" setIsOpen={setIsOpen} />
+          <MenuLink text="Engagement" href="#engagement" setIsOpen={setIsOpen} />
+          <MenuLink text="Case Studies" href="#study-cases" setIsOpen={setIsOpen} />
+          <MenuLink text="Success Stories" href="#success-stories" setIsOpen={setIsOpen} />
+          <MenuLink text="Blog" href="#blog" setIsOpen={setIsOpen} />
+        </>
+      ) : (shouldCloseSidebar ? (
+        <>
+          <MenuLink text="Score Fit Analysis" href="/fit-score/list" setIsOpen={setIsOpen} />
+          <MenuLink text="User Settings" href="/user-settings" setIsOpen={setIsOpen} />
+          <MenuLink text="Sign Out" href="/sign-in" setIsOpen={setIsOpen} />
+        </>
+      ) : (
+        <>
+          <NavLink text="vitoroliveira.ca" href="/" />
+          <NavLink text="Blog" href="/blog" />
+        </>
+      ))}
     </motion.div>
   );
 };

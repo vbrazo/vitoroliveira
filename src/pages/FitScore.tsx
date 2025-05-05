@@ -17,7 +17,7 @@ const HeroSection = () => {
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-white -z-10" />
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 mt-10">
         <div className="flex flex-col items-center text-center space-y-6 md:space-y-8">
           <div className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium bg-white">
             <span className="text-gray-800">Introducing Company Fit Score</span>

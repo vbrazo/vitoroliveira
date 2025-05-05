@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Sidebar } from "../components/RetractingSideBar";
 import { FiBriefcase } from "react-icons/fi";
+import Header from "@/components/Header";
 
 const NewFitScore = () => {
     const [formData, setFormData] = useState({
@@ -76,8 +77,14 @@ const NewFitScore = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-white via-zinc-100 to-zinc-200 flex">
-            <Sidebar />
-            <main className="flex-1 flex p-6">
+            <div className="md:hidden flex">
+                <Header />
+            </div>
+
+            <div className="md:flex hidden">
+                <Sidebar />
+            </div>
+            <main className="flex-1 flex mt-20 md:mt-0">
                 <div className="w-full max-w-lg bg-white border border-zinc-200 p-8">
                     <h1 className="text-3xl font-bold text-black mb-2 tracking-tight">New Fit Score</h1>
                     <p className="text-zinc-500 mb-8">Choose a company to analyze your fit.</p>
