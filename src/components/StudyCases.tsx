@@ -95,16 +95,16 @@ const caseStudies = {
       description: "DeltaAI democratizes access to law in Brazil by solving problems in just a few clicks",
       imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Logotipo_da_DeltaAI.png/250px-Logotipo_da_DeltaAI.png"
     },
-    {
-      heading: "Flapper",
-      description: "Aerial mobility, just like you always imagined it. Get an instant price estimate. Charter your aircraft within minutes",
-      imgSrc: "https://flyflapper.com/stories/wp-content/uploads/2019/05/Flapper-Team-large-1024x682.jpg"
-    },
-    {
-      heading: "Brota Company",
-      description: "A smart and autonomous vegetable garden that allows anyone to plant whatever they want at home without having to work or make a mess",
-      imgSrc: "https://brotacompany.com.br/cdn/shop/files/classica_04-min.jpg?v=1741372712&width=1445"
-    },
+    // {
+    //   heading: "Flapper",
+    //   description: "Aerial mobility, just like you always imagined it. Get an instant price estimate. Charter your aircraft within minutes",
+    //   imgSrc: "https://flyflapper.com/stories/wp-content/uploads/2019/05/Flapper-Team-large-1024x682.jpg"
+    // },
+    // {
+    //   heading: "Brota Company",
+    //   description: "A smart and autonomous vegetable garden that allows anyone to plant whatever they want at home without having to work or make a mess",
+    //   imgSrc: "https://brotacompany.com.br/cdn/shop/files/classica_04-min.jpg?v=1741372712&width=1445"
+    // },
     {
       heading: "Investidores.vc",
       description: "The best platform to invest in startups in Brazil",
