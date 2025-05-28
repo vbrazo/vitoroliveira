@@ -166,23 +166,23 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is Contextor?",
-      answer: "Contextor is an AI assistant that listens to your meetings in real-time, providing context-aware responses and helping you stay on top of conversations. It works silently in the background, understanding everything from 1:1 meetings to interviews and product demos."
+      answer: "Contextor is an AI assistant that listens to your meetings and coding sessions in real-time, providing context-aware responses and helping you stay on top of conversations. It works silently in the background, understanding everything from pair programming sessions to technical interviews, 1:1 meetings, and product demos."
     },
     {
       question: "How does Contextor work?",
-      answer: "Contextor runs in the background of your meetings, listening and understanding the conversation in real-time. It provides instant, context-aware responses to questions and helps recall information from earlier in the discussion, ensuring you never lose track of important points."
+      answer: "Contextor runs in the background of your meetings and coding sessions, listening and understanding the conversation in real-time. It provides instant, context-aware responses to questions and helps recall information from earlier in the discussion, ensuring you never lose track of important points or code context."
     },
     {
       question: "Is Contextor detectable in meetings?",
-      answer: "No, Contextor operates completely undetectably in the background. It doesn't join your meetings or appear as a participant - it simply listens and provides assistance without anyone knowing it's there."
+      answer: "No, Contextor operates completely undetectably in the background. It doesn't join your meetings or appear as a participant - it simply listens and provides assistance without anyone knowing it's there. This makes it perfect for both formal meetings and casual pair programming sessions."
     },
     {
-      question: "What types of meetings does Contextor support?",
-      answer: "Contextor works with various types of meetings including 1:1 conversations, interviews, and product demos. It adapts to each context, providing relevant assistance based on the type of meeting you're in."
+      question: "What types of sessions does Contextor support?",
+      answer: "Contextor works with various types of sessions including pair programming, technical interviews, 1:1 conversations, and product demos. It adapts to each context, providing relevant assistance based on whether you're coding, interviewing, or in a meeting."
     },
     {
       question: "How does Contextor maintain context?",
-      answer: "Contextor uses advanced AI to understand the full conversation flow, remembering key points and references from earlier in the discussion. This allows it to provide relevant, context-aware responses that take into account the entire conversation history."
+      answer: "Contextor uses advanced AI to understand the full conversation flow, remembering key points, code snippets, and references from earlier in the discussion. This allows it to provide relevant, context-aware responses that take into account both the conversation history and technical context."
     }
   ];
 
