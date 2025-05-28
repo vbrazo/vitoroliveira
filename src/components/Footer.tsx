@@ -42,8 +42,10 @@ const Footer: React.FC<FooterProps> = ({
               </a>
               <a
                 onClick={handleBlogClick}
-                href={'/blog'}
+                href='https://vitoroliveira.ca/blog'
                 className="text-gray-400 hover:text-gray-600 transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <BookOpen className="h-5 w-5" />
               </a>

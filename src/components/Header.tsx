@@ -1,4 +1,4 @@
-import { distance, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
 import { useLocation } from "react-router-dom";
@@ -59,7 +59,7 @@ const Logo = () => {
 const NavLeft = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  const sidebarPages = ['/fit-score', '/fit-score/list', '/fit-score/new', '/user-settings'];
+  const sidebarPages = ['/contextor'];
   const shouldCloseSidebar = sidebarPages.some(path => location.pathname.startsWith(path));
 
   return (
@@ -76,12 +76,12 @@ const NavLeft = () => {
       ) : (shouldCloseSidebar ? (
         <>
           <NavLink text="vitoroliveira.ca" href="/" />
-          <NavLink text="Blog" href="/blog" />
+          {/* <NavLink text="Blog" href="/blog" /> */}
         </>
       ) : (
         <>
-          <NavLink text="vitoroliveira.ca" href="/" />
-          <NavLink text="Blog" href="/blog" />
+          {/* <NavLink text="vitoroliveira.ca" href="/" /> */}
+          {/* <NavLink text="Blog" href="/blog" /> */}
         </>
       ))}
     </div>
@@ -143,7 +143,8 @@ const NavRight = () => {
   let href = "https://www.calendly.com/imvitoroliveira";
 
   if (!isHomePage) {
-    title = "Let's build a case study?";
+    title = "Sign Up";
+    href = "/sign-up";
   }
 
   if (isFitScorePage) {
@@ -153,25 +154,47 @@ const NavRight = () => {
 
   return (
     <div className="lg:flex items-center gap-4 hidden">
-      <a href={href} target={isFitScorePage ? "_self" : "_blank"} rel="noopener noreferrer">
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
-        >
-          {title}
-        </motion.button>
-      </a>
-      {!isHomePage && (
-        <a href="/sign-in" rel="noopener noreferrer">
+      {isHomePage && (
+        <a href={href} target={isFitScorePage ? "_self" : "_blank"} rel="noopener noreferrer">
           <motion.button
             whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="px-4 py-2 bg-black text-white font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 border-white"
-        >
-          Login
-        </motion.button>
-      </a>
+            whileTap={{ scale: 0.95 }}
+            className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
+          >
+            {title}
+          </motion.button>
+        </a>
+      )}
+      {!isHomePage && (
+        <>
+          <a href="#how-it-works" target={isFitScorePage ? "_self" : "_self"} rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-4 py-2 bg-black text-white font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 border-white"
+            >
+              How it works
+            </motion.button>
+          </a>
+          <a href="#use-cases" target={isFitScorePage ? "_self" : "_self"} rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-4 py-2 bg-black text-white font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 border-white"
+            >
+              Use Cases
+            </motion.button>
+          </a>
+          <a href={"https://calendly.com/imvitoroliveira/"} target={isFitScorePage ? "_blank" : "_blank"} rel="noopener noreferrer">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
+            >
+              Book a Demo
+            </motion.button>
+          </a>
+        </>
       )}
     </div>
   );
@@ -180,7 +203,7 @@ const NavRight = () => {
 const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: boolean) => void }) => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  const sidebarPages = ['/fit-score', '/fit-score/list', '/fit-score/new', '/user-settings'];
+  const sidebarPages = ['/contextor'];
   const shouldCloseSidebar = sidebarPages.some(path => location.pathname.startsWith(path));
 
   return (
@@ -200,9 +223,12 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
         </>
       ) : (shouldCloseSidebar ? (
         <>
-          <MenuLink text="Score Fit Analysis" href="/fit-score/list" setIsOpen={setIsOpen} />
-          <MenuLink text="User Settings" href="/user-settings" setIsOpen={setIsOpen} />
-          <MenuLink text="Sign Out" href="/sign-in" setIsOpen={setIsOpen} />
+          {/* <MenuLink text="Score Fit Analysis" href="/fit-score/list" setIsOpen={setIsOpen} /> */}
+          {/* <MenuLink text="User Settings" href="/user-settings" setIsOpen={setIsOpen} /> */}
+          {/* <MenuLink text="Sign Out" href="/sign-in" setIsOpen={setIsOpen} /> */}
+          <MenuLink text="How it works" href="#how-it-works" setIsOpen={setIsOpen} />
+          <MenuLink text="Use Cases" href="#use-cases" setIsOpen={setIsOpen} />
+          <MenuLink text="Book a Demo" href="https://calendly.com/imvitoroliveira/" setIsOpen={setIsOpen} />
         </>
       ) : (
         <>
