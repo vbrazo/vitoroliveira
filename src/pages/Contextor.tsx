@@ -1,17 +1,9 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Play, Target, TrendingUp, Users } from "lucide-react";
+import { ArrowRight, CheckCircle2, Target, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { FormEvent, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { toast } from "sonner";
+import { useState } from "react";
 import CTASection from '@/components/CTASection';
 import { UndetectableSection } from '@/components/UndetectableSection';
 import { UseCasesSection } from '@/components/UseCasesSection';
@@ -32,7 +24,7 @@ const HeroSection = () => {
             Everything you need  <span className="gradient-text">before you ask</span>
           </h1>
           <p className="max-w-[42rem] text-muted-foreground text-lg md:text-xl">
-            Contextor is an AI-powered platform that helps you understand your ideal company match before you even apply.
+            Contextor is an undetectable AI that sees your screen, hears your calls, and feeds you answers - in real time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="https://calendly.com/imvitoroliveira/" className="scroll-smooth" target="_blank" rel="noopener noreferrer">
