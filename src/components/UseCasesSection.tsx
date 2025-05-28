@@ -42,7 +42,7 @@ export const UseCasesSection = () => {
         How Contextor changes how you think.
       </h1>
 
-      <div className="-mt-[20vh]">
+      <div className="-my-[20vh]">
         <SlidingUseCaseDisplay useCaseInView={useCaseInView} />
 
         {/* Offsets the height of SlidingUseCaseDisplay so that it renders on top of Content to start */}
@@ -124,11 +124,11 @@ const Content = ({
           viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-          <span className="rounded-full bg-indigo-600 px-2 py-1.5 text-xs font-medium text-white">
+          <span className="rounded-full bg-black px-2 py-1.5 text-xs font-medium text-white">
             {useCaseInView.title}
           </span>
-          <p className="my-3 text-5xl font-bold">{useCaseInView.title}</p>
-          <p className="text-slate-600">{useCaseInView.description}</p>
+          <p className="my-3 text-5xl font-bold text-black">{useCaseInView.title}</p>
+          <p className="text-gray-600">{useCaseInView.description}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -146,8 +146,8 @@ const Content = ({
 
 const UseCaseDisplay = ({ useCaseInView }: { useCaseInView: UseCaseType }) => {
   return (
-    <div className="relative h-96 w-full rounded-xl bg-slate-800 shadow-xl overflow-hidden">
-      <div className="flex w-full gap-1.5 rounded-t-xl bg-slate-900 p-3">
+    <div className="relative h-96 w-full rounded-xl bg-black shadow-xl overflow-hidden">
+      <div className="flex w-full gap-1.5 rounded-t-xl bg-gray-900 p-3">
         <div className="h-3 w-3 rounded-full bg-red-500" />
         <div className="h-3 w-3 rounded-full bg-yellow-500" />
         <div className="h-3 w-3 rounded-full bg-green-500" />
@@ -158,8 +158,7 @@ const UseCaseDisplay = ({ useCaseInView }: { useCaseInView: UseCaseType }) => {
           alt={useCaseInView.title}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       </div>
     </div>
   );

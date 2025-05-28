@@ -7,7 +7,6 @@ import CTOServices from "./pages/CTOServices";
 import NotFound from "./pages/NotFound";
 import BlogPage from "./pages/BlogPage";
 import Dashboard from "./pages/Dashboard";
-import UserSettings from "./pages/UserSettings";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
@@ -23,12 +22,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CTOServices />} />
-          <Route path="/sign-in" element={<SignIn />} />
+          {/* <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} /> */}
           <Route path="/contextor" element={<Contextor />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/user-settings" element={<UserSettings />} />
+          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/cto-services" element={<CTOServices />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />
