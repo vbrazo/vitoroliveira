@@ -12,24 +12,31 @@ type UseCaseType = {
 const useCases: UseCaseType[] = [
   {
     id: 1,
-    title: "1:1 meetings",
-    description: "Contextor listens to the 1:1 meeting and gives you live, context-aware responses to questions, and recalls information from earlier in the discussion so you never lose the thread.",
+    title: "Pair Programming",
+    description: "Contextor listens to the pair programming session and gives you live, context-aware responses to questions, and recalls information from earlier in the discussion so you never lose the thread.",
     image: "https://cdn.prod.website-files.com/66b0861f12450487094f1c99/66f2769a7327d0855239f0ad_meeting-summaries-visual.avif",
     contentPosition: "r"
   },
   {
     id: 2,
-    title: "Interviews",
+    title: "Technical Interviews",
     description: "Contextor listens to the interview and gives you live, context-aware responses to questions, and recalls information from earlier in the discussion so you never lose the thread.",
     image: "https://media.istockphoto.com/id/1405689267/photo/student-girl-in-headphones-making-video-call.jpg?s=612x612&w=0&k=20&c=X_tvHaDdKWS6OCgq0Z554gXzb3rjITtc6K3QPnzbY9E=",
     contentPosition: "l"
   },
   {
     id: 3,
+    title: "1:1 meetings",
+    description: "Contextor listens to the 1:1 meeting and gives you live, context-aware responses to questions, and recalls information from earlier in the discussion so you never lose the thread.",
+    image: "https://cdn.prod.website-files.com/66b0861f12450487094f1c99/66f2769a7327d0855239f0ad_meeting-summaries-visual.avif",
+    contentPosition: "r"
+  },
+  {
+    id: 4,
     title: "Product demos",
     description: "Contextor listens to the demo and gives you live, context-aware responses to questions, and recalls information from earlier in the discussion so you never lose the thread.",
     image: "https://fireflies.ai/website/assets/_next/image?url=%2Fwebsite%2Fassets%2F_next%2Fstatic%2Fmedia%2Fcapture-meeting-extension-desktop.762dacf1.png&w=3840&q=75",
-    contentPosition: "r"
+    contentPosition: "l"
   }
 ];
 
