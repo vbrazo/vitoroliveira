@@ -25,7 +25,7 @@ export const UndetectableSection = () => {
             </div>
             <div className="lg:order-last">
               <img 
-                src="/lovable-uploads/no-bot-required.png" 
+                src="https://cluely.com/_next/static/media/meeting.d6f4df3a.png" 
                 alt="Doesn't join meetings interface" 
                 className="w-full h-auto rounded-lg"
               />
