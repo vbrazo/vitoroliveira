@@ -129,7 +129,7 @@ const Question = ({
               color: "rgba(3, 6, 23, 1)",
             },
           }}
-          className="bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-left text-lg font-medium"
+          className="bg-gradient-to-r from-violet-900 to-indigo-800 bg-clip-text text-left text-lg font-medium"
         >
           {title}
         </motion.span>
