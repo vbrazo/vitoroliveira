@@ -212,7 +212,7 @@ const Contextor = () => {
         <FAQ />
         <CTASection
          title="All the answers before you need them"
-         description="Contextor leverages AI to give you deep insights into your perfect company match, helping you make informed decisions before submitting applications."
+         description="Contextor is an undetectable AI that sees your screen, hears your calls, and feeds you answers - in real time."
          buttonText="Book a Demo"
          buttonLink="https://calendly.com/imvitoroliveira/" />
       </main>
