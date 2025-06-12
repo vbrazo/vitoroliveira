@@ -69,7 +69,7 @@ const caseStudies = {
     {
       heading: "Faker Elixir",
       description: "Faker is a pure Elixir library for generating fake data",
-      imgSrc: "https://opengraph.githubassets.com/cb103939c2b51057a41561ebade6a350fc630bb1f725bd9493ce0c7bd2b0b5f4/elixirs/faker",
+      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTAxRjvD-tDByGaIq-HTr0WTxsd0UuZ6tT6A&s",
       externalLink: "https://github.com/elixirs/faker"
     },
     {
