@@ -40,7 +40,7 @@ export const TESTIMONIAL_DATA: TestimonialType[] = [
     tempId: 5,
     testimonial: "Vitor is one of the most adaptable and hardworking professionals I've met. He excels at wearing multiple hats, approaches challenges with a positive attitude, and is always eager to learn. His collaborative spirit and supportive nature make him an exceptional coworker.",
     by: "Jesse Gonzalez, Senior Account Executive @ Gun.io",
-    imgSrc: "https://media.licdn.com/dms/image/v2/D5603AQHH_uAEDYcu8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725788671058?e=1750896000&v=beta&t=h5_RfUe1r02yX7-x8LTEqkaSr1G7-Kh7sXaF1vcDmUg",
+    imgSrc: "https://media.licdn.com/dms/image/v2/D5603AQHH_uAEDYcu8w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725788671058?e=1757548800&v=beta&t=m_J5rBKT9OUwaHGspl1vt6ECrpckBYsw2Y9Qk0zzb8c",
   },
   {
     tempId: 6,
@@ -64,6 +64,6 @@ export const TESTIMONIAL_DATA: TestimonialType[] = [
     tempId: 9,
     testimonial: "Vitor is a thoughtful, strategic leader and creative problem solver. His ability to break down concepts and teach others, combined with his growth mindset, makes him an exceptional teammate and mentor.",
     by: "Victoria Stahr, Talent Growth @ Gun.io",
-    imgSrc: "https://media.licdn.com/dms/image/v2/C4E03AQEWIG5MF2q3rA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1629315203984?e=1750896000&v=beta&t=qaaUzpaE87T-gKpnLiTrohCfrqnKrZe8p7ohIZ24sZo",
+    imgSrc: "https://media.licdn.com/dms/image/v2/C4E03AQEWIG5MF2q3rA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1629315203984?e=1757548800&v=beta&t=HHrFBfmHOhzhJNok4llx04Qgpmy3WJ53uPp0u-Ssdr4",
   }
 ]; 
