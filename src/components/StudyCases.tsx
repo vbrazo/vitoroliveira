@@ -63,7 +63,7 @@ const caseStudies = {
     {
       heading: "Faker Ruby",
       description: "A library for generating fake data such as names, addresses, and phone numbers",
-      imgSrc: "https://opengraph.githubassets.com/b52e62de6b563bdbaab7eb4d17a205651dd38e08bd2a23ea40bd3460cd641fd3/faker-ruby/faker",
+      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmjjJiaXbtC4YUnZwu41myAKKNWg0HYL1vQ&s",
       externalLink: "https://github.com/faker-ruby/faker"
     },
     {
