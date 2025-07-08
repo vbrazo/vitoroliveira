@@ -22,7 +22,7 @@ export const TESTIMONIAL_DATA: TestimonialType[] = [
     tempId: 2,
     testimonial: "As Vice President of Engineering at Paywith, Vitor's leadership transformed our team. His genuine passion for mentorship and team development created a culture of continuous learning and high performance. His ability to celebrate team victories and drive professional growth resulted in consistently outstanding results.",
     by: "Leandro França, Co-Founder @ Krafters",
-    imgSrc: "https://media.licdn.com/dms/image/v2/C4D03AQEHTCBOFl_bHg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1639413908539?e=1750896000&v=beta&t=H8Ep6po1oN97UJuek4ra5WT1fEQd4MlCQcqpGOx53tQ",
+    imgSrc: "https://media.licdn.com/dms/image/v2/C4D03AQEHTCBOFl_bHg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1639413908539?e=1757548800&v=beta&t=mFVcQbWo2nOPBnD55wSysisSza7BiI6rRaJitLPdZ74",
   },
   {
     tempId: 3,
@@ -34,7 +34,7 @@ export const TESTIMONIAL_DATA: TestimonialType[] = [
     tempId: 4,
     testimonial: "I highly recommend Vitor as a coach for CTOs and startup founders. His guidance significantly improved my leadership and communication skills, while facilitating valuable networking opportunities.",
     by: "Jan Vicent Hoffbauer, CTO @ Fluento.ai",
-    imgSrc: "https://media.licdn.com/dms/image/v2/D4E03AQFajF7Js5FqXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694233415827?e=1750896000&v=beta&t=6cuTpE9nhDu2a2_9hrX8F_cSV-g35sSn8TfU65sStus",
+    imgSrc: "https://media.licdn.com/dms/image/v2/D4E03AQFajF7Js5FqXg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1694233415827?e=1757548800&v=beta&t=YO4byNyeNCn15fHmwOfbM_mRvfC_XlenmojdOK64k28",
   },
   {
     tempId: 5,
