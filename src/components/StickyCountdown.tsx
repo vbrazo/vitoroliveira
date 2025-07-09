@@ -16,12 +16,16 @@ const StickyCountdown = () => {
       onClick={() => {
         window.open("https://contextor.app/en?utm_source=vitoroliveira.ca&utm_medium=website&utm_campaign=personal_site_referral", "_blank");
       }}>
-      <div className="mx-auto flex w-fit max-w-5xl flex-wrap items-center justify-center gap-x-4 text-[9px] md:text-sm">
-        Launching Contextor.app in:
-        <CountdownItem unit="Day" text="days" />
-        <CountdownItem unit="Hour" text="hours" />
-        <CountdownItem unit="Minute" text="minutes" />
-        <CountdownItem unit="Second" text="seconds" />
+      <div className="mx-auto flex flex-col md:flex-row w-fit max-w-5xl flex-wrap items-center justify-center gap-x-4 text-xs md:text-sm p-1 md:p-0">
+        <div className="flex items-center justify-center gap-1.5 py-1 md:py-0">
+          Launching Contextor.app in:
+        </div>
+        <div className="flex items-center justify-center gap-1.5 py-0 md:py-0">
+          <CountdownItem unit="Day" text="days" />
+          <CountdownItem unit="Hour" text="hours" />
+          <CountdownItem unit="Minute" text="minutes" />
+          <CountdownItem unit="Second" text="seconds" />
+        </div>
       </div>
     </div>
   );

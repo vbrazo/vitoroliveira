@@ -10,7 +10,7 @@ const FlipNavWrapper = () => {
       <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-0">
         <StickyCountdown />
       </div>
-      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-7 md:top-8">
+      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-[60px] md:top-8">
         <FlipNav />
       </div>
     </>
