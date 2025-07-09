@@ -2,12 +2,18 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
 import { useLocation } from "react-router-dom";
+import StickyCountdown from "./StickyCountdown";
 
 const FlipNavWrapper = () => {
   return (
-    <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50">
-      <FlipNav />
-    </div>
+    <>
+      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-0">
+        <StickyCountdown />
+      </div>
+      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-7 md:top-8">
+        <FlipNav />
+      </div>
+    </>
   );
 };
 
