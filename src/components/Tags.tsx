@@ -12,7 +12,7 @@ export const ShiftHightlightTabs = ({
     const tagsSection = document.getElementById("tags-header");
     if (tagsSection) {
       const isDesktop = window.innerWidth >= 1024; // lg breakpoint is typically 1024px
-      const offset = isDesktop ? -50 : 0;
+      const offset = isDesktop ? -110 : -140;
       const elementPosition = tagsSection.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({
         top: elementPosition,
