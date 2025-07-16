@@ -23,7 +23,7 @@ const Blog = () => {
   };
 
   return (
-    <section id="blog" className="py-[80px] scroll-mt-[1rem]">
+    <section id="blog" className="py-[80px] scroll-mt-20">
       <div className="flex flex-col">
         <Header />
         <main>
