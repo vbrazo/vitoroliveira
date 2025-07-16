@@ -74,7 +74,7 @@ export const StaggerTestimonials = () => {
 
   return (
     <>
-      <div id="success-stories" className="h-[50px]" />
+      <div id="success-stories" className="mt-[-60px] pt-[80px]" />
       <div
         className="relative w-full overflow-hidden bg-neutral-200"
         style={{
