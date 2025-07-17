@@ -168,7 +168,7 @@ const ColorChangeCards = () => {
   const [selectedTag, setSelectedTag] = useState("1");
 
   return (
-    <section id="study-cases" className="scroll-mt-[140px] md:scroll-mt-20">
+    <section id="study-cases" className="py-5 scroll-mt-[110px] md:scroll-mt-5">
       <div className="p-4 md:p-8 bg-slate-100">
         <div className="container max-w-7xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-cto-dark">
