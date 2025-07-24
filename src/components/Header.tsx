@@ -7,10 +7,10 @@ import StickyCountdown from "./StickyCountdown";
 const FlipNavWrapper = () => {
   return (
     <>
-      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-0">
+      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 h-auto top-0">
         <StickyCountdown />
       </div>
-      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-[60px] md:top-8">
+      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 top-[42px] md:top-[38px]">
         <FlipNav />
       </div>
     </>
