@@ -146,7 +146,7 @@ const NavRight = () => {
   const isHomePage = location.pathname === '/';
   const isFitScorePage = location.pathname === '/fit-score';
   let title = "Book a call";
-  let href = "https://www.calendly.com/imvitoroliveira";
+  let href = "https://intro.co/VitorOliveira";
 
   if (!isHomePage) {
     title = "Sign Up";
@@ -191,7 +191,7 @@ const NavRight = () => {
               Use Cases
             </motion.button>
           </a>
-          <a href={"https://calendly.com/imvitoroliveira/"} target={isFitScorePage ? "_blank" : "_blank"} rel="noopener noreferrer">
+          <a href={"https://intro.co/VitorOliveira"} target={isFitScorePage ? "_blank" : "_blank"} rel="noopener noreferrer">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -234,7 +234,7 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
           {/* <MenuLink text="Sign Out" href="/sign-in" setIsOpen={setIsOpen} /> */}
           <MenuLink text="How it works" href="#how-it-works" setIsOpen={setIsOpen} />
           <MenuLink text="Use Cases" href="#use-cases" setIsOpen={setIsOpen} />
-          <MenuLink text="Book a Demo" href="https://calendly.com/imvitoroliveira/" setIsOpen={setIsOpen} />
+          <MenuLink text="Book a Demo" href="https://intro.co/VitorOliveira" setIsOpen={setIsOpen} />
         </>
       ) : (
         <>

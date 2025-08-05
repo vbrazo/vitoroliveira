@@ -27,7 +27,7 @@ const HeroSection = () => {
             Contextor is an undetectable AI that sees your screen, hears your calls, and feeds you answers - in real time.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendly.com/imvitoroliveira/" className="scroll-smooth" target="_blank" rel="noopener noreferrer">
+            <a href="https://intro.co/VitorOliveira" className="scroll-smooth" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="gap-2 bg-black hover:bg-gray-800">
                 Book a Demo <ArrowRight className="h-4 w-4" />
               </Button>
@@ -214,7 +214,7 @@ const Contextor = () => {
          title="All the answers before you need them"
          description="Contextor is an undetectable AI that sees your screen, hears your calls, and feeds you answers - in real time."
          buttonText="Book a Demo"
-         buttonLink="https://calendly.com/imvitoroliveira/" />
+         buttonLink="https://intro.co/VitorOliveira" />
       </main>
       <Footer title="Contextor" description="By Vitor Oliveira" />
     </div>

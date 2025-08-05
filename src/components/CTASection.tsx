@@ -13,7 +13,7 @@ const CTASection: React.FC<CTASectionProps> = ({
   title = "Take your technology to the next level. <br />Bring a CTO on board.",
   description = "By the time you realize you need a CTO, the damage of not having one may already be done. Don't wait—secure the leadership your future depends on.",
   buttonText = "Book a FREE Discovery Call",
-  buttonLink = "https://www.calendly.com/imvitoroliveira",
+  buttonLink = "https://intro.co/VitorOliveira",
 }) => {
   return (
     <section className="py-20 bg-black bg-opacity-90 text-white text-center">
