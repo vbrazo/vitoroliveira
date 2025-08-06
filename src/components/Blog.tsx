@@ -78,7 +78,7 @@ const posts: PostType[] = [
   },
   {
     id: 5,
-    imgUrl: Blog5,
+    imgUrl: Blog9,
     author: "Vitor Oliveira",
     title: "Software Engineering Leadership | Developing Your Skills",
     description:
@@ -88,7 +88,7 @@ const posts: PostType[] = [
   },
   {
     id: 6,
-    imgUrl: Blog6,
+    imgUrl: Blog8,
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #4",
     description:
@@ -108,7 +108,7 @@ const posts: PostType[] = [
   },
   {
     id: 8,
-    imgUrl: Blog8,
+    imgUrl: Blog6,
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #2",
     description:
@@ -118,7 +118,7 @@ const posts: PostType[] = [
   },
   {
     id: 9,
-    imgUrl: Blog9,
+    imgUrl: Blog5,
     author: "Vitor Oliveira",
     title: "Harnessing Talent Success Stories #1",
     description:
