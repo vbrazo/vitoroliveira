@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
 // Import blog images
-import Blog9 from "/blog/blog-0.webp";
+import Blog0 from "/blog/blog-0.webp";
 import Blog1 from "/blog/blog-1.jpg";
 import Blog2 from "/blog/blog-2.jpg";
 import Blog3 from "/blog/blog-3.jpg";
@@ -16,7 +16,7 @@ import Blog5 from "/blog/talent-success-1.jpg";
 import Blog6 from "/blog/talent-success-2.jpg";
 import Blog7 from "/blog/talent-success-3.png";
 import Blog8 from "/blog/talent-success-4.webp";
-import Blog0 from "/blog/blog-5.jpg";
+import Blog9 from "/blog/blog-5.jpg";
 
 type PostType = {
   id: number;
