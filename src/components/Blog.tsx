@@ -6,6 +6,138 @@ import useMeasure from "react-use-measure";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
+// Import blog images
+import Blog9 from "/blog/blog-0.webp";
+import Blog1 from "/blog/blog-1.jpg";
+import Blog2 from "/blog/blog-2.jpg";
+import Blog3 from "/blog/blog-3.jpg";
+import Blog4 from "/blog/blog-4.webp";
+import Blog5 from "/blog/talent-success-1.jpg";
+import Blog6 from "/blog/talent-success-2.jpg";
+import Blog7 from "/blog/talent-success-3.png";
+import Blog8 from "/blog/talent-success-4.webp";
+import Blog0 from "/blog/blog-5.jpg";
+
+type PostType = {
+  id: number;
+  imgUrl: any;
+  author: string;
+  title: string;
+  description: string;
+  link: string;
+  tags: string[];
+};
+
+const tags = [
+  "Leadership",
+  "Engineering Management",
+  "Software Engineering",
+  "Talent Success",
+];
+
+const posts: PostType[] = [
+  {
+    id: 1,
+    imgUrl: Blog1,
+    author: "Vitor Oliveira",
+    title: "My Practical Guide for Engineering Managers Growing Into Organizational Leadership",
+    description:
+      "Steps to build trust, improve delivery, and drive performance across multiple teams",
+    link: "https://open.substack.com/pub/vitoroliveira/p/my-practical-guide-for-engineering?r=3osz1&utm_campaign=post&utm_medium=web",
+    tags: ["Leadership", "Engineering Management"],
+  },
+  {
+    id: 2,
+    imgUrl: Blog2,
+    author: "Vitor Oliveira",
+    title: "Are you a taker, a giver, or a compensator?",
+    description:
+      "Learn How Smart Generosity Can Elevate Your Work, Your Network, and Your Legacy",
+    link: "https://vitoroliveira.substack.com/p/are-you-a-taker-a-giver-or-a-matcher",
+    tags: ["Leadership", "Organizational Leadership", "Engineering Management"],
+  },
+  {
+    id: 3,
+    imgUrl: Blog3,
+    author: "Vitor Oliveira",
+    title: "P.S. A Journey Beyond Recruitment: Life as a Talent Success Manager",
+    description:
+      "From Startup Founder to Talent Success Manager: Enhancing Developer Experiences at Gun.io",
+    link: "https://gun.io/guest-posts/2024/03/p-s-a-journey-beyond-recruitment-life-as-a-talent-success-manager/",
+    tags: ["Talent Success"],
+  },
+  {
+    id: 4,
+    imgUrl: Blog4,
+    author: "Vitor Oliveira",
+    title: "Preventing Software Defects with Vitor Oliveira",
+    description:
+      "A discussion including learning spoken languages and whether that relates to programming, testing and QA, the false dichotomy of perfect vs. good code, the types of defects, and code review. ",
+    link: "https://audio.buzzsprout.com/82l35itq8dqgwldaqykevwvf324v?response-content-disposition=inline&",
+    tags: ["Software Engineering", "Engineering Management"],
+  },
+  {
+    id: 5,
+    imgUrl: Blog5,
+    author: "Vitor Oliveira",
+    title: "Software Engineering Leadership | Developing Your Skills",
+    description:
+      "A guide to becoming a better software engineering leader",
+    link: "https://www.youtube.com/watch?v=-94XWhDToI4",
+    tags: ["Leadership", "Organizational Leadership", "Engineering Management"],
+  },
+  {
+    id: 6,
+    imgUrl: Blog6,
+    author: "Vitor Oliveira",
+    title: "Harnessing Talent Success Stories #4",
+    description:
+      "Breaking into Tech as a Clinical Laboratory Scientist",
+    link: "https://open.substack.com/pub/vitoroliveira/p/4?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
+  },
+  {
+    id: 7,
+    imgUrl: Blog7,
+    author: "Vitor Oliveira",
+    title: "Harnessing Talent Success Stories #3",
+    description:
+      "From First-Time Manager to Engineering Manager",
+    link: "https://open.substack.com/pub/vitoroliveira/p/3?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
+  },
+  {
+    id: 8,
+    imgUrl: Blog8,
+    author: "Vitor Oliveira",
+    title: "Harnessing Talent Success Stories #2",
+    description:
+      "From Brazilian favelas to the world: Talent wins",
+    link: "https://open.substack.com/pub/vitoroliveira/p/2?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
+  },
+  {
+    id: 9,
+    imgUrl: Blog9,
+    author: "Vitor Oliveira",
+    title: "Harnessing Talent Success Stories #1",
+    description:
+      "From strong to success: Talent conquers",
+    link: "https://open.substack.com/pub/vitoroliveira/p/1?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
+    tags: ["Talent Success"],
+  },
+  {
+    id: 10,
+    imgUrl: Blog0,
+    author: "Vitor Oliveira",
+    title: "Welcome",
+    description:
+      "My notes about software engineering, software architecture, tech leadership, soft skills, working with people, and career growth.",
+    link: "https://open.substack.com/pub/vitoroliveira/p/welcome?r=3osz1&utm_campaign=post&utm_medium=web",
+    tags: ["Leadership", "Engineering Management"],
+  },
+];
+
 const MARGIN = 20;
 const BREAKPOINTS = {
   sm: 640,
@@ -142,132 +274,3 @@ const Post = ({ link, imgUrl, author, title, description, cardWidth }: PostType 
 
 export { posts, tags };
 export default Blog;
-
-type PostType = {
-  id: number;
-  imgUrl: string;
-  author: string;
-  title: string;
-  description: string;
-  link: string;
-  tags: string[];
-};
-
-const tags = [
-  "Leadership",
-  "Engineering Management",
-  "Software Engineering",
-  "Talent Success",
-];
-
-const posts: PostType[] = [
-  {
-    id: 1,
-    imgUrl: "https://www.sinnaps.com/wp-content/uploads/2019/08/project-planning-in-software-engineering-min.jpg",
-    author: "Vitor Oliveira",
-    title: "My Practical Guide for Engineering Managers Growing Into Organizational Leadership",
-    description:
-      "Steps to build trust, improve delivery, and drive performance across multiple teams",
-    link: "https://open.substack.com/pub/vitoroliveira/p/my-practical-guide-for-engineering?r=3osz1&utm_campaign=post&utm_medium=web",
-    tags: ["Leadership", "Engineering Management"],
-  },
-  {
-    id: 2,
-    imgUrl: "https://talkstar-photos.s3.amazonaws.com/uploads/33b74579-2ab0-4d22-8ad3-c867c87f3ff5/AdamGrant_2016S-stageshot.jpg",
-    author: "Vitor Oliveira",
-    title: "Are you a taker, a giver, or a compensator?",
-    description:
-      "Learn How Smart Generosity Can Elevate Your Work, Your Network, and Your Legacy",
-    link: "https://vitoroliveira.substack.com/p/are-you-a-taker-a-giver-or-a-matcher",
-    tags: ["Leadership", "Organizational Leadership", "Engineering Management"],
-  },
-  {
-    id: 3,
-    imgUrl: "https://gun.io/wp-content/uploads/2024/03/etienne-girardet-ktUX4KHlU8-unsplash.jpg",
-    author: "Vitor Oliveira",
-    title: "P.S. A Journey Beyond Recruitment: Life as a Talent Success Manager",
-    description:
-      "From Startup Founder to Talent Success Manager: Enhancing Developer Experiences at Gun.io",
-    link: "https://gun.io/guest-posts/2024/03/p-s-a-journey-beyond-recruitment-life-as-a-talent-success-manager/",
-    tags: ["Talent Success"],
-  },
-  {
-    id: 9,
-    imgUrl: "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/ec/0e/e3/ec0ee3da-785b-12ca-4ee5-dee443819f88/mza_14427237716915326589.jpg/600x600bb.webp",
-    author: "Vitor Oliveira",
-    title: "Preventing Software Defects with Vitor Oliveira",
-    description:
-      "A discussion including learning spoken languages and whether that relates to programming, testing and QA, the false dichotomy of perfect vs. good code, the types of defects, and code review. ",
-    link: "https://audio.buzzsprout.com/82l35itq8dqgwldaqykevwvf324v?response-content-disposition=inline&",
-    tags: ["Software Engineering", "Engineering Management"],
-  },
-  {
-    id: 9,
-    imgUrl: "https://i.ytimg.com/vi/-94XWhDToI4/maxresdefault.jpg",
-    author: "Vitor Oliveira",
-    title: "Software Engineering Leadership | Developing Your Skills",
-    description:
-      "A guide to becoming a better software engineering leader",
-    link: "https://www.youtube.com/watch?v=-94XWhDToI4",
-    tags: ["Leadership", "Organizational Leadership", "Engineering Management"],
-  },
-  {
-    id: 4,
-    imgUrl: "https://cdn.prod.website-files.com/5e7878021f083273253e36bd/656480c57acc6b9113bb6bf2_65255b1.webp",
-    author: "Vitor Oliveira",
-    title: "Harnessing Talent Success Stories #4",
-    description:
-      "Breaking into Tech as a Clinical Laboratory Scientist",
-    link: "https://open.substack.com/pub/vitoroliveira/p/4?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
-    tags: ["Talent Success"],
-  },
-  {
-    id: 4,
-    imgUrl: "https://thescimus.com/blog/wp-content/uploads/2023/02/Tech-Lead-vs-Engineering-Manager-1600%D0%BD%D0%B0400-e1676936691632.png",
-    author: "Vitor Oliveira",
-    title: "Harnessing Talent Success Stories #3",
-    description:
-      "From First-Time Manager to Engineering Manager",
-    link: "https://open.substack.com/pub/vitoroliveira/p/3?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
-    tags: ["Talent Success"],
-  },
-  {
-    id: 5,
-    imgUrl: "https://www.rioonwatch.org/wp-content/uploads/2016/08/1385727_368399686625642_510219592_n.jpg",
-    author: "Vitor Oliveira",
-    title: "Harnessing Talent Success Stories #2",
-    description:
-      "From Brazilian favelas to the world: Talent wins",
-    link: "https://open.substack.com/pub/vitoroliveira/p/2?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
-    tags: ["Talent Success"],
-  },
-  {
-    id: 6,
-    imgUrl: "https://images.ctfassets.net/0d3i1kfsuaq3/zv85KLhzWnMKcXAiVDkIY/8b8882065c6bbe92276f43fa69652cdb/Hero_7BestPracticesforSuccess.jpg",
-    author: "Vitor Oliveira",
-    title: "Harnessing Talent Success Stories #1",
-    description:
-      "From strong to success: Talent conquers",
-    link: "https://open.substack.com/pub/vitoroliveira/p/1?r=3osz1&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false",
-    tags: ["Talent Success"],
-  },
-  // {
-  //   id: 8,
-  //   imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJ2OPxJ7BP3hiq5Dy4NJIVyhNIChc6cXCzw&s",
-  //   author: "Vitor Oliveira",
-  //   title: "VanHackCON - Career Path in Canada",
-  //   description:
-  //     "Career path how Vitor got a leadership position after a few months in Canada",
-  //   link: "https://www.youtube.com/watch?v=5s-phH3B4DA",
-  // },
-  {
-    id: 7,
-    imgUrl: "https://substackcdn.com/image/fetch/w_1040,h_545,c_fill,f_webp,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5c806857-68ec-420e-9521-145498ebd924_2460x774.png",
-    author: "Vitor Oliveira",
-    title: "Welcome",
-    description:
-      "My notes about software engineering, software architecture, tech leadership, soft skills, working with people, and career growth.",
-    link: "https://open.substack.com/pub/vitoroliveira/p/welcome?r=3osz1&utm_campaign=post&utm_medium=web",
-    tags: ["Leadership", "Engineering Management"],
-  },
-];
