@@ -4,78 +4,104 @@ import { useState } from "react";
 import { SpringModal } from "./SpringModal";
 import { ShiftHightlightTabs } from "./Tags";
 
+import Strides from "/study-cases/strides.webp";
+import Napice from "/study-cases/napice.png";
+import Paywith from "/study-cases/paywith.jpeg";
+import Scena from "/study-cases/scena.webp";
+import GoBooks from "/study-cases/gobooks.webp";
+import ScalablePath from "/study-cases/scalable-path.png";
+import Michelin from "/study-cases/michelin.jpg";
+import TwoOneTwoOneTwo from "/study-cases/21212.jpg";
+import BancoBBM from "/study-cases/banco-bbm.jpg";
+import MRSLogistica from "/study-cases/mrs-logistica.jpg";
+import FakerRuby from "/study-cases/faker-ruby.png";
+import FakerElixir from "/study-cases/faker-elixir.png";
+import TheAlgorithms from "/study-cases/the-algorithms.png";
+import Cuid from "/study-cases/cuid-mx.png";
+import JornadaMima from "/study-cases/jornada-mima.png";
+import DeltaAI from "/study-cases/delta-ai.png";
+import Investidores from "/study-cases/investidores-vc.png";
+import NextGen from "/study-cases/nextgen-vp.jpeg";
+import HustleFund from "/study-cases/hustle-fund.webp";
+import Leadsales from "/study-cases/leadsales.webp";
+import PlataformaImpact from "/study-cases/plataforma-impact.jpeg";
+import SuperCharger from "/study-cases/supercharger-ventures.jpg";
+import LISA from "/study-cases/lisa-accelerator.png";
+import InvestOttawa from "/study-cases/invest-ottawa.jpeg";
+import Gunio from "/study-cases/gun-io.webp";
+
 const caseStudies = {
   "1": [
     {
       heading: "Strides Tech Community",
       description: "A lifelong learning platform for career growth through mentorship, training and knowledge sharing",
-      imgSrc: "https://www.strides.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhow-it-works-1.604b0dd5.webp&w=3840&q=75"
+      imgSrc: Strides
     },
     {
       heading: "Napice",
       description: "Education and community platform for software engineering leaders. Live courses, cohorts, tech talks, and trainings focused on leadership",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp_cTcecj_Lwnj22x9QAIjcGI5bd9FZSqOrQ&s"
+      imgSrc: Napice
     },
     {
       heading: "Paywith",
       description: "PayWith's payment innovations platform allows businesses to create powerful, mobile-centric payment programs, faster, cheaper, and with more security and control",
-      imgSrc: "https://media.licdn.com/dms/image/v2/C561BAQE2zdpkRzc5Aw/company-background_10000/company-background_10000/0/1620549922242/paywith_australia_cover?e=2147483647&v=beta&t=ltw-imeCOBDF0zX9sVUzaKKJ54HmuGnWUZYMdkCSaSk"
+      imgSrc: Paywith
     },
     {
       heading: "Scena Labs",
       description: "Scena was a visual recommendation engine that helps you find restaurants and nightlife that fit your style",
-      imgSrc: "https://miro.medium.com/v2/resize:fit:1392/format:webp/1*c_rFCMHDv6WGqTObhF-HdA.jpeg"
+      imgSrc: Scena
     },
     {
       heading: "GoBooks",
       description: "GoBooks was the first textbook rental company in Brazil",
-      imgSrc: "https://miro.medium.com/v2/resize:fit:4800/format:webp/1*qXn-UcKwqXm7J6XRvF45bA.jpeg"
+      imgSrc: GoBooks
     },
   ],
   "2": [
     {
       heading: "Scalable Path",
       description: "Scalable Path is a network of 26,000+ remote software developers from more than 179 countries",
-      imgSrc: "https://cdn1-s3.scalablepath.com/disrupt_intro_frame_38b87c0160.png"
+      imgSrc: ScalablePath
     },
     {
       heading: "Michelin",
       description: "Michelin is a world-leading manufacturer of life-changing composites and experiences",
-      imgSrc: "https://dgaddcosprod.blob.core.windows.net/cxf-corporate/attachments/clj5heilq4uf00tmn4cgbejnn-bibendum-mouvement-1.0.0.1920.1080.full.jpg"
+      imgSrc: Michelin
     },
     {
       heading: "21212 Digital Accelerator",
       description: "21212 is Brazil's leading accelerator and a member of Startup Brasil-- a federally funded program to support entrepreneurship in Brazil",
-      imgSrc: "https://miro.medium.com/v2/resize:fit:4000/1*XJQ6PX6i7m4W2GYC-V_oLw.jpeg"
+      imgSrc: TwoOneTwoOneTwo
     },
     {
       heading: "Banco BBM",
       description: "A talent identification and development center that systematically pursues cutting-edge knowledge and prioritizes people who aim to achieve their professional goals, adding value to the organization",
-      imgSrc: "https://www.bocombbm.com.br/bbm-content./uploads/2018/12/lt2005.jpg"
+      imgSrc: BancoBBM
     },
     {
       heading: "MRS Logística",
       description: "MRS Logística is a concessionary that controls, operates and monitors the Southeastern Federal Railroad Network",
-      imgSrc: "https://live.staticflickr.com/65535/52940210201_a490e07deb_b.jpg"
+      imgSrc: MRSLogistica
     }
   ],
   "3": [
     {
       heading: "Faker Ruby",
       description: "A library for generating fake data such as names, addresses, and phone numbers",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgmjjJiaXbtC4YUnZwu41myAKKNWg0HYL1vQ&s",
+      imgSrc: FakerRuby,
       externalLink: "https://github.com/faker-ruby/faker"
     },
     {
       heading: "Faker Elixir",
       description: "Faker is a pure Elixir library for generating fake data",
-      imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTAxRjvD-tDByGaIq-HTr0WTxsd0UuZ6tT6A&s",
+      imgSrc: FakerElixir,
       externalLink: "https://github.com/elixirs/faker"
     },
     {
       heading: "The Algorithms",
       description: "Open Source resource for learning Data Structures & Algorithms and their implementation in any Programming Language",
-      imgSrc: "https://repository-images.githubusercontent.com/317667451/6450d900-7ac8-11eb-87c2-6490ed11fbbb",
+      imgSrc: TheAlgorithms,
       externalLink: "https://github.com/TheAlgorithms"
     }
   ],
@@ -83,17 +109,17 @@ const caseStudies = {
     {
       heading: "Cuid.mx",
       description: "Reliable AI-powered security for homes and businesses",
-      imgSrc: "https://cdn.prod.website-files.com/6630e04058310760b61638d6/672d6af2f2a3c344e2c07677_663cdece6e163475e7744fd5_home-p-800.png"
+      imgSrc: Cuid,
     },
     {
       heading: "Jornada Mima",
       description: "Jornada Mima takes care of the feeding journey of babies and children",
-      imgSrc: "https://www.projetodraft.com/wp-content/uploads/2024/12/084_004-Com-Sal.png"
+      imgSrc: JornadaMima,
     },
     {
       heading: "DeltaAI",
       description: "DeltaAI democratizes access to law in Brazil by solving problems in just a few clicks",
-      imgSrc: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Logotipo_da_DeltaAI.png/250px-Logotipo_da_DeltaAI.png"
+      imgSrc: DeltaAI,
     },
     // {
     //   heading: "Flapper",
@@ -108,56 +134,56 @@ const caseStudies = {
     {
       heading: "Investidores.vc",
       description: "The best platform to invest in startups in Brazil",
-      imgSrc: "https://s.criacaostatic.cc/investidoresvcktt77n5c/uploads/2025/02/INVESTIDORES.png"
+      imgSrc: Investidores,
     },
     {
       heading: "NextGen Venture Partners",
       description: "NextGen Venture Partners works with over 1,800 Venture Partners to invest $1 million in seed stage companies and $2 million to $10 million in companies with more than $10 million in revenue",
-      imgSrc: "https://media.licdn.com/dms/image/v2/D5622AQGe2DLCuJJg8A/feedshare-shrink_800/feedshare-shrink_800/0/1712621092452?e=2147483647&v=beta&t=-k-Hm65EIkn6r0oVFgKyM5vd4Ngl8XmfADvEvWflqPg"
+      imgSrc: NextGen,
     },
     {
       heading: "Hustle Fund",
       description: "Hustle Fund is a venture capital firm investing in hilariously-early pre-seed founders",
-      imgSrc: "https://i.vimeocdn.com/video/1960427049-8a4c0144cdc6c9a9aaa698998bc6818afc4a471e6ae726ae58702b13cd19eddd-d?f=webp"
+      imgSrc: HustleFund,
     }
   ],
   "5": [
     {
       heading: "Jornada Mima",
       description: "Jornada Mima takes care of the feeding journey of babies and children",
-      imgSrc: "https://www.projetodraft.com/wp-content/uploads/2024/12/084_004-Com-Sal.png"
+      imgSrc: JornadaMima,
     },
     {
       heading: "Leadsales",
       description: "El primer CRM y plataforma de Comercio Conversacional para WhatsApp, Facebook y Instagram",
-      imgSrc: "https://leadsales.io/wp-content/uploads/2025/03/Leadsales-what-is-it-and-how-does-this-WhatsApp-CRM-work-1-2.png"
+      imgSrc: Leadsales,
     },
     {
       heading: "Plataforma Impact",
       description: "Plataforma Impact helps people in underserved communities start and grow transformative careers in technology",
-      imgSrc: "https://media.licdn.com/dms/image/v2/C5612AQGIRiVy9f1Jgw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1621469964850?e=2147483647&v=beta&t=6MZa4kAY-lD1Ar6e_25h9OKHMz87LAiRN2wesySS3HM"
+      imgSrc: PlataformaImpact,
     },
     {
       heading: "SuperCharger Ventures",
       description: "SuperCharger Ventures is a leading EdTech ecosystem located in London, Singapore, and Malta",
-      imgSrc: "https://startinmalta.com/wp-content/uploads/2022/10/supercharger-venture.jpg"
+      imgSrc: SuperCharger,
     },
     {
       heading: "LISA Stanford Accelerator",
       description: "An ecosystem for Innovators and Startup founders of Stanford GSB Alumni community",
-      imgSrc: "https://media.licdn.com/dms/image/v2/D4D12AQEBceSZJSmRjA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1683485562925?e=2147483647&v=beta&t=C1SlKfqK5W_CumH6eHzNZeu_y32h0lOYiVZjsLK3jaI"
+      imgSrc: LISA,
     },
     {
       heading: "Invest Ottawa",
       description: "Ottawa's leading economic development agency for fostering the advancement of the region's globally competitive knowledge-based institutions and industries",
-      imgSrc: "https://pbs.twimg.com/ext_tw_video_thumb/1666462613570478080/pu/img/lTXabLaBw9d1UYLZ?format=jpg&name=large"
+      imgSrc: InvestOttawa,
     },
   ],
   "6": [
     {
       heading: "Gun.io",
       description: "Gun.io sources and manages world-class developers for world class companies",
-      imgSrc: "https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a98c826f7c2f123f62d9d9eff63c4d92/gun-io.png"
+      imgSrc: Gunio,
     },
   ]
 };
