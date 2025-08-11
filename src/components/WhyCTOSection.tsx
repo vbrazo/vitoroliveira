@@ -108,12 +108,12 @@ const WhyCTOSection: React.FC = () => {
           ))}
         </div>
         <div className="bg-gray-50 p-8 rounded-lg max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-3 text-cto-dark">No Budget? No problem.</h3>
+          <h3 className="text-2xl font-bold mb-3 text-cto-dark">Budget tight? We've got you covered.</h3>
           <p className="text-cto-gray mb-6">
             The truth is, you don't need a full-time CTO to access top-tier technical leadership. A fractional CTO can offer the same strategic insight and expertise—without the full-time cost.
           </p>
           <a href="#services" className="inline-flex items-center text-black hover:underline">
-            Learn more about my fractional CTO services 
+            Learn more about my services 
             <ArrowRight className="ml-1 h-4 w-4" />
           </a>
         </div>
