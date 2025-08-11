@@ -76,13 +76,10 @@ const WhyCTOSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-fade-in-up">
             <p className="text-cto-gray mb-6 leading-relaxed">
-              A CTO's role goes far beyond managing technology—they design the digital foundation that enables a company to scale and adapt in an ever-evolving landscape.
+              A CTO's role goes far beyond managing technology—they architect the digital foundation that empowers a company to scale and adapt in a constantly evolving landscape.
             </p>
             <p className="text-xl md:text-2xl font-light mb-6 text-cto-dark italic">
-              A CTO's responsibilities can differ widely based on the company’s size, industry, and tech priorities. In startups, they’re often deeply involved in hands-on development, while in larger organizations, the role tends to center around strategic leadership and long-term planning.
-            </p>
-            <p className="text-cto-gray mb-6">
-              The scope of a CTO's role often depends on the company’s size, industry, and technological demands. In startups, they may take a hands-on approach to development, whereas in larger organizations, the emphasis typically shifts to strategy, vision, and executive leadership.
+              Their responsibilities vary widely depending on the company’s size, industry, and technological priorities. In startups, a CTO is often deeply involved in hands-on development, while in larger organizations, the focus shifts toward strategy, vision, and long-term leadership.
             </p>
           </div>
           <div className="relative h-full flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
