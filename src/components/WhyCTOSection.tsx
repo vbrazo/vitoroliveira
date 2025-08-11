@@ -71,27 +71,7 @@ const WhyCTOSection: React.FC = () => {
     <section id="why" className="py-20 bg-white">
       <div className="container max-w-7xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cto-dark">Need for a<br />Chief Technology Officer</h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="animate-fade-in-up">
-            <p className="text-cto-gray mb-6 leading-relaxed">
-              A CTO's role goes far beyond managing technology—they architect the digital foundation that empowers a company to scale and adapt in a constantly evolving landscape.
-            </p>
-            <p className="text-xl md:text-2xl font-light mb-6 text-cto-dark italic">
-              Their responsibilities vary widely depending on the company’s size, industry, and technological priorities. In startups, a CTO is often deeply involved in hands-on development, while in larger organizations, the focus shifts toward strategy, vision, and long-term leadership.
-            </p>
-          </div>
-          <div className="relative h-full flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            <div className="relative w-full h-full min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
-                alt="CTO Leadership" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-cto-blue/10 mix-blend-overlay"></div>
-            </div>
-          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cto-dark">From Tech Chaos to Strategic Clarity</h2>
         </div>
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {cards.map((card, index) => (
