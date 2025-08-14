@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import { Card, CardContent } from "@/design-system";
 
 interface ServiceCardProps {
   title: string;
@@ -19,22 +20,21 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon, lin
     </>
   );
 
-  return linkUrl ? (
-    <a 
-      href={linkUrl} 
-      className="group/card relative block p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-all duration-300 bg-white cursor-pointer overflow-hidden"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      {content}
-      <div className="mt-4 text-black hover:underline">
-        {linkText || 'Learn more'} →
-      </div>
-    </a>
-  ) : (
-    <div className="p-8 border border-gray-200 rounded-lg bg-white">
-      {content}
-    </div>
+  return (
+    <Card className="group/card relative overflow-hidden">
+      <CardContent className="p-8">
+        {linkUrl ? (
+          <a href={linkUrl} target="_blank" rel="noopener noreferrer" className="block">
+            {content}
+            <div className="mt-4 text-black hover:underline">
+              {linkText || 'Learn more'} →
+            </div>
+          </a>
+        ) : (
+          content
+        )}
+      </CardContent>
+    </Card>
   );
 };
 

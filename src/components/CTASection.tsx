@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Container, Section } from "@/design-system";
 
 interface CTASectionProps {
   title?: string;
@@ -11,13 +12,13 @@ interface CTASectionProps {
 
 const CTASection: React.FC<CTASectionProps> = ({
   title = "Take your technology to the next level. <br />Bring a CTO on board.",
-  description = "By the time you realize you need a CTO, the damage of not having one may already be done. Don't wait—secure the leadership your future depends on.",
+  description = "By the time you realize you need a CTO, the damage of not having one may already be done. Don't wait! Secure the leadership your future depends on.",
   buttonText = "Book a FREE Discovery Call",
   buttonLink = "https://intro.co/VitorOliveira",
 }) => {
   return (
-    <section className="py-20 bg-black bg-opacity-90 text-white text-center">
-      <div className="container max-w-4xl mx-auto px-6">
+    <Section className="bg-black bg-opacity-90 text-white text-center">
+      <Container className="max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4" dangerouslySetInnerHTML={{ __html: title }} />
         <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
           {description}
@@ -43,8 +44,8 @@ const CTASection: React.FC<CTASectionProps> = ({
             {buttonText}
           </motion.button>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 
