@@ -1,6 +1,6 @@
-import Header from '@/components/Header';
-import EngagementSection from '@/components/EngagementSection';
-import Footer from '@/components/Footer';
+import Header from '@/design-system/compositions/Header';
+import EngagementSection from '@/design-system/compositions/EngagementSection';
+import Footer from '@/design-system/compositions/Footer';
 
 const Index = () => {
   return (

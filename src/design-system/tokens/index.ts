@@ -15,5 +15,3 @@ export const colors = {
 export const radius = {
   base: "var(--radius)",
 };
-
-

@@ -1,13 +1,5 @@
-// Barrel exports for the design system
-export * from "./components";
-export * from "./tokens";
-export * from "./utils";
-export * from "./types";
-
-// Centralized design system exports
 // Re-export commonly used UI primitives and utilities
-
-export { Button, buttonVariants } from "@/components/ui/button";
+export { Button, buttonVariants } from "@/design-system/compositions/ui/button";
 export {
   Card,
   CardHeader,
@@ -15,16 +7,26 @@ export {
   CardTitle,
   CardDescription,
   CardFooter,
-} from "@/components/ui/card";
-export { Input } from "@/components/ui/input";
-export { Label } from "@/components/ui/label";
-export { Badge } from "@/components/ui/badge";
-export { Separator } from "@/components/ui/separator";
-export { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-export { Toaster } from "@/components/ui/toaster";
-export { Toaster as Sonner } from "@/components/ui/sonner";
+} from "@/design-system/compositions/ui/card";
+export { Input } from "@/design-system/compositions/ui/input";
+export { Label } from "@/design-system/compositions/ui/label";
+export { Badge } from "@/design-system/compositions/ui/badge";
+export { Separator } from "@/design-system/compositions/ui/separator";
+export { Tabs, TabsList, TabsTrigger, TabsContent } from "@/design-system/compositions/ui/tabs";
+export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/design-system/compositions/ui/tooltip";
+export { Toaster } from "@/design-system/compositions/ui/toaster";
+export { Toaster as Sonner } from "@/design-system/compositions/ui/sonner";
 export { useToast, toast } from "@/hooks/use-toast";
 
-// Optionally export helpers
+// DS atoms
+export { Container } from "./compositions/layout/Container";
+export { Section } from "./compositions/layout/Section";
+export { Heading, Text, Muted } from "./compositions/typography/Typography";
+
+// Tokens, utils, types
+export * from "./tokens";
+export * from "./utils";
+export * from "./types";
+
+// Helpers
 export { cn } from "@/lib/utils";

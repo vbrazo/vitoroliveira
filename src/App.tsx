@@ -1,12 +1,11 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/design-system/compositions/ui/toaster";
+import { Toaster as Sonner } from "@/design-system/compositions/ui/sonner";
+import { TooltipProvider } from "@/design-system/compositions/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CTOServices from "./pages/CTOServices";
 import NotFound from "./pages/NotFound";
 import BlogPage from "./pages/BlogPage";
-import Contextor from "./pages/Contextor";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +17,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CTOServices />} />
-          <Route path="/contextor" element={<Contextor />} />
           <Route path="/cto-services" element={<CTOServices />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />

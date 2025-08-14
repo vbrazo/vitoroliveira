@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import { posts, tags } from '@/components/Blog';
+import Header from '@/design-system/compositions/Header';
+import Footer from '@/design-system/compositions/Footer';
+import { posts, tags } from '@/design-system/compositions/Blog';
 import { ExternalLink } from 'lucide-react';
 import { motion } from "framer-motion";
 

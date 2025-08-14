@@ -1,14 +1,14 @@
-import Header from '@/components/Header';
-import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
-import EngagementSection from '@/components/EngagementSection';
-import WhyCTOSection from '@/components/WhyCTOSection';
-import CTASection from '@/components/CTASection';
-import Footer from '@/components/Footer';
-import Blog from '../components/Blog';
-import StudyCases from '../components/StudyCases';
-import ScrollingTestimonials from '@/components/ScrollingTestimonials';
-import { StaggerTestimonials } from '@/components/StaggerTestimonials';
+import Header from '@/design-system/compositions/Header';
+import HeroSection from '@/design-system/compositions/HeroSection';
+import ServicesSection from '@/design-system/compositions/ServicesSection';
+import EngagementSection from '@/design-system/compositions/EngagementSection';
+import WhyCTOSection from '@/design-system/compositions/WhyCTOSection';
+import CTASection from '@/design-system/compositions/CTASection';
+import Footer from '@/design-system/compositions/Footer';
+import Blog from '../design-system/compositions/Blog';
+import StudyCases from '../design-system/compositions/StudyCases';
+import ScrollingTestimonials from '@/design-system/compositions/ScrollingTestimonials';
+import { StaggerTestimonials } from '@/design-system/compositions/StaggerTestimonials';
 
 const CTOServices = () => {
   return (
