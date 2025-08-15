@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           <div className="relative w-full h-auto md:h-[500px] lg:h-screen">
             <img
               className="w-full h-full object-cover"
-              src="/vitor-v2.JPG"
+              src="/vitor-v2.webp"
               alt="Vitor Oliveira"
             />
                         <div
