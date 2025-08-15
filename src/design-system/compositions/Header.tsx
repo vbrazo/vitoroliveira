@@ -13,7 +13,6 @@ const FlipNavWrapper = () => {
       <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-40 top-[42px] md:top-[38px]">
         <FlipNav />
       </div>
-      <div className="h-[106px] md:h-[94px]" />
     </>
   );
 };
