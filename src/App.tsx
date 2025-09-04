@@ -1,16 +1,9 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/design-system/compositions/ui/toaster";
+import { Toaster as Sonner } from "@/design-system/compositions/ui/sonner";
+import { TooltipProvider } from "@/design-system/compositions/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import CTOServices from "./pages/CTOServices";
-import NotFound from "./pages/NotFound";
-import BlogPage from "./pages/BlogPage";
-import Dashboard from "./pages/Dashboard";
-import SignIn from "./pages/SignIn";
-import SignUp from "./pages/SignUp";
-import ForgotPassword from "./pages/ForgotPassword";
-import Contextor from "./pages/Contextor";
+import { CTOServices, BlogPage, NotFound } from "./features";
 
 const queryClient = new QueryClient();
 
@@ -22,11 +15,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<CTOServices />} />
-          {/* <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/sign-up" element={<SignUp />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} /> */}
-          <Route path="/contextor" element={<Contextor />} />
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
           <Route path="/cto-services" element={<CTOServices />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="*" element={<NotFound />} />

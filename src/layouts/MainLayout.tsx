@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom'; // or your routing library
-import { SidebarProvider } from "@/components/ui/sidebar";
+import { SidebarProvider } from "@/design-system/compositions/ui/sidebar";
 
 const MainLayout = ({ children }) => {
   const location = useLocation();
@@ -20,4 +20,4 @@ const MainLayout = ({ children }) => {
   );
 };
 
-export default MainLayout; 
+export default MainLayout;
