@@ -13,7 +13,7 @@ import {
   StaggerTestimonials,
 } from '@/features/home/components';
 
-const CTOServices = () => {
+const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -41,4 +41,4 @@ const CTOServices = () => {
   );
 };
 
-export default CTOServices;
+export default HomePage;
