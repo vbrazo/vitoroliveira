@@ -76,7 +76,7 @@ const JobsListPage = () => {
                     key={job.id}
                     job={job}
                     index={index}
-                    showActiveBadge={index === 1}
+                    showActiveBadge={true}
                   />
                 ))}
               </div>

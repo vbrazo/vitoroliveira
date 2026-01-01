@@ -262,8 +262,8 @@ const JobsSection: React.FC = () => {
             Pre-vetted engineers and fractional consultants matched to your culture, tech stack, and growth stage, not just resumes.
           </Text>
           <Text className="max-w-2xl mx-auto leading-relaxed text-sm md:text-base lg:text-lg">
-            Through my fractional CTO work, I've built and scaled engineering teams at dozens of startups.
-            Now I help other founders access the same caliber of talent, with the same rigorous vetting and
+            Through my fractional CTO work, I've built and scaled engineering teams at many startups.
+            Now I help founders access the same caliber of talent, with the same rigorous vetting and
             cultural fit focus that's made my clients successful.
           </Text>
         </motion.div>
@@ -396,7 +396,7 @@ const JobsSection: React.FC = () => {
             to="/jobs/about"
             className="inline-flex items-center gap-3 px-8 md:px-10 py-4 md:py-5 bg-white text-gray-900 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 text-base md:text-lg border-2 border-gray-300 hover:border-gray-400 shadow-md hover:shadow-lg"
           >
-            See How Our Vetting Works
+            See How My Vetting Works
             <ArrowRight className="h-5 w-5" />
           </Link>
         </motion.div>

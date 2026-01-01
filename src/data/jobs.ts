@@ -51,7 +51,7 @@ export const jobs: JobType[] = [
   {
     id: '2',
     slug: 'backend-engineer-payments',
-    title: 'Backend Engineer (Payments)',
+    title: 'Backend Engineer',
     company: 'Payments Startup',
     location: 'Palo Alto, CA',
     type: 'Full-time',
