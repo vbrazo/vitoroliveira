@@ -13,7 +13,7 @@ export const ShiftHightlightTabs = ({
     const tagsSection = document.getElementById("tags-header");
     if (tagsSection) {
       const isDesktop = window.innerWidth >= 1024;
-      const offset = isDesktop ? -110 : -140;
+      const offset = isDesktop ? -90 : -80;
       const elementPosition = tagsSection.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({
         top: elementPosition,
@@ -25,7 +25,7 @@ export const ShiftHightlightTabs = ({
   return (
     <>
       <div id="tags-header" />
-      <div className="sticky top-[7rem] z-10 bg-slate-100/95 backdrop-blur-sm pt-4 md:pt-4 pb-4 lg:top-[6.8rem] lg:pt-4 lg:pb-4">
+      <div className="sticky top-[4.3rem] z-10 bg-slate-100/95 backdrop-blur-sm pt-4 md:pt-4 pb-4 lg:top-[4.7rem] lg:pt-4 lg:pb-4">
         <div className="mx-auto grid max-w-4xl grid-cols-2 gap-4 lg:grid-cols-6">
           {TAGS_TABS.map((t) => (
             <ToggleButton

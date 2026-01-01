@@ -4,5 +4,3 @@ export const stickyCta = {
   label: "I've just launched an AI Career Agent!",
   action: "Learn more",
 };
-
-

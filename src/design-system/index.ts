@@ -20,6 +20,14 @@ export { useToast, toast } from "@/hooks/use-toast";
 export { Container } from "./compositions/layout/Container";
 export { Section } from "./compositions/layout/Section";
 export { Heading, Text, Muted } from "./compositions/typography/Typography";
+export { AnimatedGridBackground } from "./compositions/AnimatedGridBackground";
+export { TrustIndicators } from "./compositions/TrustIndicators";
+export { CTASection } from "./compositions/CTASection";
+export { ValueCard } from "./compositions/ValueCard";
+export { ProcessStep } from "./compositions/ProcessStep";
+export { DifferentiatorCard } from "./compositions/DifferentiatorCard";
+export { CountUpStat } from "./compositions/CountUpStat";
+export { CalModal } from "./compositions/CalModal";
 
 export * from "./tokens";
 export * from "./utils";

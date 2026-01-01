@@ -11,6 +11,7 @@ import {
   CTASection,
   ScrollingTestimonials,
   StaggerTestimonials,
+  JobsSection,
 } from '@/features/home/components';
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
       <main>
         <HeroSection />
         <ServicesSection />
+        <JobsSection />
         <EngagementSection />
         <StudyCases />
         <WhyCTOSection />

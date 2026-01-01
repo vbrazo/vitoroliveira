@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/design-system/compositions/ui/sonner";
 import { TooltipProvider } from "@/design-system/compositions/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HomePage, BlogPage, NotFound } from "./features";
+import { HomePage, BlogPage, NotFound, JobsAboutPage, JobsListPage, JobDetailPage } from "./features";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +16,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
+          <Route path="/jobs/about" element={<JobsAboutPage />} />
+          <Route path="/jobs/:slug" element={<JobDetailPage />} />
+          <Route path="/jobs" element={<JobsListPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

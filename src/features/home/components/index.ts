@@ -11,3 +11,4 @@ export { default as VideoModal } from './VideoModal';
 export { default as ServiceCard } from './ServiceCard';
 export { SpringModal } from './SpringModal';
 export { ShiftHightlightTabs } from './Tags';
+export { default as JobsSection } from './JobsSection';

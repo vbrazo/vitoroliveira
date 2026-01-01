@@ -3,14 +3,18 @@ import { useState } from "react";
 import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
 import { useLocation } from "react-router-dom";
 import StickyCountdown from "../StickyCountdown";
+import {
+  Dialog,
+  DialogContent,
+} from "@/design-system/compositions/ui/dialog";
 
 const FlipNavWrapper = () => {
   return (
     <>
-      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 h-auto top-0">
+      {/* <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-50 h-auto top-0">
         <StickyCountdown />
-      </div>
-      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-40 top-[42px] md:top-[38px]">
+      </div> */}
+      <div className="flex justify-center items-center bg-black w-full fixed left-0 right-0 z-40">
         <FlipNav />
       </div>
     </>
@@ -19,24 +23,38 @@ const FlipNavWrapper = () => {
 
 const FlipNav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isCalModalOpen, setIsCalModalOpen] = useState(false);
   return (
-    <nav className="bg-black p-4 flex justify-between items-center top-0 max-w-7xl mx-auto w-full px-4">
-      <div className="flex-1">
-        <NavLeft />
-      </div>
-      <div className="flex justify-end flex-1">
-        <NavRight />
-      </div>
-      <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} />
-      <motion.button
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="block lg:hidden text-white text-2xl"
-        onClick={() => setIsOpen((pv) => !pv)}
-      >
-        {isOpen ? <FiX /> : <FiMenu />}
-      </motion.button>
-    </nav>
+    <>
+      <nav className="bg-black p-4 flex justify-between items-center top-0 max-w-7xl mx-auto w-full px-4">
+        <div className="flex-1">
+          <NavLeft />
+        </div>
+        <div className="flex justify-end flex-1">
+          <NavRight setIsCalModalOpen={setIsCalModalOpen} />
+        </div>
+        <NavMenu isOpen={isOpen} setIsOpen={setIsOpen} setIsCalModalOpen={setIsCalModalOpen} />
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="block lg:hidden text-white text-2xl"
+          onClick={() => setIsOpen((pv) => !pv)}
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </motion.button>
+      </nav>
+      <Dialog open={isCalModalOpen} onOpenChange={setIsCalModalOpen}>
+        <DialogContent className="max-w-7xl w-full h-[90vh] p-8 bg-[#EDEEF2]">
+          <iframe
+            src="https://cal.com/vitoroliveira/30min?overlayCalendar=true"
+            className="w-full h-full rounded-lg"
+            style={{ border: 'none' }}
+            title="Schedule a call"
+            allow="camera; microphone; geolocation"
+          />
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };
 
@@ -65,6 +83,8 @@ const Logo = () => {
 const NavLeft = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isJobsPage = location.pathname.startsWith('/jobs');
+  const isBlogPage = location.pathname === '/blog';
   const sidebarPages = ['/contextor'];
   const shouldCloseSidebar = sidebarPages.some(path => location.pathname.startsWith(path));
 
@@ -77,8 +97,16 @@ const NavLeft = () => {
           <NavLink text="Engagement" href="#engagement" />
           <NavLink text="Case Studies" href="#study-cases" />
           <NavLink text="Success Stories" href="#success-stories-2" />
+          <NavLink text="Hire" href="#talent-solutions" />
           <NavLink text="Blog" href="#blog" />
         </>
+      ) : isJobsPage ? (
+        <>
+          <NavLink text="Jobs" href="/jobs" />
+          <NavLink text="About" href="/jobs/about" />
+        </>
+      ) : isBlogPage ? (
+        <></>
       ) : (shouldCloseSidebar ? (
         <>
           <NavLink text="vitoroliveira.ca" href="/" />
@@ -137,14 +165,16 @@ const NavLink = ({ text, href, isExternal }: { text: string, href: string, isExt
   );
 };
 
-const NavRight = () => {
+const NavRight = ({ setIsCalModalOpen }: { setIsCalModalOpen: (value: boolean) => void }) => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isJobsPage = location.pathname.startsWith('/jobs');
+  const isBlogPage = location.pathname === '/blog';
   const isFitScorePage = location.pathname === '/fit-score';
   let title = "Book a call";
   let href = "https://intro.co/VitorOliveira";
 
-  if (!isHomePage) {
+  if (!isHomePage && !isJobsPage && !isBlogPage) {
     title = "Sign Up";
     href = "/sign-up";
   }
@@ -167,7 +197,28 @@ const NavRight = () => {
           </motion.button>
         </a>
       )}
-      {!isHomePage && (
+      {isJobsPage && (
+        <motion.button
+          onClick={() => setIsCalModalOpen(true)}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
+        >
+          {title}
+        </motion.button>
+      )}
+      {isBlogPage && (
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-4 py-2 bg-white text-black font-medium rounded-md whitespace-nowrap transition-all duration-300 flex items-center gap-2 hover:bg-white-100 hover:text-black border border-black"
+          >
+            {title}
+          </motion.button>
+        </a>
+      )}
+      {!isHomePage && !isJobsPage && !isBlogPage && (
         <>
           <a href="#how-it-works" target={isFitScorePage ? "_self" : "_self"} rel="noopener noreferrer">
             <motion.button
@@ -202,9 +253,11 @@ const NavRight = () => {
   );
 };
 
-const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: boolean) => void }) => {
+const NavMenu = ({ isOpen, setIsOpen, setIsCalModalOpen }: { isOpen: boolean, setIsOpen: (value: boolean) => void, setIsCalModalOpen: (value: boolean) => void }) => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const isJobsPage = location.pathname.startsWith('/jobs');
+  const isBlogPage = location.pathname === '/blog';
   const sidebarPages = ['/contextor'];
   const shouldCloseSidebar = sidebarPages.some(path => location.pathname.startsWith(path));
 
@@ -221,8 +274,16 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
           <MenuLink text="Engagement" href="#engagement" setIsOpen={setIsOpen} />
           <MenuLink text="Case Studies" href="#study-cases" setIsOpen={setIsOpen} />
           <MenuLink text="Success Stories" href="#success-stories" setIsOpen={setIsOpen} />
+          <MenuLink text="Hire" href="#talent-solutions" setIsOpen={setIsOpen} />
           <MenuLink text="Blog" href="#blog" setIsOpen={setIsOpen} />
         </>
+      ) : isJobsPage ? (
+        <>
+          <MenuLink text="Jobs" href="/jobs" setIsOpen={setIsOpen} />
+          <MenuLink text="About" href="/jobs/about" setIsOpen={setIsOpen} />
+        </>
+      ) : isBlogPage ? (
+        <></>
       ) : (shouldCloseSidebar ? (
         <>
           <MenuLink text="How it works" href="#how-it-works" setIsOpen={setIsOpen} />
@@ -231,8 +292,8 @@ const NavMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: (value: bo
         </>
       ) : (
         <>
-          <NavLink text="vitoroliveira.ca" href="/" />
-          <NavLink text="Blog" href="/blog" />
+          <MenuLink text="Home" href="/" setIsOpen={setIsOpen} />
+          <MenuLink text="Blog" href="/blog" setIsOpen={setIsOpen} />
         </>
       ))}
     </motion.div>
