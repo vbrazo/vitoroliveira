@@ -82,5 +82,43 @@ export const jobs: JobType[] = [
     ],
     tags: ['Ruby on Rails', 'Next.js', 'TypeScript', 'Payments', 'Fintech'],
   },
+  {
+    id: '3',
+    slug: 'staff-software-engineer-platform',
+    title: 'Staff Software Engineer (Platform Team)',
+    company: 'AI Platform Startup',
+    location: 'Remote (Canada/Portugal)',
+    type: 'Full-time',
+    salary: 'CA$150K - CA$250K',
+    description: 'We just raised $30M Series B and are scaling our AI agent platform from 6 to 100+ workflows for marketing teams. We need a Staff Software Engineer to join our Platform team to help architect the APIs powering this 15x growth. You\'ll own platform infrastructure used by thousands of users daily, working remotely with direct input on technical architecture at a pivotal scaling moment.',
+    requirements: [
+      '6+ years of experience building and maintaining large-scale software applications',
+      'Proficiency with our core stack (React, Node.js, TypeScript) is ideal, though we\'re open to adjacent tech',
+      'Strong experience with asynchronous message queue systems',
+      'Experience with MongoDB or other document-based databases',
+      'Solid understanding of data modeling, ETL concepts, and simplifying data architecture',
+      'Exceptional written and verbal communication skills with a knack for translating complex technical issues into clear business impacts',
+      'Interest in AI/ML',
+      'Ability to thrive in a fast-paced environment with evolving requirements and priorities',
+      'A pragmatic approach to tackling challenging problems, with a deep interest in understanding and solving business needs'
+    ],
+    responsibilities: [
+      'Scoping, designing, and implementing resilient, performant, and high-quality backend solutions',
+      'Working closely with fellow engineers to deliver complex backend features and integrations',
+      'Maintaining and enhancing existing integrations, anticipating future product solutions and making sure our systems scale with growth',
+      'Identifying and resolving errors, performance issues, and devex problems in our codebase',
+      'Driving engineering advancements',
+      'Build a unified API for insights data to be used by other development teams',
+      'Store insights and metrics from data providers at scale'
+    ],
+    whyJoin: [
+      'Join as a Founding Engineer in a rapidly growing startup - be part of a fast-growing team (3x YoY) at a company that recently secured $30M in Series B funding',
+      'Remote-first culture with team members across Canada, UK, Portugal, and Spain, prioritizing clear communication and teamwork',
+      'Competitive compensation package including equity for all employees, health benefits from day one, monthly health & lifestyle stipend, 20 days of PTO, and $1,500 work-from-home stipend',
+      'Strong product-market fit with 3x YoY growth and second-time founders with deep industry knowledge',
+      'Opportunity for impact: As an early team member, your contributions will directly shape the product, team, and the future of the company',
+      'Award-winning team ranked #5 on LinkedIn\'s Top 15 Startups in Canada for 2025'
+    ],
+    tags: ['React', 'Node.js', 'TypeScript', 'GraphQL', 'PostgreSQL', 'MongoDB', 'Azure', 'AI/ML'],
+  },
 ];
-
