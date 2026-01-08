@@ -35,7 +35,7 @@ const HomePage = () => {
         <CTASection
           title = "Take your technology to the next level. <br />Bring a CTO on board."
           description = "By the time you realize you need a CTO, the damage of not having one may already be done. Don't wait! Secure the leadership your future depends on."
-          buttonText = "Book a FREE Discovery Call"
+          buttonText = "Book a Discovery Call"
           buttonLink = "https://intro.co/VitorOliveira" />
       </main>
       <Footer title="Vitor Oliveira" description="Strategic Leadership in Technology, Product, and Growth" />

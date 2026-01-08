@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
               className="px-8 py-3 text-lg rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
               onClick={() => window.open('https://intro.co/VitorOliveira', '_blank')}
             >
-              Book a FREE Discovery Call
+              Book a Discovery Call
             </motion.button>
           </div>
 
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
               className="px-8 py-3 text-sm rounded-md uppercase bg-white border duration-200 border-neutral-700 border-opacity-40 text-neutral-700 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
               onClick={() => window.open('https://intro.co/VitorOliveira', '_blank')}
             >
-              Book a FREE Discovery Call
+              Book a Discovery Call
             </motion.button>
           </div>
         </div>

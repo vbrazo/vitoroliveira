@@ -29,7 +29,7 @@ export const jobs: JobType[] = [
       'Demonstrable track record in ambiguous situations and excited to work in a fast-paced environment (prior startup experience ideal)',
       'Experience across the stack or strong front-end leaning and aspire to be scrappy generalists that wear many hats',
       'Proficient in at least one modern tech stack (and eager to learn if there are gaps)',
-      'Strong communicator – able to articulate complex/technical problems in a methodical manner and explain their thinking succinctly',
+      'Strong communicator - able to articulate complex/technical problems in a methodical manner and explain their thinking succinctly',
       'Entrepreneurial drive beyond the code (e.g., built something but can also speak about their GTM strategy or strategy to find the first customer)',
       'Strong mission alignment and resonates with the vision (but no prior experience in the healthcare space required)'
     ],
