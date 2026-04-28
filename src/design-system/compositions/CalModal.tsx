@@ -9,7 +9,7 @@ interface CalModalProps {
 export const CalModal = ({ 
   open, 
   onOpenChange, 
-  url = 'https://cal.com/vitoroliveira/30min?overlayCalendar=true' 
+  url = 'https://calendly.com/imvitoroliveira' 
 }: CalModalProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>

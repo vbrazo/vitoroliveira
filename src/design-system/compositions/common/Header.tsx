@@ -46,7 +46,7 @@ const FlipNav = () => {
       <Dialog open={isCalModalOpen} onOpenChange={setIsCalModalOpen}>
         <DialogContent className="max-w-7xl w-full h-[90vh] p-8 bg-[#EDEEF2]">
           <iframe
-            src="https://cal.com/vitoroliveira/30min?overlayCalendar=true"
+            src="https://calendly.com/imvitoroliveira"
             className="w-full h-full rounded-lg"
             style={{ border: 'none' }}
             title="Schedule a call"

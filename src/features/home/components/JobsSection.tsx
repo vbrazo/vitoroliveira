@@ -400,20 +400,6 @@ const JobsSection: React.FC = () => {
             <ArrowRight className="h-5 w-5" />
           </Link>
         </motion.div>
-
-        {/* For Engineers Link */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center"
-        >
-          <Link to="/jobs" className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors text-sm font-medium group">
-            <span>Are you an engineer? View opportunities</span>
-            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
-        </motion.div>
       </Container>
     </Section>
   );
