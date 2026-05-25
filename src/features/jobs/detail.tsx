@@ -41,7 +41,7 @@ const JobDetailPage = () => {
           </Section>
         </main>
         <Footer 
-          title="Vitor Oliveira" 
+          title="Vítor Oliveira" 
           description="Strategic Leadership in Technology, Product, and Growth" 
         />
       </div>
@@ -96,7 +96,7 @@ const JobDetailPage = () => {
         </Section>
       </main>
       <Footer 
-        title="Vitor Oliveira" 
+        title="Vítor Oliveira" 
         description="Strategic Leadership in Technology, Product, and Growth" 
       />
 

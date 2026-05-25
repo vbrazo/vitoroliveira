@@ -1,4 +1,16 @@
 [[redirects]]
+  from = "https://www.vitoroliveira.ca/*"
+  to = "https://vitoroliveira.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.vitoroliveira.ca/*"
+  to = "https://vitoroliveira.ca/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/jobs"
   to = "/jobs/about"
   status = 301

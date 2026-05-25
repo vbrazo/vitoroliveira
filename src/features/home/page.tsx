@@ -38,7 +38,7 @@ const HomePage = () => {
           buttonText = "Book a Discovery Call"
           buttonLink = "https://intro.co/VitorOliveira" />
       </main>
-      <Footer title="Vitor Oliveira" description="Strategic Leadership in Technology, Product, and Growth" />
+      <Footer title="Vítor Oliveira" description="Strategic Leadership in Technology, Product, and Growth" />
     </div>
   );
 };

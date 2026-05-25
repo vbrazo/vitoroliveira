@@ -114,7 +114,7 @@ const BlogPage = () => {
           </div>
         </div>
       </main>
-      <Footer title="Vitor Oliveira" description="Strategic Leadership in Technology, Product, and Growth" />
+      <Footer title="Vítor Oliveira" description="Strategic Leadership in Technology, Product, and Growth" />
     </div>
   );
 };

@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
             <img
               className="w-full h-full object-cover"
               src="/vitor-v2.webp"
-              alt="Vitor Oliveira"
+              alt="Vítor Oliveira"
             />
                         <div
               className="absolute inset-0 pointer-events-none hidden md:flex"
