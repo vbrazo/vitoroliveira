@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiMenu, FiArrowRight, FiX } from "react-icons/fi";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { useLocation } from "react-router-dom";
 import StickyCountdown from "../StickyCountdown";
 import {
@@ -40,7 +40,7 @@ const FlipNav = () => {
           className="block lg:hidden text-white text-2xl"
           onClick={() => setIsOpen((pv) => !pv)}
         >
-          {isOpen ? <FiX /> : <FiMenu />}
+          {isOpen ? <X /> : <Menu />}
         </motion.button>
       </nav>
       <Dialog open={isCalModalOpen} onOpenChange={setIsCalModalOpen}>
@@ -324,7 +324,7 @@ const MenuLink = ({ text, href, isExternal, setIsOpen }: { text: string, href: s
       className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
     >
       <motion.span variants={menuLinkArrowVariants}>
-        <FiArrowRight className="h-[30px] text-gray-950" />
+        <ArrowRight className="h-[30px] text-gray-950" />
       </motion.span>
       <motion.div whileHover={{ y: -30 }}>
         <span className="flex items-center h-[30px] text-gray-500">{text}</span>

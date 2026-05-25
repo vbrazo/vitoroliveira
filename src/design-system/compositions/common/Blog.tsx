@@ -1,7 +1,7 @@
 import Header from '@/design-system/compositions/common/Header';
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import useMeasure from "react-use-measure";
 import { Button } from "@/design-system/compositions/ui/button";
 import { useNavigate } from "react-router-dom";
@@ -84,7 +84,7 @@ const BlogPostCarousel = () => {
                 disabled={!CAN_SHIFT_LEFT}
                 onClick={shiftLeft}
               >
-                <FiArrowLeft />
+                <ArrowLeft />
               </button>
               <button
                 className={`rounded-lg border-[1px] border-neutral-400 bg-white p-1.5 text-2xl transition-opacity ${
@@ -93,7 +93,7 @@ const BlogPostCarousel = () => {
                 disabled={!CAN_SHIFT_RIGHT}
                 onClick={shiftRight}
               >
-                <FiArrowRight />
+                <ArrowRight />
               </button>
             </div>
           </div>

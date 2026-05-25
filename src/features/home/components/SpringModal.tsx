@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Dispatch, SetStateAction, useState } from "react";
-import { FiAlertCircle, FiMail } from "react-icons/fi";
+import { AlertCircle, Mail } from "lucide-react";
 
 export const SpringModal = ({
   isOpen,
@@ -81,10 +81,10 @@ export const SpringModal = ({
             onClick={(e) => e.stopPropagation()}
             className="bg-gradient-to-br bg-black text-white p-6 rounded-lg w-full max-w-lg shadow-xl cursor-default relative overflow-hidden"
           >
-            <FiAlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
+            <AlertCircle className="text-white/10 rotate-12 text-[250px] absolute z-0 -top-24 -left-24" />
             <div className="relative z-10">
               <div className="bg-white w-16 h-16 mb-2 rounded-full text-3xl text-black grid place-items-center mx-auto">
-                <FiMail />
+                <Mail />
               </div>
               <h3 className="text-3xl font-bold text-center mb-2">
                 Get More Details

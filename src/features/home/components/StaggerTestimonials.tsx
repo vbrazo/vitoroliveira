@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { GoArrowLeft, GoArrowRight } from "react-icons/go";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { TESTIMONIAL_DATA } from "@/data/testimonials";
 
 const CARD_WIDTH_LG = 420;
@@ -105,13 +105,13 @@ export const StaggerTestimonials = () => {
             onClick={() => handleMove(-1)}
             className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
           >
-            <GoArrowLeft />
+            <ArrowLeft />
           </button>
           <button
             onClick={() => handleMove(1)}
             className="grid h-14 w-14 place-content-center text-3xl transition-colors hover:bg-black hover:text-white"
           >
-            <GoArrowRight />
+            <ArrowRight />
           </button>
         </div>
       </div>

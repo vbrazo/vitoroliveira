@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, animate, useInView, MotionConfig } from 'framer-motion';
-import { FiArrowRight } from 'react-icons/fi';
 import { twMerge } from 'tailwind-merge';
 import { 
   Target, 
@@ -101,7 +100,7 @@ const SpringCard: React.FC<SpringCardProps> = ({
 
               {/* Title */}
               <p className="flex items-center text-xl md:text-2xl font-bold uppercase mb-4">
-                <FiArrowRight className="-ml-8 mr-2 opacity-0 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:opacity-100" />
+                <ArrowRight className="-ml-8 mr-2 opacity-0 transition-all duration-300 ease-in-out group-hover:ml-0 group-hover:opacity-100" />
                 {title}
               </p>
 
@@ -229,7 +228,7 @@ const JobsSection: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="max-w-3xl mx-auto text-center mb-12"
         >
-          <div className="inline-block mb-4 hidden md:block">
+          <div className="hidden mb-4 md:block">
             <span className="text-xs font-semibold text-gray-500 uppercase tracking-[0.2em] px-4 py-2 bg-white rounded-full border border-gray-200 shadow-sm">
               Beyond Leadership and Management
             </span>
