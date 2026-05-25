@@ -47,6 +47,28 @@ const Footer: React.FC<FooterProps> = ({title, description}) => {
                 <BookOpen className="h-5 w-5" />
               </a>
             </div>
+            <nav
+              aria-label="Footer navigation"
+              className="mt-6 flex flex-wrap justify-center gap-4 text-sm text-gray-700"
+            >
+              <a href="https://vitoroliveira.ca/blog" className="hover:text-black hover:underline">
+                Blog
+              </a>
+              <a href="https://vitoroliveira.ca/jobs" className="hover:text-black hover:underline">
+                Open roles
+              </a>
+              <a href="https://vitoroliveira.ca/jobs/about" className="hover:text-black hover:underline">
+                Talent matching
+              </a>
+              <a
+                href="https://intro.co/VitorOliveira"
+                className="hover:text-black hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Book a call
+              </a>
+            </nav>
           </div>
         </div>
         

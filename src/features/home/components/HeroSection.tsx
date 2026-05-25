@@ -12,9 +12,9 @@ const HeroSection: React.FC = () => {
       <div className="container mt-40 md:mt-20 flex flex-col md:flex-row max-w-7xl justify-center items-center gap-8 md:h-[500px] lg:h-screen">
         <div className="w-full md:w-1/2 flex flex-col justify-center px-4 md:px-0">
           <div>
-            <div className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
+            <h1 className="text-[26px] md:text-[44px] font-bold uppercase leading-snug md:leading-[46px] text-white">
               Strategic Leadership in Technology, Product, and Growth
-            </div>
+            </h1>
           </div>
 
           <div className="mt-4 md:mt-[3vh] w-full md:w-[456px]">
