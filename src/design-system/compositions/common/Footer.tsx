@@ -54,9 +54,6 @@ const Footer: React.FC<FooterProps> = ({title, description}) => {
               <a href="https://vitoroliveira.ca/blog" className="hover:text-black hover:underline">
                 Blog
               </a>
-              <a href="https://vitoroliveira.ca/jobs" className="hover:text-black hover:underline">
-                Open roles
-              </a>
               <a href="https://vitoroliveira.ca/jobs/about" className="hover:text-black hover:underline">
                 Talent matching
               </a>

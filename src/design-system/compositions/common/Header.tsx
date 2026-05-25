@@ -102,7 +102,6 @@ const NavLeft = () => {
         </>
       ) : isJobsPage ? (
         <>
-          <NavLink text="Jobs" href="/jobs" />
           <NavLink text="About" href="/jobs/about" />
         </>
       ) : isBlogPage ? (
@@ -279,7 +278,6 @@ const NavMenu = ({ isOpen, setIsOpen, setIsCalModalOpen }: { isOpen: boolean, se
         </>
       ) : isJobsPage ? (
         <>
-          <MenuLink text="Jobs" href="/jobs" setIsOpen={setIsOpen} />
           <MenuLink text="About" href="/jobs/about" setIsOpen={setIsOpen} />
         </>
       ) : isBlogPage ? (
