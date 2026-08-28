@@ -108,10 +108,10 @@ const setMetaByProperty = (html, property, content) =>
     `<meta property="${property}" content="${escapeHtml(content)}" />`,
   );
 
-const setRootFallback = (html, fallback) =>
+const setSeoFallback = (html, fallback) =>
   html.replace(
-    /<div id="root">[\s\S]*?<\/div>(?=\s*<script)/,
-    `<div id="root">\n${fallback}\n    </div>`,
+    /<div id="seo-fallback">[\s\S]*?<\/div>/,
+    `<div id="seo-fallback">\n${fallback}\n    </div>`,
   );
 
 const renderRoute = (template, route) => {
@@ -125,7 +125,7 @@ const renderRoute = (template, route) => {
   html = setMetaByProperty(html, "og:title", route.title);
   html = setMetaByProperty(html, "og:description", route.description);
   html = setMetaByProperty(html, "og:url", route.canonical);
-  html = setRootFallback(html, renderFallback(route));
+  html = setSeoFallback(html, renderFallback(route));
 
   return html;
 };

@@ -41,6 +41,19 @@
     <meta name="robots" content="index, follow" />
     <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
+    <style>
+      #seo-fallback {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -58,7 +71,8 @@
   </head>
 
   <body>
-    <div id="root">
+    <div id="root"></div>
+    <div id="seo-fallback">
       <main>
         <section>
           <h1>Strategic Leadership in Technology, Product, and Growth</h1>
